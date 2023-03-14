@@ -1,0 +1,24 @@
+{
+  "name": "aclinicaoral",
+  "version": "1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp fdm",
+    "gulp": "gulp fdm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Depthcode",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "aos": "^2.3.4"
+  }
+}
