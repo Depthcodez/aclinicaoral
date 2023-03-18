@@ -1,0 +1,69 @@
+@import './_pattern'
+@import './_responsive'
+
+.s-dayClinic
+  margin: 6rem 0
+  .container
+    .info-dayClinic
+      display: flex
+      width: 100% 
+      .dayClinic-left
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 50%
+        .content-dayClinic-left
+          p
+            color: $color-p
+            margin: 2rem 0
+            width: 85%
+            font-size: 16px
+          h2
+            color: $bege-padrao
+            font-size: 40px
+          a
+            color: $color-p
+      .dayClinic-right
+        width: 50%
+        background: $bege-padrao
+        padding: 5rem
+        display: flex
+        align-items: center
+        justify-content: center
+        .img-right-dayClinc
+          margin: 0 0 0 -20%
+          img
+            width: 100%
+            height: auto
+.mobile-dayClinic
+  width: 100%
+  background: #fff
+  position: fixed
+  bottom: 0
+  padding: 2rem 0
+  display: flex
+  justify-content: center
+  align-items: center
+  .infos-mobile-dayClinic
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 4rem
+    .ligar-mobile-dayClinic
+      a
+        padding: 1rem 5rem
+        background: $bege-padrao
+        color: #fff
+        border-radius: 30px
+        i
+          font-size: 1.5rem
+    .mapa-mobile-dayClinic
+      a
+        padding: 1rem 5rem 
+        border: 2px solid $bege-padrao
+        border-radius: 30px
+        color: $bege-padrao
+        i
+          font-size: 1.5rem
+
+@media only screen and (max-width: 456px)
