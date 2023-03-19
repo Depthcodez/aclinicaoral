@@ -786,6 +786,15 @@ li {
   margin: 0 auto;
 }
 
+.invisalign-left {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.img-invisalign {
+  margin: 0 0 0 20% !important;
+}
+
 .s-tratamento-base {
   margin: 6rem 0;
 }
@@ -812,6 +821,12 @@ li {
 .s-tratamento-base .container .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left a {
   color: #7a7a7a;
 }
+.s-tratamento-base .container .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left ul li {
+  color: #7a7a7a;
+  list-style: disc;
+  margin: 1rem 0;
+  font-size: 14px;
+}
 .s-tratamento-base .container .info-tratamento-base .tratamentoBase-right {
   width: 50%;
   background: #c8bcac;
@@ -826,4 +841,55 @@ li {
 .s-tratamento-base .container .info-tratamento-base .tratamentoBase-right .img-right-tratamentoBase img {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 456px) {
+  .s-tratamento-base {
+    margin: 6rem 0;
+  }
+  .s-tratamento-base .container .info-tratamento-base {
+    display: block;
+    width: 100%;
+  }
+  .s-tratamento-base .container .info-tratamento-base .tratamento-base-left {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .s-tratamento-base .container .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left p {
+    color: #7a7a7a;
+    margin: 2rem 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  .s-tratamento-base .container .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left h2 {
+    color: #c8bcac;
+    font-size: 35px;
+  }
+  .s-tratamento-base .container .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left a {
+    color: #7a7a7a;
+  }
+  .s-tratamento-base .container .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left ul {
+    text-align: center;
+    margin: 0 auto;
+    color: #7a7a7a;
+    text-align: center;
+    width: 80%;
+    font-size: 14px !important;
+  }
+  .s-tratamento-base .container .info-tratamento-base .tratamentoBase-right {
+    width: 100vw !important;
+    background: none !important;
+    padding: 0rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .s-tratamento-base .container .info-tratamento-base .tratamentoBase-right .img-right-tratamentoBase img {
+    width: 100%;
+    height: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
