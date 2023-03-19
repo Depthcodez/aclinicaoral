@@ -36,6 +36,7 @@
             width: 100%
             height: auto
 .mobile-dayClinic
+  display: none !important
   width: 100%
   background: #fff
   position: fixed
@@ -48,7 +49,7 @@
     display: flex
     justify-content: center
     align-items: center
-    gap: 4rem
+    gap: 2rem !important
     .ligar-mobile-dayClinic
       a
         padding: 1rem 5rem
@@ -66,4 +67,41 @@
         i
           font-size: 1.5rem
 
-// @media only screen and (max-width: 456px)
+@media only screen and (max-width: 456px)
+  .mobile-dayClinic
+    display: block !important
+  .s-dayClinic
+    margin: 6rem 0
+    .container
+      .info-dayClinic
+        display: block
+        width: 100% 
+        .dayClinic-left
+          display: flex
+          text-align: center
+          flex-direction: column
+          justify-content: center
+          width: 100%
+          align-items: center 
+          .content-dayClinic-left
+            p
+              color: $color-p
+              margin: 2rem 0
+              width: 100%
+              font-size: 14px
+            h2
+              color: $bege-padrao
+              font-size: 35px
+            a
+              color: $color-p
+        .dayClinic-right
+          width: 100vw !important
+          background: none !important
+          padding: 0rem !important
+          display: flex
+          align-items: center
+          justify-content: center
+          .img-right-dayClinc
+            img
+              width: 100%
+              height: auto
