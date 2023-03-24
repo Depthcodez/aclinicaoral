@@ -817,6 +817,7 @@ li {
 .s-tratamento-base .container .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left h2 {
   color: #c8bcac;
   font-size: 40px;
+  margin-bottom: 2rem;
 }
 .s-tratamento-base .container .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left a {
   color: #7a7a7a;
@@ -826,6 +827,10 @@ li {
   list-style: disc;
   margin: 1rem 0;
   font-size: 14px;
+}
+.s-tratamento-base .container .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left strong {
+  color: #7B7B7B;
+  font-size: 16px;
 }
 .s-tratamento-base .container .info-tratamento-base .tratamentoBase-right {
   width: 50%;
