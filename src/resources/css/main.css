@@ -1183,3 +1183,25 @@ li {
         .s-tratamento-base .container .info-tratamento-base .tratamentoBase-right .img-right-tratamentoBase img {
           width: 100%;
           height: auto; } }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+.s-tratamento-base .container .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left .agendarIndex {
+  padding: 1rem 1.5rem;
+  background: #c8bcac;
+  font-weight: bold;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  color: #fff;
+  margin-top: 1rem; }
+  .s-tratamento-base .container .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left .agendarIndex:hover {
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-box-shadow: 4px 4px 4px 8px;
+            box-shadow: 4px 4px 4px 8px; }
