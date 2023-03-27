@@ -816,7 +816,7 @@ li {
 
 .s-banner .container .msgBanner {
   position: absolute;
-  top: 60%;
+  top: 45%;
   right: 45%; }
   .s-banner .container .msgBanner h1 {
     color: #fff;
@@ -1269,7 +1269,11 @@ li {
 
 header {
   -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3); }
+          box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 999999999999; }
   header nav {
     display: -webkit-box;
     display: -webkit-flex;
