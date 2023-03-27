@@ -35,6 +35,24 @@
     <title>A clinica Oral</title>
   </head>
   <body>
+    <style>
+      .carousel-inner .review {
+        padding: 20px;
+      }
+
+      .carousel-inner .review .rating {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .carousel-inner .active {
+        display: block;
+      }
+
+      .carousel-inner .item {
+        display: none;
+      }
+    </style>
     <main>
       <header>
         <nav class="container">
@@ -87,103 +105,24 @@
           <div class="info-tratamento-base">
             <div class="tratamento-base-left">
               <div class="content-tratamentoBase-left">
-                <h2>Ortodontia</h2>
+                <h2>Coroas de Porcelana</h2>
                 <p>
-                  Hoje em dia há um número crescente de adultos usando aparelhos
-                  ortodônticos, até mesmo celebridades passaram a usá-los,
-                  influenciando a forma de pensar das pessoas. Contudo é preciso
-                  saber que atualmente existem aparelhos que não chamam tanto a
-                  atenção como o metálico o que incentiva um número cada vez
-                  maior de pacientes na adesão ao tratamento.
+                  Onlays e coroas de porcelanas são indicadas quando a estrutura
+                  dentária atingida pela cárie, ou fratura do dente é tão
+                  extensa que não seria possível a reabilitação com as
+                  restaurações convencionais. Isso porque a porcelana confere
+                  maior resistência aliada a estética, sendo muito difícil sua
+                  fratura ou cisalhamento, principalmente em grandes extensões.
+                  Além de proporcionar um ótimo vedamento periférico quando
+                  utilizada adequadamente e com cimentos específicos diminuindo
+                  a propensão à infiltrações limitadoras do prazo de vida útil.
                 </p>
               </div>
             </div>
             <div class="tratamentoBase-right">
               <div class="img-right-tratamentoBase">
                 <img
-                  src="./resources/img/Ortodontia-Vila-Olímpia.jpg"
-                  alt=""
-                  width="1000"
-                  height="667"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="s-tratamento-base">
-        <div class="container">
-          <div class="info-tratamento-base invisalign-left">
-            <div class="tratamento-base-left">
-              <div class="content-tratamentoBase-left">
-                <h2>Invisalign</h2>
-                <p>
-                  Sucesso no mundo inteiro, os alinhadores Invisalign são
-                  aparelhos ortodônticos transparentes em formato de placas, ou
-                  seja, não possuem braquetes e fios metálicos como nos
-                  aparelhos ortodônticos convencionais. Com um visual discreto,
-                  ao ponto de quase ninguém perceber que você está em
-                  tratamento, por serem praticamente invisíveis. Por ser um
-                  aparelho removível, tem a vantagem de poder remover antes das
-                  refeições e na hora da higienização. Não atrapalham na fala.
-                  Não causam irritação. O tempo de consulta para ativação do
-                  aparelho é reduzido em relação ao aparelho convencional.
-                </p>
-              </div>
-            </div>
-            <div class="tratamentoBase-right">
-              <div class="img-right-tratamentoBase">
-                <img
-                  src="./resources/img/Invisalign-Vila-Olímpia.jpg"
-                  alt=""
-                  width="1000"
-                  height="667"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="s-tratamento-base">
-        <div class="container">
-          <div class="info-tratamento-base">
-            <div class="tratamento-base-left">
-              <div class="content-tratamentoBase-left">
-                <h2>Aparelhos Auto-Ligados</h2>
-                <p>
-                  É uma evolução do aparelho convencional, com algumas
-                  vantagens:
-                </p>
-                <ul>
-                  <li>Mais higiênico, acumula menos placa bacteriana;</li>
-                  <li>minimiza a necessidade de extrações dentárias;</li>
-                  <li>
-                    material de alta tecnologia, a força é ativada pela
-                    temperatura da boca;
-                  </li>
-                  <li>
-                    as manutenções são feitas a cada 2 meses, sem prolongar o
-                    tempo do tratamento;
-                  </li>
-                  <li>
-                    correção mais rápida quando comparado aos aparelhos fixos
-                    convencionais;
-                  </li>
-                  <li>diminuição da dor durante o tratamento;</li>
-                  <li>diminuição do número de visitas ao dentista;</li>
-                  <li>
-                    redução significativa da força exigida para movimentação
-                    dentária.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="tratamentoBase-right">
-              <div class="img-right-tratamentoBase">
-                <img
-                  src="./resources/img/Aparelhos-Auto-Ligados-Vila-Olímpia.jpg"
+                  src="./resources/img/Coroas-de-Porcelana-Vila-Olímpia.jpg"
                   alt=""
                   width="1000"
                   height="667"
@@ -233,7 +172,35 @@
       </section>
 
       <section class="s-depoimento">
-        <div class="container"></div>
+        <div class="container">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner"></div>
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        </div>
       </section>
 
       <section class="s-localizacao">
@@ -309,6 +276,43 @@
         </div>
       </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./resources/js/main.js"></script>
+    <script>
+      var place_id = 'PLACE_ID'
+      var api_key = 'API_KEY'
+
+      var request = {
+        placeId: place_id,
+        fields: ['name', 'rating', 'reviews']
+      }
+
+      var service = new google.maps.places.PlacesService(
+        document.createElement('div')
+      )
+
+      service.getDetails(request, function (place, status) {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+          var reviews = place.reviews.sort(function (a, b) {
+            return new Date(b.time) - new Date(a.time)
+          })
+
+          var recent_reviews = reviews.slice(0, 5)
+
+          recent_reviews.forEach(function (review) {
+            var html = `
+        <div class="review">
+          <div class="rating">${review.rating} estrelas</div>
+          <div class="text">${review.text}</div>
+        </div>
+      `
+
+            $('.carousel-inner').append(html)
+          })
+
+          $('.carousel-inner .review:first-child').addClass('active')
+        }
+      })
+    </script>
   </body>
 </html>

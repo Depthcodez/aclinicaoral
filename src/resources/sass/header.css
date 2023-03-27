@@ -1,0 +1,35 @@
+/* Define a seta para baixo usando um triângulo */
+.dropdown::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.3em;
+  vertical-align: middle;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+/* Transforma a seta para cima quando o usuário passa o mouse */
+.dropdown:hover::after {
+  transform: rotate(-180deg);
+  color: #c8bcac;
+}
+
+/* Define a cor da seta */
+.dropdown::after {
+  color: #7a7a7a;
+}
+
+
+/* Cor padrão */
+.dropdown-toggle {
+  color: #7a7a7a;
+}
+
+/* Cor quando aberto */
+.dropdown-toggle.active {
+  color: #c8bcac; /* Substitua pela cor desejada */
+}
