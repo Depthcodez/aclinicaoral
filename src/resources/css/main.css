@@ -1234,11 +1234,12 @@ li {
         -ms-flex-pack: distribute;
             justify-content: space-around; }
     .s-itens-menu .container .itens-index .box-iten-index {
-      padding: 5rem 6rem;
+      padding: 5rem 3rem;
       color: #fff;
       background-color: #c8bcac;
       -webkit-border-radius: 15px;
-              border-radius: 15px; }
+              border-radius: 15px;
+      font-size: 29px; }
   .s-itens-menu .container .iten-tratamento {
     display: -webkit-box;
     display: -webkit-flex;
