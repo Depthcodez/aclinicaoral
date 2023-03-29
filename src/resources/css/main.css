@@ -866,3 +866,80 @@ li {
           max-width: 100%; }
           .s-localizacao .container .info-localizacao .right-localizacao .info-left-localizacao .localizacao-mapa iframe {
             width: 100%; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+nav .itens-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  nav .itens-menu #tratamento {
+    border-bottom: 2px;
+    border-bottom-color: #dfd7cc;
+    position: relative;
+    width: 8%; }
+    nav .itens-menu #tratamento #tratamentoa {
+      position: relative;
+      border-bottom: 3px solid #000; }
+    nav .itens-menu #tratamento .submenu {
+      width: 100%;
+      position: absolute; }
+    nav .itens-menu #tratamento:hover .sub-menu {
+      display: block;
+      opacity: 1;
+      height: 30vw;
+      width: 30vw;
+      top: 100%; }
+    nav .itens-menu #tratamento .sub-menu, nav .itens-menu #tratamento .sub-menu-1, nav .itens-menu #tratamento .sub-menu-2 {
+      display: none;
+      background: #ffffff;
+      margin-left: 0;
+      left: 0;
+      padding-left: 1em;
+      min-width: 100%;
+      display: block;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      -webkit-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.11);
+              box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.11);
+      -webkit-border-radius: 2px;
+              border-radius: 2px; }
+      nav .itens-menu #tratamento .sub-menu li, nav .itens-menu #tratamento .sub-menu-1 li, nav .itens-menu #tratamento .sub-menu-2 li {
+        border-top: 0;
+        color: #6B7C93;
+        line-height: 120%;
+        font-weight: 600;
+        position: relative;
+        padding: 0.75rem 1.5rem 1.5rem 0;
+        font-size: 14px;
+        margin-bottom: 1rem; }
+    nav .itens-menu #tratamento #estetica {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      nav .itens-menu #tratamento #estetica:hover .sub-menu-1 {
+        display: block;
+        opacity: 1;
+        height: 100%; }
+    nav .itens-menu #tratamento #cirurgia {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      nav .itens-menu #tratamento #cirurgia:hover .sub-menu-2 {
+        display: block;
+        opacity: 1;
+        height: 100%; }
