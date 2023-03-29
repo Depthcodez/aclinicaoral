@@ -1,4 +1,4 @@
-;<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+// ;<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script> link para incluir no body
 
 var place_id = 'PLACE_ID'
 var api_key = 'API_KEY'
