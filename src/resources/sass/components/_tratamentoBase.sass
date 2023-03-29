@@ -1,18 +1,24 @@
 @import './_pattern'
 @import './_responsive'
+.invisalign-left
+  display: flex
+  flex-direction: row-reverse
 
-.s-dayClinic
+.img-invisalign
+  margin: 0 0 0 20% !important
+
+.s-tratamento-base
   margin: 6rem 0
   .container
-    .info-dayClinic
+    .info-tratamento-base
       display: flex
       width: 100% 
-      .dayClinic-left
+      .tratamento-base-left
         display: flex
         flex-direction: column
         justify-content: center
         width: 50%
-        .content-dayClinic-left
+        .content-tratamentoBase-left
           p
             color: $color-p
             margin: 2rem 0
@@ -21,69 +27,47 @@
           h2
             color: $bege-padrao
             font-size: 40px
+            margin-bottom: 2rem
           a
             color: $color-p
-      .dayClinic-right
+          ul
+            li
+              color: $color-p
+              list-style: disc
+              margin: 1rem 0
+              font-size: 14px
+          strong
+            color: $color-titulo
+            font-size: 16px
+
+      .tratamentoBase-right
         width: 50%
         background: $bege-padrao
         padding: 5rem
         display: flex
         align-items: center
         justify-content: center
-        .img-right-dayClinc
+        .img-right-tratamentoBase
           margin: 0 0 0 -20%
           img
             width: 100%
             height: auto
-.mobile-dayClinic
-  display: none !important
-  width: 100%
-  background: #fff
-  position: fixed
-  bottom: 0
-  padding: 2rem 0
-  display: flex
-  justify-content: center
-  align-items: center
-  .infos-mobile-dayClinic
-    display: flex
-    justify-content: center
-    align-items: center
-    gap: 2rem !important
-    .ligar-mobile-dayClinic
-      a
-        padding: 1rem 5rem
-        background: $bege-padrao
-        color: #fff
-        border-radius: 30px
-        i
-          font-size: 1.5rem
-    .mapa-mobile-dayClinic
-      a
-        padding: 1rem 5rem 
-        border: 2px solid $bege-padrao
-        border-radius: 30px
-        color: $bege-padrao
-        i
-          font-size: 1.5rem
 
 @media only screen and (max-width: 456px)
-  .mobile-dayClinic
-    display: block !important
-  .s-dayClinic
+  .s-tratamento-base
     margin: 6rem 0
     .container
-      .info-dayClinic
+      .info-tratamento-base
         display: block
         width: 100% 
-        .dayClinic-left
+        .tratamento-base-left
           display: flex
           text-align: center
           flex-direction: column
           justify-content: center
           width: 100%
           align-items: center 
-          .content-dayClinic-left
+          .content-tratamentoBase-left
             p
               color: $color-p
               margin: 2rem 0
@@ -94,14 +78,22 @@
               font-size: 35px
             a
               color: $color-p
-        .dayClinic-right
+            ul
+              text-align: center
+              margin: 0 auto
+              li
+              color: $color-p
+              text-align: center
+              width: 80%
+              font-size: 14px !important
+        .tratamentoBase-right
           width: 100vw !important
           background: none !important
           padding: 0rem !important
           display: flex
           align-items: center
           justify-content: center
-          .img-right-dayClinc
+          .img-right-tratamentoBase
             img
               width: 100%
               height: auto

@@ -7,7 +7,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./resources/css/main.css" />
-    <!-- <link rel="stylesheet" href="./resources/css/main.css" /> -->
+    <link rel="stylesheet" href="./resources/sass/header.css" />
 
     <!--Font Awesome-->
     <link
@@ -37,172 +37,108 @@
   <body>
     <main>
       <header>
-        <div>
-          <nav>
-            <button>ligar</button>
-            <ul class="itens-menu">
-              <li>Início</li>
-              <li id="tratamento">
-                <a href="#" id="tratamentoa">Tratamentos</a>
-                <ul class="sub-menu">
-                  <li>
-                    <li>
-                      <ul id="estetica"><a href="#" class="item">Estética</a>
-                        <ul class="sub-menu-1">
-                          <li>Lente de Contato Dental</li>
-                          <li>Facetas de Porcelana</li>
-                          <li>Clareamento Dental</li>
-                          <li>Coroas de Porcelana</li>
-                          <li>Restauração Dentária</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>
-                      <ul id="cirurgia">
-                        <a href="#" class="item">Cirurgia</a>
-                        <ul class="sub-menu-2">
-                          <li>Dentes do Siso</li>
-                          <li>Implante Dentário</li>
-                          <li>Cirurgia Ortoginática</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>Ortodontia</li>
-                    <li>Tratamento de Canal (Endodontia)</li>
-                    <li>Tratamento de Gengiva (Periodontia)</li>
-                    <li>Difusão do ATM</li>
-                    <li>Odontologia Pré-Natal</li>
-                    <li>Odontopediatria</li>
-                  </li>
-                </ul>
-              </li>
-              <li>Day Clinic</li>
-              <li>Equipe</li>
-              <li>Depoimentos</li>
-              <li>Endereço</li>
-              <li>Blog</li>
-              <li>Contato</li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="container">
+          <a href="" class="agendarHeader">
+            <i class="fa-solid fa-phone"></i> Agendar Consulta</a
+          >
+          <ul>
+            <li><a href="">Início</a></li>
+            <li class="dropdown">
+              <a href="">Tratamentos</a>
+              <ul class="dropdown-menu">
+                <li class="submenu">
+                  <a href="">Estética</a>
+                  <ul class="submenu-menu">
+                    <li><a href="">Lente de Contato Dental</a></li>
+                    <li><a href="">Facetas de Porcelana</a></li>
+                    <li><a href="">Clareamento Dental</a></li>
+                    <li><a href="">Coroas de Porcelana</a></li>
+                    <li><a href="">Restauração Dentária</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a href="">Cirurgia</a>
+                  <ul class="submenu-menu">
+                    <li><a href="">Dentes do siso</a></li>
+                    <li><a href="">Implante Dentário</a></li>
+                    <li><a href="">Cirurgia Ortognática</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Ortodontia</a></li>
+                <li><a href="">Tratamento de Canal (Endodontia)</a></li>
+                <li><a href="">Tratamento de Gengiva (Periodontia)</a></li>
+                <li><a href="">Disfunção do ATM</a></li>
+                <li><a href="">Odontologia Pré-Natal</a></li>
+                <li><a href="">Odontopediatria</a></li>
+              </ul>
+            </li>
+            <li><a href="">Day Clinic</a></li>
+            <li><a href="">Equipe</a></li>
+            <li><a href="">Depoimentos</a></li>
+            <li><a href="">Endereço</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </nav>
       </header>
 
-      <section class="s-banner">
-        <div class="imgBanner">
-          <img src="./resources/img/background-index-new-3.png" alt="" />
-        </div>
-        <div class="container">
-          <div class="msgBanner">
-            <img
-              src="./resources/img/Logo-Dentista-Vila-Olímpia.webp"
-              alt=""
-              width="150"
-              height="150"
-            />
-            <div>
-              <h1>Conforto e sofisticação para você e seu sorriso</h1>
-              <h3>Dentista Vila Olímpia</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="s-itens-menu">
-        <div class="container">
-          <div class="itens-index">
-            <p class="box-iten-index">Ortodontia</p>
-            <p class="box-iten-index">Clareamento Dental</p>
-            <p class="box-iten-index">Dentes do Siso</p>
-            <p class="box-iten-index">Lente de Contato Dental</p>
-          </div>
-          <div class="iten-tratamento">
-            <a href="">Todos os Tratamentos</a>
-          </div>
-        </div>
-      </section>
-
       <section class="s-tratamento-base">
         <div class="container">
           <div class="info-tratamento-base">
             <div class="tratamento-base-left">
               <div class="content-tratamentoBase-left">
-                <h2>A Clínica Oral</h2>
+                <h2>Cirurgia Ortognática</h2>
                 <p>
-                  Somos uma Clínica Odontológica com o objetivo de no mesmo
-                  espaço integrar todas as especialidades, proporcionando um
-                  plano de tratamento mais completo e personalizado. Contando
-                  com uma equipe de profissionais graduados e pós-graduados pela
-                  USP e outros Centros de Excelência buscamos constantemente
-                  trazer para nossos pacientes o que a de melhor e mais moderno
-                  na odontologia.
+                  É um tratamento indicado para pessoas que têm deformidades
+                  envolvendo os ossos da face e os dentes, visando restabelecer
+                  o equilíbrio anatômico da face. Quando não for possível
+                  resolver o caso somente com o aparelho ortodôntico, uma vez
+                  que o problema está no tamanho dos ossos do esqueleto e não
+                  somente na posição dos dentes, faz-se necessário uma correção
+                  óssea.
                 </p>
-                <a href="" class="agendarIndex" style="color: #fff"
-                  >Agendar Consulta</a
-                >
-              </div>
-            </div>
-            <div class="tratamentoBase-right">
-              <div class="img-right-tratamentoBase">
-                <img
-                  src="./resources/img/A-Clínica-Oral-Dentista-Vila-Olímpia.jpg"
-                  alt=""
-                  width="1000"
-                  height="667"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="s-tratamento-base">
-        <div class="container">
-          <div class="info-tratamento-base invisalign-left">
-            <div class="tratamento-base-left">
-              <div class="content-tratamentoBase-left">
-                <h2>Equipamentos de Última Geração</h2>
                 <p>
-                  Investimos constantemente em tecnologia e aparelhos de última
-                  geração, como sensores digitais de raio-X, câmeras intra-orais
-                  para fotografias digitais, laser, softwares de imagens para
-                  sempre oferecer o melhor serviço para nossos pacientes.
+                  As deformidades dos ossos da face podem se originar de
+                  distúrbios de crescimento, síndromes e anomalias específicas,
+                  traumas na face, ou serem de origem genética, dentre outros
+                  fatores. Essas alterações podem estar localizadas num osso,
+                  como no prognatismo mandibular (mandíbula grande) ou no
+                  retrognatismo mandibular (mandíbula pequena), ou muitas vezes
+                  uma combinação dos dois. O paciente deverá realizar uma
+                  documentação ortodôntica completa para que os profissionais
+                  (Cirurgião Buco Maxilo Facial e Ortodontista) analisem as
+                  correções necessárias através de um tratamento
+                  ortodôntico-cirúrgico-ortodôntico. Isto é, inicia-se com a
+                  ortodontia preparando os dentes por período que varia de seis
+                  meses a um ano e meio (primeira etapa), a partir daí
+                  planeja-se a cirurgia ortognática, fazendo uma moldagem de
+                  estudo e confeccionando modelos de gesso e montagem em
+                  articulador; opera-se o paciente e, logo que se recupere, a
+                  ortodontia realizará os últimos ajustes na oclusão.
                 </p>
-              </div>
-            </div>
-            <div class="tratamentoBase-right">
-              <div class="img-right-tratamentoBase">
-                <img
-                  src="./resources/img/Equipamentos-de-Última-Geração-Dentista-Vila-Olímpia.jpg"
-                  alt=""
-                  width="1000"
-                  height="667"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="s-tratamento-base">
-        <div class="container">
-          <div class="info-tratamento-base">
-            <div class="tratamento-base-left">
-              <div class="content-tratamentoBase-left">
-                <h2>Espaço Aconchegante</h2>
                 <p>
-                  Criamos um espaço aconchegante para seu conforto, climatizado
-                  e com rede wireless. Contando ainda com iPads disponíveis para
-                  você agilizar seus compromissos ou simplesmente navegar em
-                  seus sites prediletos. Todas as salas são equipadas com TVs e
-                  fones sem fio, travesseiros e cobertores para conforto do
-                  paciente durante o atendimento.
+                  Antes da cirurgia, o paciente deverá realizar alguns exames
+                  complementares. A cirurgia é realizada em ambiente hospitalar
+                  e sob anestesia geral, envolvendo normalmente dois cirurgiões,
+                  um instrumentador e uma equipe multidisciplinar. A cirurgia é
+                  realizada totalmente por dentro da boca, não deixando cicatriz
+                  na face e, dependendo do porte da cirurgia e recuperação da
+                  anestesia, a alta hospitalar é dada ao paciente na manhã do
+                  dia seguinte. A correção das deformidades faciais através da
+                  cirurgia ortognática traz grandes benefícios aos pacientes
+                  operados, com sensível melhora na relação entre os dentes,
+                  músculos, ossos, respiração, fonação, posição da língua,
+                  articulação temporo-mandibular (ATM), mastigação, digestão e
+                  em muitos casos, no relacionamento social. A Cirurgia
+                  Ortognática moderna busca um equilíbrio das funções
+                  mastigatória, respiratória e da beleza estética.
                 </p>
               </div>
             </div>
             <div class="tratamentoBase-right">
               <div class="img-right-tratamentoBase">
                 <img
-                  src="./resources/img/Espaco-Aconchegante-Dentista-Vila-Olímpia.jpg"
+                  src="./resources/img/Restauração-Dentária-Vila-Olímpia (1).jpg"
                   alt=""
                   width="1000"
                   height="667"

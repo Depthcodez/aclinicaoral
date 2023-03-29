@@ -7,7 +7,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./resources/css/main.css" />
-    <!-- <link rel="stylesheet" href="./resources/css/main.css" /> -->
+    <link rel="stylesheet" href="./resources/sass/header.css" />
 
     <!--Font Awesome-->
     <link
@@ -37,172 +37,73 @@
   <body>
     <main>
       <header>
-        <div>
-          <nav>
-            <button>ligar</button>
-            <ul class="itens-menu">
-              <li>Início</li>
-              <li id="tratamento">
-                <a href="#" id="tratamentoa">Tratamentos</a>
-                <ul class="sub-menu">
-                  <li>
-                    <li>
-                      <ul id="estetica"><a href="#" class="item">Estética</a>
-                        <ul class="sub-menu-1">
-                          <li>Lente de Contato Dental</li>
-                          <li>Facetas de Porcelana</li>
-                          <li>Clareamento Dental</li>
-                          <li>Coroas de Porcelana</li>
-                          <li>Restauração Dentária</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>
-                      <ul id="cirurgia">
-                        <a href="#" class="item">Cirurgia</a>
-                        <ul class="sub-menu-2">
-                          <li>Dentes do Siso</li>
-                          <li>Implante Dentário</li>
-                          <li>Cirurgia Ortoginática</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>Ortodontia</li>
-                    <li>Tratamento de Canal (Endodontia)</li>
-                    <li>Tratamento de Gengiva (Periodontia)</li>
-                    <li>Difusão do ATM</li>
-                    <li>Odontologia Pré-Natal</li>
-                    <li>Odontopediatria</li>
-                  </li>
-                </ul>
-              </li>
-              <li>Day Clinic</li>
-              <li>Equipe</li>
-              <li>Depoimentos</li>
-              <li>Endereço</li>
-              <li>Blog</li>
-              <li>Contato</li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="container">
+          <a href="" class="agendarHeader">
+            <i class="fa-solid fa-phone"></i> Agendar Consulta</a
+          >
+          <ul>
+            <li><a href="">Início</a></li>
+            <li class="dropdown">
+              <a href="">Tratamentos</a>
+              <ul class="dropdown-menu">
+                <li class="submenu">
+                  <a href="">Estética</a>
+                  <ul class="submenu-menu">
+                    <li><a href="">Lente de Contato Dental</a></li>
+                    <li><a href="">Facetas de Porcelana</a></li>
+                    <li><a href="">Clareamento Dental</a></li>
+                    <li><a href="">Coroas de Porcelana</a></li>
+                    <li><a href="">Restauração Dentária</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a href="">Cirurgia</a>
+                  <ul class="submenu-menu">
+                    <li><a href="">Dentes do siso</a></li>
+                    <li><a href="">Implante Dentário</a></li>
+                    <li><a href="">Cirurgia Ortognática</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Ortodontia</a></li>
+                <li><a href="">Tratamento de Canal (Endodontia)</a></li>
+                <li><a href="">Tratamento de Gengiva (Periodontia)</a></li>
+                <li><a href="">Disfunção do ATM</a></li>
+                <li><a href="">Odontologia Pré-Natal</a></li>
+                <li><a href="">Odontopediatria</a></li>
+              </ul>
+            </li>
+            <li><a href="">Day Clinic</a></li>
+            <li><a href="">Equipe</a></li>
+            <li><a href="">Depoimentos</a></li>
+            <li><a href="">Endereço</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </nav>
       </header>
 
-      <section class="s-banner">
-        <div class="imgBanner">
-          <img src="./resources/img/background-index-new-3.png" alt="" />
-        </div>
-        <div class="container">
-          <div class="msgBanner">
-            <img
-              src="./resources/img/Logo-Dentista-Vila-Olímpia.webp"
-              alt=""
-              width="150"
-              height="150"
-            />
-            <div>
-              <h1>Conforto e sofisticação para você e seu sorriso</h1>
-              <h3>Dentista Vila Olímpia</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="s-itens-menu">
-        <div class="container">
-          <div class="itens-index">
-            <p class="box-iten-index">Ortodontia</p>
-            <p class="box-iten-index">Clareamento Dental</p>
-            <p class="box-iten-index">Dentes do Siso</p>
-            <p class="box-iten-index">Lente de Contato Dental</p>
-          </div>
-          <div class="iten-tratamento">
-            <a href="">Todos os Tratamentos</a>
-          </div>
-        </div>
-      </section>
-
       <section class="s-tratamento-base">
         <div class="container">
           <div class="info-tratamento-base">
             <div class="tratamento-base-left">
               <div class="content-tratamentoBase-left">
-                <h2>A Clínica Oral</h2>
+                <h2>Facetas de Porcelana</h2>
                 <p>
-                  Somos uma Clínica Odontológica com o objetivo de no mesmo
-                  espaço integrar todas as especialidades, proporcionando um
-                  plano de tratamento mais completo e personalizado. Contando
-                  com uma equipe de profissionais graduados e pós-graduados pela
-                  USP e outros Centros de Excelência buscamos constantemente
-                  trazer para nossos pacientes o que a de melhor e mais moderno
-                  na odontologia.
-                </p>
-                <a href="" class="agendarIndex" style="color: #fff"
-                  >Agendar Consulta</a
-                >
-              </div>
-            </div>
-            <div class="tratamentoBase-right">
-              <div class="img-right-tratamentoBase">
-                <img
-                  src="./resources/img/A-Clínica-Oral-Dentista-Vila-Olímpia.jpg"
-                  alt=""
-                  width="1000"
-                  height="667"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="s-tratamento-base">
-        <div class="container">
-          <div class="info-tratamento-base invisalign-left">
-            <div class="tratamento-base-left">
-              <div class="content-tratamentoBase-left">
-                <h2>Equipamentos de Última Geração</h2>
-                <p>
-                  Investimos constantemente em tecnologia e aparelhos de última
-                  geração, como sensores digitais de raio-X, câmeras intra-orais
-                  para fotografias digitais, laser, softwares de imagens para
-                  sempre oferecer o melhor serviço para nossos pacientes.
+                  São laminados confeccionados de porcelana que recobrem a
+                  superfície externa do dente, podendo clarear dentes com
+                  manchas escuras, fechar espaços existentes entre os dentes,
+                  alinhar dentes fora de posição, aumentar seu tamanho e alterar
+                  sua forma, criando a possibilidade de ter um sorriso jovem.
+                  Além disso, são biocompatívies, não retêm placa, sua cor e
+                  brilho se mantêm estáveis, pois este material não sofre
+                  alterações e há uma excelente adaptação na boca.
                 </p>
               </div>
             </div>
             <div class="tratamentoBase-right">
               <div class="img-right-tratamentoBase">
                 <img
-                  src="./resources/img/Equipamentos-de-Última-Geração-Dentista-Vila-Olímpia.jpg"
-                  alt=""
-                  width="1000"
-                  height="667"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="s-tratamento-base">
-        <div class="container">
-          <div class="info-tratamento-base">
-            <div class="tratamento-base-left">
-              <div class="content-tratamentoBase-left">
-                <h2>Espaço Aconchegante</h2>
-                <p>
-                  Criamos um espaço aconchegante para seu conforto, climatizado
-                  e com rede wireless. Contando ainda com iPads disponíveis para
-                  você agilizar seus compromissos ou simplesmente navegar em
-                  seus sites prediletos. Todas as salas são equipadas com TVs e
-                  fones sem fio, travesseiros e cobertores para conforto do
-                  paciente durante o atendimento.
-                </p>
-              </div>
-            </div>
-            <div class="tratamentoBase-right">
-              <div class="img-right-tratamentoBase">
-                <img
-                  src="./resources/img/Espaco-Aconchegante-Dentista-Vila-Olímpia.jpg"
+                  src="./resources/img/Facetas-de-Porcelana-Vila-Olímpia.jpg"
                   alt=""
                   width="1000"
                   height="667"

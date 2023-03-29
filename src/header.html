@@ -7,7 +7,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./resources/css/main.css" />
-    <!-- <link rel="stylesheet" href="./resources/css/main.css" /> -->
+    <link rel="stylesheet" href="./resources/sass/header.css" />
 
     <!--Font Awesome-->
     <link
@@ -37,54 +37,49 @@
   <body>
     <main>
       <header>
-        <div>
-          <nav>
-            <button>ligar</button>
-            <ul class="itens-menu">
-              <li>Início</li>
-              <li id="tratamento">
-                <a href="#" id="tratamentoa">Tratamentos</a>
-                <ul class="sub-menu">
-                  <li>
-                    <li>
-                      <ul id="estetica"><a href="#" class="item">Estética</a>
-                        <ul class="sub-menu-1">
-                          <li>Lente de Contato Dental</li>
-                          <li>Facetas de Porcelana</li>
-                          <li>Clareamento Dental</li>
-                          <li>Coroas de Porcelana</li>
-                          <li>Restauração Dentária</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>
-                      <ul id="cirurgia">
-                        <a href="#" class="item">Cirurgia</a>
-                        <ul class="sub-menu-2">
-                          <li>Dentes do Siso</li>
-                          <li>Implante Dentário</li>
-                          <li>Cirurgia Ortoginática</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>Ortodontia</li>
-                    <li>Tratamento de Canal (Endodontia)</li>
-                    <li>Tratamento de Gengiva (Periodontia)</li>
-                    <li>Difusão do ATM</li>
-                    <li>Odontologia Pré-Natal</li>
-                    <li>Odontopediatria</li>
-                  </li>
-                </ul>
-              </li>
-              <li>Day Clinic</li>
-              <li>Equipe</li>
-              <li>Depoimentos</li>
-              <li>Endereço</li>
-              <li>Blog</li>
-              <li>Contato</li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="container">
+          <a href="" class="agendarHeader">
+            <i class="fa-solid fa-phone"></i> Agendar Consulta</a
+          >
+          <ul>
+            <li><a href="">Início</a></li>
+            <li class="dropdown">
+              <a href="">Tratamentos</a>
+              <ul class="dropdown-menu">
+                <li class="submenu">
+                  <a href="">Estética</a>
+                  <ul class="submenu-menu">
+                    <li><a href="">Lente de Contato Dental</a></li>
+                    <li><a href="">Facetas de Porcelana</a></li>
+                    <li><a href="">Clareamento Dental</a></li>
+                    <li><a href="">Coroas de Porcelana</a></li>
+                    <li><a href="">Restauração Dentária</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a href="">Cirurgia</a>
+                  <ul class="submenu-menu">
+                    <li><a href="">Dentes do siso</a></li>
+                    <li><a href="">Implante Dentário</a></li>
+                    <li><a href="">Cirurgia Ortognática</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Ortodontia</a></li>
+                <li><a href="">Tratamento de Canal (Endodontia)</a></li>
+                <li><a href="">Tratamento de Gengiva (Periodontia)</a></li>
+                <li><a href="">Disfunção do ATM</a></li>
+                <li><a href="">Odontologia Pré-Natal</a></li>
+                <li><a href="">Odontopediatria</a></li>
+              </ul>
+            </li>
+            <li><a href="">Day Clinic</a></li>
+            <li><a href="">Equipe</a></li>
+            <li><a href="">Depoimentos</a></li>
+            <li><a href="">Endereço</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </nav>
       </header>
 
       <section class="s-banner">

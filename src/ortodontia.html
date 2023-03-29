@@ -7,7 +7,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./resources/css/main.css" />
-    <!-- <link rel="stylesheet" href="./resources/css/main.css" /> -->
+    <link rel="stylesheet" href="./resources/sass/header.css" />
 
     <!--Font Awesome-->
     <link
@@ -37,114 +37,71 @@
   <body>
     <main>
       <header>
-        <div>
-          <nav>
-            <button>ligar</button>
-            <ul class="itens-menu">
-              <li>Início</li>
-              <li id="tratamento">
-                <a href="#" id="tratamentoa">Tratamentos</a>
-                <ul class="sub-menu">
-                  <li>
-                    <li>
-                      <ul id="estetica"><a href="#" class="item">Estética</a>
-                        <ul class="sub-menu-1">
-                          <li>Lente de Contato Dental</li>
-                          <li>Facetas de Porcelana</li>
-                          <li>Clareamento Dental</li>
-                          <li>Coroas de Porcelana</li>
-                          <li>Restauração Dentária</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>
-                      <ul id="cirurgia">
-                        <a href="#" class="item">Cirurgia</a>
-                        <ul class="sub-menu-2">
-                          <li>Dentes do Siso</li>
-                          <li>Implante Dentário</li>
-                          <li>Cirurgia Ortoginática</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>Ortodontia</li>
-                    <li>Tratamento de Canal (Endodontia)</li>
-                    <li>Tratamento de Gengiva (Periodontia)</li>
-                    <li>Difusão do ATM</li>
-                    <li>Odontologia Pré-Natal</li>
-                    <li>Odontopediatria</li>
-                  </li>
-                </ul>
-              </li>
-              <li>Day Clinic</li>
-              <li>Equipe</li>
-              <li>Depoimentos</li>
-              <li>Endereço</li>
-              <li>Blog</li>
-              <li>Contato</li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="container">
+          <a href="" class="agendarHeader">
+            <i class="fa-solid fa-phone"></i> Agendar Consulta</a
+          >
+          <ul>
+            <li><a href="">Início</a></li>
+            <li class="dropdown">
+              <a href="">Tratamentos</a>
+              <ul class="dropdown-menu">
+                <li class="submenu">
+                  <a href="">Estética</a>
+                  <ul class="submenu-menu">
+                    <li><a href="">Lente de Contato Dental</a></li>
+                    <li><a href="">Facetas de Porcelana</a></li>
+                    <li><a href="">Clareamento Dental</a></li>
+                    <li><a href="">Coroas de Porcelana</a></li>
+                    <li><a href="">Restauração Dentária</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a href="">Cirurgia</a>
+                  <ul class="submenu-menu">
+                    <li><a href="">Dentes do siso</a></li>
+                    <li><a href="">Implante Dentário</a></li>
+                    <li><a href="">Cirurgia Ortognática</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Ortodontia</a></li>
+                <li><a href="">Tratamento de Canal (Endodontia)</a></li>
+                <li><a href="">Tratamento de Gengiva (Periodontia)</a></li>
+                <li><a href="">Disfunção do ATM</a></li>
+                <li><a href="">Odontologia Pré-Natal</a></li>
+                <li><a href="">Odontopediatria</a></li>
+              </ul>
+            </li>
+            <li><a href="">Day Clinic</a></li>
+            <li><a href="">Equipe</a></li>
+            <li><a href="">Depoimentos</a></li>
+            <li><a href="">Endereço</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </nav>
       </header>
-
-      <section class="s-banner">
-        <div class="imgBanner">
-          <img src="./resources/img/background-index-new-3.png" alt="" />
-        </div>
-        <div class="container">
-          <div class="msgBanner">
-            <img
-              src="./resources/img/Logo-Dentista-Vila-Olímpia.webp"
-              alt=""
-              width="150"
-              height="150"
-            />
-            <div>
-              <h1>Conforto e sofisticação para você e seu sorriso</h1>
-              <h3>Dentista Vila Olímpia</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="s-itens-menu">
-        <div class="container">
-          <div class="itens-index">
-            <p class="box-iten-index">Ortodontia</p>
-            <p class="box-iten-index">Clareamento Dental</p>
-            <p class="box-iten-index">Dentes do Siso</p>
-            <p class="box-iten-index">Lente de Contato Dental</p>
-          </div>
-          <div class="iten-tratamento">
-            <a href="">Todos os Tratamentos</a>
-          </div>
-        </div>
-      </section>
 
       <section class="s-tratamento-base">
         <div class="container">
           <div class="info-tratamento-base">
             <div class="tratamento-base-left">
               <div class="content-tratamentoBase-left">
-                <h2>A Clínica Oral</h2>
+                <h2>Ortodontia</h2>
                 <p>
-                  Somos uma Clínica Odontológica com o objetivo de no mesmo
-                  espaço integrar todas as especialidades, proporcionando um
-                  plano de tratamento mais completo e personalizado. Contando
-                  com uma equipe de profissionais graduados e pós-graduados pela
-                  USP e outros Centros de Excelência buscamos constantemente
-                  trazer para nossos pacientes o que a de melhor e mais moderno
-                  na odontologia.
+                  Hoje em dia há um número crescente de adultos usando aparelhos
+                  ortodônticos, até mesmo celebridades passaram a usá-los,
+                  influenciando a forma de pensar das pessoas. Contudo é preciso
+                  saber que atualmente existem aparelhos que não chamam tanto a
+                  atenção como o metálico o que incentiva um número cada vez
+                  maior de pacientes na adesão ao tratamento.
                 </p>
-                <a href="" class="agendarIndex" style="color: #fff"
-                  >Agendar Consulta</a
-                >
               </div>
             </div>
             <div class="tratamentoBase-right">
               <div class="img-right-tratamentoBase">
                 <img
-                  src="./resources/img/A-Clínica-Oral-Dentista-Vila-Olímpia.jpg"
+                  src="./resources/img/Ortodontia-Vila-Olímpia.jpg"
                   alt=""
                   width="1000"
                   height="667"
@@ -160,19 +117,25 @@
           <div class="info-tratamento-base invisalign-left">
             <div class="tratamento-base-left">
               <div class="content-tratamentoBase-left">
-                <h2>Equipamentos de Última Geração</h2>
+                <h2>Invisalign</h2>
                 <p>
-                  Investimos constantemente em tecnologia e aparelhos de última
-                  geração, como sensores digitais de raio-X, câmeras intra-orais
-                  para fotografias digitais, laser, softwares de imagens para
-                  sempre oferecer o melhor serviço para nossos pacientes.
+                  Sucesso no mundo inteiro, os alinhadores Invisalign são
+                  aparelhos ortodônticos transparentes em formato de placas, ou
+                  seja, não possuem braquetes e fios metálicos como nos
+                  aparelhos ortodônticos convencionais. Com um visual discreto,
+                  ao ponto de quase ninguém perceber que você está em
+                  tratamento, por serem praticamente invisíveis. Por ser um
+                  aparelho removível, tem a vantagem de poder remover antes das
+                  refeições e na hora da higienização. Não atrapalham na fala.
+                  Não causam irritação. O tempo de consulta para ativação do
+                  aparelho é reduzido em relação ao aparelho convencional.
                 </p>
               </div>
             </div>
             <div class="tratamentoBase-right">
               <div class="img-right-tratamentoBase">
                 <img
-                  src="./resources/img/Equipamentos-de-Última-Geração-Dentista-Vila-Olímpia.jpg"
+                  src="./resources/img/Invisalign-Vila-Olímpia.jpg"
                   alt=""
                   width="1000"
                   height="667"
@@ -188,21 +151,39 @@
           <div class="info-tratamento-base">
             <div class="tratamento-base-left">
               <div class="content-tratamentoBase-left">
-                <h2>Espaço Aconchegante</h2>
+                <h2>Aparelhos Auto-Ligados</h2>
                 <p>
-                  Criamos um espaço aconchegante para seu conforto, climatizado
-                  e com rede wireless. Contando ainda com iPads disponíveis para
-                  você agilizar seus compromissos ou simplesmente navegar em
-                  seus sites prediletos. Todas as salas são equipadas com TVs e
-                  fones sem fio, travesseiros e cobertores para conforto do
-                  paciente durante o atendimento.
+                  É uma evolução do aparelho convencional, com algumas
+                  vantagens:
                 </p>
+                <ul>
+                  <li>Mais higiênico, acumula menos placa bacteriana;</li>
+                  <li>minimiza a necessidade de extrações dentárias;</li>
+                  <li>
+                    material de alta tecnologia, a força é ativada pela
+                    temperatura da boca;
+                  </li>
+                  <li>
+                    as manutenções são feitas a cada 2 meses, sem prolongar o
+                    tempo do tratamento;
+                  </li>
+                  <li>
+                    correção mais rápida quando comparado aos aparelhos fixos
+                    convencionais;
+                  </li>
+                  <li>diminuição da dor durante o tratamento;</li>
+                  <li>diminuição do número de visitas ao dentista;</li>
+                  <li>
+                    redução significativa da força exigida para movimentação
+                    dentária.
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="tratamentoBase-right">
               <div class="img-right-tratamentoBase">
                 <img
-                  src="./resources/img/Espaco-Aconchegante-Dentista-Vila-Olímpia.jpg"
+                  src="./resources/img/Aparelhos-Auto-Ligados-Vila-Olímpia.jpg"
                   alt=""
                   width="1000"
                   height="667"
