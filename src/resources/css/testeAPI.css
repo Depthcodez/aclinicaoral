@@ -1,0 +1,16 @@
+.carousel-inner .review {
+  padding: 20px;
+}
+
+.carousel-inner .review .rating {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-inner .active {
+  display: block;
+}
+
+.carousel-inner .item {
+  display: none;
+}

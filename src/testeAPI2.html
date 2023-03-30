@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exibir as últimas avaliações do Google Places</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd4U5ETE1wjqnXCVxoMBtx8Ez4Y2QBOUo&libraries=places"></script>
+    <style>
+      .review {
+        margin-bottom: 20px;
+      }
+      .rating {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="reviews"></div>
+    <script>
+      var place_id =
+        'ElRSLiBGdW5jaGFsLCA1NTEgLSA4byBhbmRhciBjaiA4MSAtIFZpbGEgT2zDrW1waWEsIFPDo28gUGF1bG8gLSBTUCwgMDQ1NTEtMDYwLCBCcmF6aWwiKhooChYKFAoSCaPofQU4V86UEV9iOJ1SxhskEg44byBhbmRhciBjaiA4MQ'
+      var api_key = 'AIzaSyAd4U5ETE1wjqnXCVxoMBtx8Ez4Y2QBOUo'
+
+      var request = {
+        placeId: place_id,
+        fields: ['name', 'rating', 'reviews']
+      }
+
+      var service = new google.maps.places.PlacesService(
+        document.createElement('div')
+      )
+
+      service.getDetails(request, function (place, status) {
+        if (place.reviews && place.reviews.length > 0) {
+          var reviews = place.reviews.sort(function (a, b) {
+            return new Date(b.time) - new Date(a.time)
+          })
+
+          var recent_reviews = reviews.slice(0, 5)
+
+          recent_reviews.forEach(function (review) {
+            var html = `
+              <div class="review">
+                <div class="rating">${review.rating} estrelas</div>
+                <div class="text">${review.text}</div>
+              </div>
+            `
+
+            document.getElementById('reviews').innerHTML += html
+          })
+        }
+      })
+    </script>
+  </body>
+</html>

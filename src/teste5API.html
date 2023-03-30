@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exibir avaliações do Google Maps</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>Avaliações do Google Maps</h1>
+    <ul id="reviews"></ul>
+
+    <script>
+      $(document).ready(function () {
+        // ID do lugar que você deseja exibir as avaliações
+        var placeId = 'ChIJ4zGFAZJZwokRGugEDh7ZVO4'
+
+        // Sua chave de API do Google Cloud Platform
+        var apiKey = 'AIzaSyAd4U5ETE1wjqnXCVxoMBtx8Ez4Y2QBOUo'
+
+        // Endpoint para obter as informações do lugar, incluindo as avaliações
+        var endpoint =
+          'https://maps.googleapis.com/maps/api/place/details/json?place_id=' +
+          placeId +
+          '&fields=name,rating,reviews&key=' +
+          apiKey
+
+        // Envie uma solicitação GET para o endpoint
+        $.get(endpoint, function (data) {
+          // Obtenha as 5 avaliações mais recentes
+          var reviews = data.result.reviews.slice(0, 5)
+
+          // Preencha a lista com as informações das avaliações
+          reviews.forEach(function (review) {
+            var item =
+              '<li><strong>' +
+              review.author_name +
+              '</strong> (' +
+              review.rating +
+              '): ' +
+              review.text +
+              '</li>'
+            $('#reviews').append(item)
+          })
+        })
+      })
+    </script>
+  </body>
+</html>
