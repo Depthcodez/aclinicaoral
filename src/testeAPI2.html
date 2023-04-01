@@ -11,41 +11,80 @@
         font-weight: bold;
       }
     </style>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <link rel="stylesheet" href="./resources/css/testeAPI.css" />
   </head>
   <body>
-    <div id="reviews"></div>
+    <ul id="reviews-carousel"></ul>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
     <script>
-      var place_id =
-        'ElRSLiBGdW5jaGFsLCA1NTEgLSA4byBhbmRhciBjaiA4MSAtIFZpbGEgT2zDrW1waWEsIFPDo28gUGF1bG8gLSBTUCwgMDQ1NTEtMDYwLCBCcmF6aWwiKhooChYKFAoSCaPofQU4V86UEV9iOJ1SxhskEg44byBhbmRhciBjaiA4MQ'
-      var api_key = 'AIzaSyAd4U5ETE1wjqnXCVxoMBtx8Ez4Y2QBOUo'
+      const placeId = 'ChIJfZbyEzhXzpQRlhDURW4spRU'
+      const fields = [
+        'name',
+        'rating',
+        'formatted_phone_number',
+        'geometry',
+        'reviews'
+      ]
 
-      var request = {
-        placeId: place_id,
-        fields: ['name', 'rating', 'reviews']
-      }
-
-      var service = new google.maps.places.PlacesService(
+      const service = new google.maps.places.PlacesService(
         document.createElement('div')
       )
 
-      service.getDetails(request, function (place, status) {
-        if (place.reviews && place.reviews.length > 0) {
-          var reviews = place.reviews.sort(function (a, b) {
-            return new Date(b.time) - new Date(a.time)
+      service.getDetails({ placeId, fields }, (place, status) => {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          const reviews = place.reviews
+
+          const reviewsList = $('#reviews-carousel')
+
+          if (Array.isArray(reviews)) {
+            reviews
+              .sort((a, b) => b.time - a.time)
+              .forEach(review => {
+                if (review.rating >= 3) {
+                  const li = $('<li></li>')
+                  li.html(
+                    `<div><p><strong>${review.author_name}</strong></p><p>${review.text}</p><p class="rating">${review.rating}/5</p></div>`
+                  )
+                  reviewsList.append(li)
+                }
+              })
+          } else {
+            const li = $('<li></li>')
+            li.text('Nenhuma avaliação encontrada.')
+            reviewsList.append(li)
+          }
+
+          reviewsList.slick({
+            dots: true,
+            arrows: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
           })
-
-          var recent_reviews = reviews.slice(0, 5)
-
-          recent_reviews.forEach(function (review) {
-            var html = `
-              <div class="review">
-                <div class="rating">${review.rating} estrelas</div>
-                <div class="text">${review.text}</div>
-              </div>
-            `
-
-            document.getElementById('reviews').innerHTML += html
-          })
+        } else {
+          console.error('Erro ao obter informações do local')
         }
       })
     </script>
