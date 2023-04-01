@@ -39,8 +39,8 @@
       <header>
         <nav class="container">
           <a href="" class="agendarHeader">
-            <i class="fa-solid fa-phone"></i> Agendar Consulta</a
-          >
+            <i class="fa-solid fa-phone"></i> Agendar Consulta
+          </a>
           <ul>
             <li><a href="">Início</a></li>
             <li class="dropdown">
@@ -324,5 +324,38 @@
       </footer>
     </main>
     <script src="./resources/js/main.js"></script>
+
+    <script>
+      const dropdowns = document.querySelectorAll('.dropdown')
+
+      dropdowns.forEach(dropdown => {
+        const submenu = dropdown.querySelector('.submenu-menu')
+        const trigger = dropdown.querySelector('a[href="#"]')
+
+        trigger.addEventListener('click', e => {
+          e.preventDefault()
+          submenu.classList.toggle('active')
+        })
+
+        dropdown.addEventListener('mouseleave', () => {
+          submenu.classList.remove('active')
+        })
+      })
+
+      const submenus = document.querySelectorAll('.submenu')
+
+      submenus.forEach(submenu => {
+        const submenuMenu = submenu.querySelector('.submenu-menu')
+        const trigger = submenu.querySelector('a[href="#"]')
+
+        trigger.addEventListener('mouseover', () => {
+          submenuMenu.classList.add('active')
+        })
+
+        submenu.addEventListener('mouseleave', () => {
+          submenuMenu.classList.remove('active')
+        })
+      })
+    </script>
   </body>
 </html>
