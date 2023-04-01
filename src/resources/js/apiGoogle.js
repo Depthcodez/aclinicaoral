@@ -24,7 +24,7 @@ service.getDetails({ placeId, fields }, (place, status) => {
           if (review.rating >= 3) {
             const li = $('<li></li>')
             li.html(
-              `<div><p><strong>${review.author_name}</strong></p><p>${review.text}</p><p class="rating">${review.rating}/5</p></div>`
+              `<div><p><strong>${review.author_name}</strong></p><p>${review.text}</p><p class="rating">Nota: ${review.rating}/5</p></div>`
             )
             reviewsList.append(li)
           }

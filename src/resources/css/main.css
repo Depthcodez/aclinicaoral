@@ -556,8 +556,6 @@ li {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .s-equipe .container .equipe-info .equipe-curriculo:first-child {
-        margin-top: -3rem; }
       .s-equipe .container .equipe-info .equipe-curriculo span {
         color: #c8bcac;
         font-size: 29px;
@@ -1262,6 +1260,9 @@ li {
       -webkit-border-radius: 30px;
               border-radius: 30px;
       width: 30%; }
+
+.s-depoimento .container .box-depoimento #reviews-carousel {
+  padding: 0 4rem; }
 
 .container {
   width: 90%;
