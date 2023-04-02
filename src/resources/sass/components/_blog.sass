@@ -13,13 +13,19 @@
           border: 1px solid #e0e1e1
           border-radius: 5px
           padding: 2rem
+          margin: 3rem 0
           h3
             margin: 2rem 0
+          a
+            img
+              width: 100%
           .date-news-left
             margin-top: -2rem
             margin-bottom: 2rem
           .text-news-left
             margin-bottom: 2rem
+        .first-news-page
+          margin-top: 0
       .blog-news-right
         width: 30%
         .blog-right-agendar-consulta
@@ -35,8 +41,50 @@
           padding: 2rem
           border: 1px solid #e0e1e1
           border-radius: 5px
+          .link-recente-posts
+            margin: 2rem 0
+            border-bottom: 1px solid #e0e1e1
+            padding: 1rem 0
           .title-post-recente
             margin-bottom: 2rem
             border-bottom: 1px solid #e0e1e1
           .link-post-recente
             margin: 2rem 0
+    .list-itens-posts-pages
+      margin-top: 4rem
+      width: 68.2%
+      border: 1px solid #e0e1e1
+      border-radius: 5px
+      .list-pages-post
+        display: flex
+        justify-content: space-around
+        align-items: center
+        ul
+          display: flex
+          justify-content: center
+          padding: 2rem
+          li
+            a
+              padding: 0.8rem 1.5rem
+              margin: 0 2rem
+              &:hover
+                background-color: #03a9f4
+                transition: all 0.2s
+            .active-page-post
+              background: $bege-padrao
+        .seta-left-page, .seta-right-page
+          padding: 0.8rem 1.5rem
+          border: 2px solid $bege-padrao
+          border-radius: 100%
+          height: 40px
+          width: 40px
+          display: flex
+          justify-content: center
+          align-items: center
+          &:hover
+            background-color: #03a9f4
+            transition: all 0.2s
+          i
+            font-weight: bold
+            font-size: 2.5rem
+            color: $color-p
