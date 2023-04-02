@@ -130,7 +130,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin-right: 4px;
 }
 
 nav ul li:last-child {
@@ -256,6 +256,7 @@ nav ul li.dropdown .submenu-menu li a:hover {
     padding: 10px 0;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 500px;
   }
 
   nav ul li.dropdown:hover .submenu-menu {
