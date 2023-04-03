@@ -1529,7 +1529,10 @@ header {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
   .s-blog .container .blog-news .blog-news-left .news-left .divisao-tags-page a {
     margin: 0 2rem;
     padding: 0.5rem 1.5rem;
