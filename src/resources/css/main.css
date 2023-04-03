@@ -1533,7 +1533,8 @@ header {
   .s-blog .container .blog-news .blog-news-left .news-left .divisao-tags-page a {
     margin: 0 2rem;
     padding: 0.5rem 1.5rem;
-    border: 1px solid #e0e1e1; }
+    border: 1px solid #e0e1e1;
+    white-space: nowrap; }
     .s-blog .container .blog-news .blog-news-left .news-left .divisao-tags-page a:hover {
       background: #03a9f4; }
 
