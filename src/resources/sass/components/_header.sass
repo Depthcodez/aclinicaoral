@@ -1,96 +1,173 @@
 @import './_pattern'
 @import './_responsive'
 
-header
-    position: fixed
-    width: 100%
-    padding: 0 2rem 2rem 2rem
-    background: #fff
-    height: 6rem
-    div
-        position: absolute
+
+/* Estilos gerais para o header */
+header 
+  width: 100%
+  background-color: #fff
+  color: $color-p-equipe
+  padding: 10px
+  padding-left: 5%
+  padding-right: 5%
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.33)
+  position: fixed
+  z-index: 1111
+
+/* Estilos para os links do header */
+header a 
+  color: $color-p-equipe
+  text-decoration: none
+
+nav
+  width: 100%
+  display: flex
+  padding-top: 1rem
+  padding-bottom: 1rem
+  justify-content: space-between
+  .call
+    max-width: 30%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.main-menu
+  text-align: left
+  display: flex
+  align-items: center
+  max-width: 100%
+
+  .menu
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    flex-wrap: wrap
+    li
+      display: flex
+      // width: 100%
+      align-items: center
+      margin-bottom: 1rem
+      padding: 0.85rem
+      margin-bottom: 1rem
+      a
         width: 100%
-        nav
-            position: fixed
-            width: 100%
-            .itens-menu
-                display: flex
-                justify-content: space-around
-                #tratamento
-                    border-bottom: 2px
-                    border-bottom-color: $bege-links
-                    position: relative
-                    width: 8%
+        text-align: center
+        text-transform: uppercase
+        font-family: 'Gotham Medium'
+        font-size: 14px
+        font-weight: 600
+        padding: 0.85rem 0 0.5rem 0
+        letter-spacing: 1px
+        margin: 0.65rem
+      .link-active
+        border-bottom: 3px solid $bege-links
 
-                    &:after
-                        content: ''
-                        position: absolute
-                        display: inline-block
-                        width: 0
-                        height: 0
-                        margin-left: 0.3em
-                        vertical-align: middle
-                        border-top: 0.3em solid
-                        border-right: 0.3em solid transparent
-                        border-bottom: 0
-                        border-left: 0.3em solid transparent
-                        right: -40%
-                        top: 1rem
-                    &:hover:after
-                        transform: rotate(-180deg)
-                        color: #c8bcac
-                    #tratamentoa
-                        position: relative
-                        border-bottom: 3px solid #000
-                    .submenu
-                        width: 100%
-                        position: absolute
-                    &:hover
-                        .sub-menu
-                            display: block
-                            opacity: 1
-                            height: 36vw
-                            width: 20vw
-                            top: 100%
-                    .sub-menu, .sub-menu-1, .sub-menu-2
-                        // position: absolute
-                        display: none
-                        background: $branco-padrao
-                        margin-left: 0
-                        left: 0
-                        padding-left: 1em
-                        min-width: 100%
-                        display: block
-                        box-sizing: border-box
-                        transition: all .2s linear
-                        opacity: 0
-                        height: 0
-                        overflow: hidden
-                        box-shadow: 1px 1px 4px 2px rgba(0,0,0,.11)
-                        border-radius: 2px
+.has-submenu
+    position: relative
+    padding: 0.85rem
+    &::after
+      content: url('../icons/triancule.svg') 
+      width: 1rem
+      height: 1rem
+      transform: translateY(-7px)
+    &:hover
+      .text-active
+        color: $bege-padrao
+      &::after
+        content: url('../icons/triancule-up.svg') 
 
-                        li
-                            border-top: 0
-                            color: #6B7C93
-                            line-height: 120%
-                            font-weight: 600
-                            position: relative
-                            padding: 0.75rem 1.5rem 1.5rem 0
-                            font-size: 14px
-                            margin-bottom: 1rem
-                    #estetica
-                        display: flex
-                        &:hover
-                            .sub-menu-1
-                                display: block
-                                opacity: 1
-                                height: 100%
-                    #cirurgia
-                        display: flex
-                        &:hover
-                            .sub-menu-2
-                                display: block
-                                opacity: 1
-                                height: 100%
-                    
+    // margin-bottom: 1rem
+    // padding: 1rem
+
+/* Estilos para os submenus */
+.submenu 
+  display: none
+  position: absolute
+  box-shadow: 1px 1px 4px 2px rgba(0,0,0,.11)
+  border-radius: 2px
+  background-color: #fff
+  color: #000
+  top: 100%
+  left: 15%
+  min-width: 250px
+  z-index: 1111
+  li
+    padding: 0.85rem 2.5rem !important
+    box-shadow: inset 0px -10px 10px -15px rgba(0,0,0,0.75)
+    display: block !important
+    margin-bottom: 0 !important
+    line-height: 120%
+    font-weight: 600
+    border-top: 0
+    position: relative
+    font-size: 14px
+    margin-bottom: 1rem !important
+    &:last-child
+      border-bottom: none
+    a
+        font-size: 90%
+        text-transform: capitalize !important
+        padding: 0 !important
+        width: 100% !important
+        // font-size: 12px !important
+
+
+/* Estilos para o submenu de tratamentos estéticos que abre para o lado */
+.submenu--estetica, .submenu--cirurgia 
+  display: none
+  position: absolute
+  border-radius: 2px
+  background-color: #fff
+  color: $color-p-equipe
+  padding: 0 0 1rem 0 
+  top: 0
+  left: 102%
+  white-space: nowrap
+  li
+    padding: 0.85rem 2.5rem !important
+    box-shadow: inset 0px -10px 10px -15px rgba(0,0,0,0.75)
+    display: block !important
+    margin-bottom: 0 !important
+    line-height: 120%
+    font-weight: 600
+    border-top: 0
+    position: relative
+    font-size: 14px
+    margin-bottom: 1rem !important
+
+.submenu--estetica:before, .submenu--cirurgia:before
+    content: " "
+    width: 2rem
+    height: 100%
+    background: 0 0
+    position: absolute
+    z-index: 1
+    left: -20px
+    top: 0
+
+.has-submenu--cirurgia, .has-submenu--estetica
+    padding: 0.75rem 1.5rem
+    position: relative
+    &::after
+      content: url('../icons/triancule-right.svg') 
+      width: 1rem
+      height: 1rem
+      position: absolute
+      right: 5%
+
+/* Estilos para os links que ativam os submenus */
+.has-submenu:hover > .submenu 
+  display: block
+
+.has-submenu--estetica:hover 
+    background-color: #F8F8F8
+    color: #000
+    > .submenu--estetica 
+        display: block
+
+.has-submenu--cirurgia:hover 
+    background-color: #F8F8F8
+    color: #000
+    > .submenu--cirurgia 
+        display: block
                     

@@ -41,71 +41,69 @@
   <body>
     <main>
       <header>
-        <div>
-          <nav>
-            <button>ligar</button>
-            <ul class="itens-menu">
-              <li>Início</li>
-              <li id="tratamento">
-                <a href="#" id="tratamentoa">Tratamentos</a>
-                <ul class="sub-menu">
-                  <li>
-                    <li>
-                      <ul id="estetica"><a href="#" class="item">Estética</a>
-                        <ul class="sub-menu-1">
-                          <li>Lente de Contato Dental</li>
-                          <li>Facetas de Porcelana</li>
-                          <li>Clareamento Dental</li>
-                          <li>Coroas de Porcelana</li>
-                          <li>Restauração Dentária</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>
-                      <ul id="cirurgia">
-                        <a href="#" class="item">Cirurgia</a>
-                        <ul class="sub-menu-2">
-                          <li>Dentes do Siso</li>
-                          <li>Implante Dentário</li>
-                          <li>Cirurgia Ortoginática</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>Ortodontia</li>
-                    <li>Tratamento de Canal (Endodontia)</li>
-                    <li>Tratamento de Gengiva (Periodontia)</li>
-                    <li>Difusão do ATM</li>
-                    <li>Odontologia Pré-Natal</li>
-                    <li>Odontopediatria</li>
+        <nav>
+          <div class="call">
+            <a class="button-wpp" href="https://api.whatsapp.com/send?phone=5511988711774&amp;text=Oi, gostaria de agendar uma consulta" onclick=" ga('send', 'event', 'whatsapp message', 'asc-mobile-desktop', 'botao 1');"><i class="fa fa-whatsapp"></i> Agendar Consulta</a>
+          </div>
+          
+          <div class="main-menu">
+            <ul class="menu">
+              <li><a href="#" class="link-active">Início</a></li>
+              <li class="has-submenu">
+                <a href="#" class="text-active">Tratamentos</a>
+                <ul class="submenu">
+                  <li class="has-submenu--estetica">
+                    <a href="#">Estética</a>
+                    <ul class="submenu--estetica">
+                      <li><a href="#">Lente de contato dental</a></li>
+                      <li><a href="#">Facetas de porcelanas</a></li>
+                      <li><a href="#">Clareamento Dental</a></li>
+                      <li><a href="#">Coroas de Porcelanas</a></li>
+                      <li><a href="#">Restauração Dentária</a></li>
+                    </ul>
                   </li>
+                  <li class="has-submenu--cirurgia">
+                    <a href="#">Cirurgia</a>
+                    <ul class="submenu--cirurgia">
+                      <li><a href="#">Dente do siso</a></li>
+                      <li><a href="#">Implante dentário</a></li>
+                      <li><a href="#">Cirurgia Ortagnática</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Otodontia</a></li>
+                  <li><a href="#">Tratamento de Canal (Endodontia)</a></li>
+                  <li><a href="#">Tratamento da Gengiva (Periodontia)</a></li>
+                  <li><a href="#">Disfunção do ATM</a></li>
+                  <li><a href="#">Odontologia Pré-Natal</a></li>
+                  <li><a href="#">Odontopediatria</a></li>
                 </ul>
               </li>
-              <li>Day Clinic</li>
-              <li>Equipe</li>
-              <li>Depoimentos</li>
-              <li>Endereço</li>
-              <li>Blog</li>
-              <li>Contato</li>
+              <li><a href="#">Day Clinic</a></li>
+              <li><a href="#">Equipe</a></li>
+              <li><a href="#">Depoimentos</a></li>
+              <li><a href="#">Endereço</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contato</a></li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </header>
-
+      
       <section class="s-banner">
         <div class="imgBanner">
-          <img src="./resources/img/background-index-new-3.png" alt="" />
-        </div>
-        <div class="container">
-          <div class="msgBanner">
-            <img
-              src="./resources/img/Logo-Dentista-Vila-Olímpia.webp"
-              alt=""
-              width="150"
-              height="150"
-            />
-            <div>
-              <h1>Conforto e sofisticação para você e seu sorriso</h1>
-              <h3>Dentista Vila Olímpia</h3>
+          <div class="background-overlay"></div>
+          <div class="container">
+            <div class="msgBanner">
+              <img
+                src="./resources/img/Logo-Dentista-Vila-Olímpia.webp"
+                alt=""
+                width="150"
+                height="150"
+              />
+              <div class="text-first">
+                <p>Conforto e sofisticação para você e seu sorriso</p>
+                <h1>Dentista Vila Olímpia</h1>
+              </div>
             </div>
           </div>
         </div>
@@ -125,10 +123,45 @@
         </div>
       </section>
 
-      <section class="s-tratamento-base">
+      <section class="s-itens-menu none">
         <div class="container">
+          <h2>Principais Tratamentos</h2>
+          <div class="itens-tratamento">
+            <div class="item-tratamento">
+              <div class="plus"><img src="resources/icons/plus-icon.svg" alt="Mais tratamentos"></div>
+              <div class="text-tratamento">
+                <span>Ortodontia</span>
+              </div>
+            </div>
+            <div class="item-tratamento">
+              <div class="plus"><img src="resources/icons/plus-icon.svg" alt="Mais tratamentos"></div>
+              <div class="text-tratamento">
+                <span>Clareamento Dental</span>
+              </div>
+            </div>
+            <div class="item-tratamento">
+              <div class="plus"><img src="resources/icons/plus-icon.svg" alt="Mais tratamentos"></div>
+              <div class="text-tratamento">
+                <span>Dentes do Siso</span>
+              </div>
+            </div>
+            <div class="item-tratamento">
+              <div class="plus"><img src="resources/icons/plus-icon.svg" alt="Mais tratamentos"></div>
+              <div class="text-tratamento">
+                <span>Lente de Contato Dental</span>
+              </div>
+            </div>
+          </div>
+          <div class="iten-tratamento">
+            <a href="">Todos os Tratamentos</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-tratamento-base">
+        <!-- <div class="container"> -->
           <div class="info-tratamento-base">
-            <div class="tratamento-base-left">
+            <div class="tratamento-base-left p-10">
               <div class="content-tratamentoBase-left">
                 <h2>A Clínica Oral</h2>
                 <p>
@@ -141,7 +174,7 @@
                   na odontologia.
                 </p>
                 <a href="" class="agendarIndex" style="color: #fff"
-                  >Agendar Consulta</a
+                  >Agendar consulta</a
                 >
               </div>
             </div>
@@ -156,13 +189,13 @@
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section class="s-tratamento-base">
-        <div class="container">
+        <!-- <div class="container"> -->
           <div class="info-tratamento-base invisalign-left">
-            <div class="tratamento-base-left">
+            <div class="tratamento-base-left p-10">
               <div class="content-tratamentoBase-left">
                 <h2>Equipamentos de Última Geração</h2>
                 <p>
@@ -180,17 +213,18 @@
                   alt=""
                   width="1000"
                   height="667"
+                  class="ml-2"
                 />
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section class="s-tratamento-base">
-        <div class="container">
+        <!-- <div class="container"> -->
           <div class="info-tratamento-base">
-            <div class="tratamento-base-left">
+            <div class="tratamento-base-left p-10">
               <div class="content-tratamentoBase-left">
                 <h2>Espaço Aconchegante</h2>
                 <p>
@@ -214,7 +248,7 @@
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section class="s-equipe">
@@ -258,7 +292,7 @@
       <section class="s-depoimento">
         <div class="container">
           <div class="box-depoimento">
-            <h1>Últimas avaliações do local</h1>
+            <h1>Depoimentos</h1>
             <ul id="reviews-carousel"></ul>
           </div>
         </div>

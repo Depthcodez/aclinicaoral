@@ -2,21 +2,21 @@
 @import './_responsive'
 
 .s-tratamento-base
-  .container
-    .info-tratamento-base
-      .tratamento-base-left
-        .content-tratamentoBase-left
-          .agendarIndex
-            padding: 1rem 1.5rem
-            background: $bege-padrao
-            font-weight: bold
-            border-radius: 30px
-            color: #fff
-            margin-top: 1rem
-            &:hover
-              transform: translateY(-10px)
-              transition: all 0.2s
-              box-shadow: 4px 4px 4px 8px
+  // .container
+  .info-tratamento-base
+    .tratamento-base-left
+      .content-tratamentoBase-left
+        .agendarIndex
+          padding: 1rem 1.5rem
+          background: $bege-padrao
+          font-weight: bold
+          border-radius: 30px
+          color: #fff
+          margin-top: 1rem
+          &:hover
+            transform: translateY(-10px)
+            transition: all 0.2s
+            box-shadow: 4px 4px 4px 8px
 
 .s-itens-menu
   margin-top: -7rem
@@ -25,7 +25,15 @@
       display: flex
       justify-content: space-around
       .box-iten-index
-        padding: 5rem 3rem
+        width: 100%
+        margin: 0px 15px 0px 15px
+        padding: 30px
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        text-align: center
+        line-height: 3.5rem
         color: #fff
         background-color: $bege-padrao
         border-radius: 15px
@@ -39,12 +47,141 @@
       a
         color: $bege-padrao
         padding: 1rem 2rem
-        border: 2px solid $bege-padrao
+        border: 1px solid $bege-padrao
         border-radius: 30px
         width: 30%
+        font-size: 1.5rem
+        text-transform: uppercase
+  
+.none
+  display: none
+  .container
+    h2
+      margin: 3rem 0
+    .itens-tratamento
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 4rem 0 0
+      .item-tratamento
+        width: 25%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        min-height: 14rem
+        .plus
+          margin-bottom: 20px
+        .text-tratamento
+          display: flex
+          align-items: flex-start
+          height: 8rem
+          span
+            color: $bege-padrao
+            font-size: 29px
+            text-align: center
 
 .s-depoimento
   .container
     .box-depoimento
       #reviews-carousel
         padding: 0 4rem
+
+.box-depoimento
+  div 
+    width: 90%
+    padding: 1rem 2rem
+    margin: 0 auto
+    .text-apost
+      display: flex
+      .apost
+        transform: translateY(-10px)
+        margin-right: 1rem
+        &::before
+          content: url('../icons/quote.svg')
+          width: 4rem
+          height: 4rem
+          display: block
+      .depoiment
+        color: #fff
+        font-style: italic
+        font-weight: 400
+        font-family: 'Gotham Regular'
+        font-size: 1.6rem
+        // letter-spacing: 0.1px
+    .author
+      width: 100%
+      display: block
+      padding: 0.5rem
+      text-align: end
+      color: #fff
+      font-style: italic
+      font-weight: 300
+      font-family: 'Gotham Regular'
+      font-size: 1.6rem
+@media only screen and (max-width: 1024px)
+  .s-itens-menu
+    display: none
+    margin: 0
+  
+  .none
+    display: block
+    .container
+      h2
+        text-align: center
+        color: $bege-padrao
+        font-size: 3.5rem
+
+@media only screen and (max-width: 768px)
+  .none
+    padding: 4rem
+    border-bottom: 1px solid $bege-padrao
+    margin: 0 1rem 2rem 1rem
+    .container
+      .itens-tratamento
+        flex-direction: column
+        .item-tratamento
+          width: 50%
+          margin: 5rem 0
+          min-height: 100%
+          &:first-child
+            margin: 2rem 0
+          &:last-child
+            margin-bottom: 0
+          .text-tratamento
+            height: 100%
+      .iten-tratamento
+        width: 100%
+        a
+          width: 100%
+          margin: 05% 10% 0% 10%
+        --e-column-margin-right: 10%
+        --e-column-margin-left: 10%
+
+  .s-equipe
+    border-top: none
+    .container
+      .equipe-info
+        flex-direction: column
+
+  .s-tratamento-base
+    // .container
+    .info-tratamento-base
+      .tratamento-base-left
+        .content-tratamentoBase-left
+          h2
+            text-align: center
+          .agendarIndex
+            display: block
+            // width: 100%
+            text-align: center
+            margin: 03% 10% 0% 10%
+          p
+            margin-bottom: 0 !important
+      .tratamentoBase-right
+        width: 100%
+        background: none
+        padding: 0
+        .img-right-tratamentoBase
+          margin: 10% 0% 0%
+      
