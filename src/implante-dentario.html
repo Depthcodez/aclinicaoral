@@ -7,7 +7,6 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./resources/css/main.css" />
-    <link rel="stylesheet" href="./resources/sass/header.css" />
 
     <!--Font Awesome-->
     <link
@@ -32,11 +31,15 @@
       rel="stylesheet"
     />
 
+   <!--Carrousel-->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
     <title>A clinica Oral</title>
   </head>
   <body>
     <main>
-      <header>
+      <!-- <header>
         <nav class="container">
           <a href="" class="agendarHeader">
             <i class="fa-solid fa-phone"></i> Agendar Consulta</a
@@ -80,12 +83,12 @@
             <li><a href="">Contato</a></li>
           </ul>
         </nav>
-      </header>
+      </header> -->
 
       <section class="s-tratamento-base">
-        <div class="container">
+        <!-- <div class="container"> -->
           <div class="info-tratamento-base">
-            <div class="tratamento-base-left">
+            <div class="tratamento-base-left p-10">
               <div class="content-tratamentoBase-left">
                 <h2>Implante Dentário</h2>
                 <p>
@@ -112,7 +115,8 @@
               </div>
             </div>
             <div class="tratamentoBase-right">
-              <div class="img-right-tratamentoBase">
+              <div class="img-right-tratamentoBase" style="display: flex;
+              justify-content: center; align-items: center;">
                 <img
                   src="./resources/img/Implante-Dentário-Vila-Olímpia.jpg"
                   alt=""
@@ -122,7 +126,7 @@
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section class="s-equipe">
@@ -164,7 +168,12 @@
       </section>
 
       <section class="s-depoimento">
-        <div class="container"></div>
+        <div class="container">
+          <div class="box-depoimento">
+            <h1>Depoimentos</h1>
+            <ul id="reviews-carousel"></ul>
+          </div>
+        </div>
       </section>
 
       <section class="s-localizacao">
@@ -240,6 +249,24 @@
         </div>
       </footer>
     </main>
+
     <script src="./resources/js/main.js"></script>
+
+    <!--API Google-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd4U5ETE1wjqnXCVxoMBtx8Ez4Y2QBOUo&libraries=places"></script>
+
+    <!--Carrousel-->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <!--Lógica API Google Depoimentos-->
+    <script src="./resources/js/apiGoogle.js"></script>
+
   </body>
 </html>

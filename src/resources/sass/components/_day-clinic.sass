@@ -3,38 +3,40 @@
 
 .s-dayClinic
   margin: 6rem 0
-  .container
-    .info-dayClinic
+  .info-dayClinic
+    display: flex
+    width: 100% 
+    .dayClinic-left
       display: flex
-      width: 100% 
-      .dayClinic-left
-        display: flex
-        flex-direction: column
-        justify-content: center
-        width: 50%
-        .content-dayClinic-left
-          p
-            color: $color-p
-            margin: 2rem 0
-            width: 85%
-            font-size: 16px
-          h2
-            color: $bege-padrao
-            font-size: 40px
-          a
-            color: $color-p
-      .dayClinic-right
-        width: 50%
-        background: $bege-padrao
-        padding: 5rem
-        display: flex
-        align-items: center
-        justify-content: center
-        .img-right-dayClinc
-          margin: 0 0 0 -20%
-          img
-            width: 100%
-            height: auto
+      flex-direction: column
+      justify-content: center
+      width: 40%
+      margin: 0 5% 0 10%
+      .content-dayClinic-left
+        p
+          color: $color-p
+          margin: 2rem 0
+          width: 85%
+          font-size: 16px
+        h2
+          color: $bege-padrao
+          font-size: 40px
+          font-weight: 400
+        a
+          color: $color-p
+    .dayClinic-right
+      width: 60%
+      background: $bege-padrao
+      padding: 5rem
+      display: flex
+      align-items: center
+      justify-content: center
+      .img-right-dayClinc
+        margin: 0 0 0 -20%
+        img
+          width: 100%
+          height: auto
+
 .mobile-dayClinic
   display: none !important
   width: 100%
@@ -66,42 +68,71 @@
         color: $bege-padrao
         i
           font-size: 1.5rem
+  
+@media only screen and (max-width: 768px)
+  .info-dayClinic
+    flex-direction: column
+    .dayClinic-left
+      width: 100% !important
+      margin: 0 !important
+      // margin: 0 auto !important
+      display: flex
+      justify-content: center
+      align-items: center
+      .content-dayClinic-left
+        width: 85%
+        h2
+          text-align: center
+        p
+          text-align: center
+          width: 100% !important
+    .dayClinic-right
+      background: none !important
+      width: 100% !important
+      padding: 0 !important
+      margin: 5rem 0
+  
+  .slick-next
+    right: 0 !important
+    display: none !important
+
+  .slick-dots
+    position: relative !important
 
 @media only screen and (max-width: 456px)
   .mobile-dayClinic
     display: block !important
   .s-dayClinic
     margin: 6rem 0
-    .container
-      .info-dayClinic
-        display: block
-        width: 100% 
-        .dayClinic-left
-          display: flex
-          text-align: center
-          flex-direction: column
-          justify-content: center
-          width: 100%
-          align-items: center 
-          .content-dayClinic-left
-            p
-              color: $color-p
-              margin: 2rem 0
-              width: 100%
-              font-size: 14px
-            h2
-              color: $bege-padrao
-              font-size: 35px
-            a
-              color: $color-p
-        .dayClinic-right
-          width: 100vw !important
-          background: none !important
-          padding: 0rem !important
-          display: flex
-          align-items: center
-          justify-content: center
-          .img-right-dayClinc
-            img
-              width: 100%
-              height: auto
+    .info-dayClinic
+      display: block
+      width: 100% 
+      .dayClinic-left
+        display: flex
+        text-align: center
+        flex-direction: column
+        justify-content: center
+        width: 100%
+        align-items: center 
+        .content-dayClinic-left
+          p
+            color: $color-p
+            margin: 2rem 0
+            width: 100%
+            font-size: 14px
+          h2
+            color: $bege-padrao
+            font-size: 35px
+          a
+            color: $color-p
+      .dayClinic-right
+        width: 100vw !important
+        background: none !important
+        padding: 0rem !important
+        display: flex
+        align-items: center
+        justify-content: center
+        .img-right-dayClinc
+          img
+            width: 100%
+            height: auto

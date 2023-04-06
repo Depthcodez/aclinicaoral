@@ -175,6 +175,24 @@
                 color: $bege-padrao
                 white-space: nowrap
 
+@media only screen and (max-width: 768px)
+  .info-contato
+    flex-direction: column
+    .info-contato-left
+      width: 100% !important
+      .conteudo-contato-left
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        .buttons-contato
+          width: 40%
+          display: flex
+          flex-direction: column
+          align-items: center
+    .info-contato-right
+      width: 100% !important
+
 @media only screen and (max-width: 456px)
   .s-contato
     display: flex

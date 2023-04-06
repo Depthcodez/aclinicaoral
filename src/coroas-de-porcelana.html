@@ -5,38 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--CSS-->
-    <link rel="stylesheet" href="./resources/css/main.css" />
-    <link rel="stylesheet" href="./resources/sass/header.css" />
+   <!--CSS-->
+   <link rel="stylesheet" href="./resources/css/main.css" />
 
-    <!--Font Awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+   <!--Font Awesome-->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
 
-    <!--Icons Font Awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+   <!--Icons Font Awesome-->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   />
 
-    <!--Fonte Roboto-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+   <!--Fonte Roboto-->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet"
+   />
+
+   <!--Carrousel-->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
     <title>A clinica Oral</title>
   </head>
   <body>
     <main>
-      <header>
+      <!-- <header>
         <nav class="container">
           <a href="" class="agendarHeader">
             <i class="fa-solid fa-phone"></i> Agendar Consulta</a
@@ -80,12 +83,12 @@
             <li><a href="">Contato</a></li>
           </ul>
         </nav>
-      </header>
+      </header> -->
 
       <section class="s-tratamento-base">
-        <div class="container">
+        <!-- <div class="container"> -->
           <div class="info-tratamento-base">
-            <div class="tratamento-base-left">
+            <div class="tratamento-base-left p-10">
               <div class="content-tratamentoBase-left">
                 <h2>Coroas de Porcelana</h2>
                 <p>
@@ -112,7 +115,7 @@
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section class="s-equipe">
@@ -154,7 +157,12 @@
       </section>
 
       <section class="s-depoimento">
-        <div class="container"></div>
+        <div class="container">
+          <div class="box-depoimento">
+            <h1>Depoimentos</h1>
+            <ul id="reviews-carousel"></ul>
+          </div>
+        </div>
       </section>
 
       <section class="s-localizacao">
@@ -230,6 +238,23 @@
         </div>
       </footer>
     </main>
+
     <script src="./resources/js/main.js"></script>
+
+    <!--API Google-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd4U5ETE1wjqnXCVxoMBtx8Ez4Y2QBOUo&libraries=places"></script>
+
+    <!--Carrousel-->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <!--Lógica API Google Depoimentos-->
+    <script src="./resources/js/apiGoogle.js"></script>
   </body>
 </html>
