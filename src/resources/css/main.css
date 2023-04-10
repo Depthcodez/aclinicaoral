@@ -1428,6 +1428,9 @@ body {
     font-size: 1.4rem !important;
     line-height: 2rem; } }
 
+.rating {
+  color: #fff; }
+
 .s-tratamento-base .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left .agendarIndex {
   padding: 1rem 1.5rem;
   background: #c8bcac;
