@@ -32,63 +32,73 @@
     />
 
     <!--Carrousel-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
 
     <title>A clinica Oral</title>
   </head>
   <body>
     <main>
       <header>
-        <div>
-          <nav>
-            <button>ligar</button>
-            <ul class="itens-menu">
-              <li>Início</li>
-              <li id="tratamento">
-                <a href="#" id="tratamentoa">Tratamentos</a>
-                <ul class="sub-menu">
-                  <li>
-                    <li>
-                      <ul id="estetica"><a href="#" class="item">Estética</a>
-                        <ul class="sub-menu-1">
-                          <li>Lente de Contato Dental</li>
-                          <li>Facetas de Porcelana</li>
-                          <li>Clareamento Dental</li>
-                          <li>Coroas de Porcelana</li>
-                          <li>Restauração Dentária</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>
-                      <ul id="cirurgia">
-                        <a href="#" class="item">Cirurgia</a>
-                        <ul class="sub-menu-2">
-                          <li>Dentes do Siso</li>
-                          <li>Implante Dentário</li>
-                          <li>Cirurgia Ortoginática</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>Ortodontia</li>
-                    <li>Tratamento de Canal (Endodontia)</li>
-                    <li>Tratamento de Gengiva (Periodontia)</li>
-                    <li>Difusão do ATM</li>
-                    <li>Odontologia Pré-Natal</li>
-                    <li>Odontopediatria</li>
+        <nav>
+          <div class="call">
+            <a
+              class="button-wpp"
+              href="https://api.whatsapp.com/send?phone=5511988711774&amp;text=Oi, gostaria de agendar uma consulta"
+              onclick=" ga('send', 'event', 'whatsapp message', 'asc-mobile-desktop', 'botao 1');"
+              ><i class="fa fa-whatsapp"></i> Agendar Consulta</a
+            >
+          </div>
+
+          <div class="main-menu">
+            <ul class="menu">
+              <li><a href="#" class="link-active">Início</a></li>
+              <li class="has-submenu">
+                <a href="#" class="text-active">Tratamentos</a>
+                <ul class="submenu">
+                  <li class="has-submenu--estetica">
+                    <a href="#">Estética</a>
+                    <ul class="submenu--estetica">
+                      <li><a href="#">Lente de contato dental</a></li>
+                      <li><a href="#">Facetas de porcelanas</a></li>
+                      <li><a href="#">Clareamento Dental</a></li>
+                      <li><a href="#">Coroas de Porcelanas</a></li>
+                      <li><a href="#">Restauração Dentária</a></li>
+                    </ul>
                   </li>
+                  <li class="has-submenu--cirurgia">
+                    <a href="#">Cirurgia</a>
+                    <ul class="submenu--cirurgia">
+                      <li><a href="#">Dente do siso</a></li>
+                      <li><a href="#">Implante dentário</a></li>
+                      <li><a href="#">Cirurgia Ortagnática</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Otodontia</a></li>
+                  <li><a href="#">Tratamento de Canal (Endodontia)</a></li>
+                  <li><a href="#">Tratamento da Gengiva (Periodontia)</a></li>
+                  <li><a href="#">Disfunção do ATM</a></li>
+                  <li><a href="#">Odontologia Pré-Natal</a></li>
+                  <li><a href="#">Odontopediatria</a></li>
                 </ul>
               </li>
-              <li>Day Clinic</li>
-              <li>Equipe</li>
-              <li>Depoimentos</li>
-              <li>Endereço</li>
-              <li>Blog</li>
-              <li>Contato</li>
+              <li><a href="#">Day Clinic</a></li>
+              <li><a href="#">Equipe</a></li>
+              <li><a href="#">Depoimentos</a></li>
+              <li><a href="#">Endereço</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contato</a></li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </header>
 
       <section class="s-blog">
@@ -96,42 +106,114 @@
           <div class="blog-news">
             <div class="blog-news-left">
               <div class="news-left first-news-page">
-                <h3>Estética do sorriso: lentes de contato e facetas em porcelana</h3>
+                <h3>
+                  Estética do sorriso: lentes de contato e facetas em porcelana
+                </h3>
                 <p>07/11/2017</p>
                 <!-- <img src="./resources/img/" alt=""> -->
-                <p class="text-news-left">As lentes de contato e as facetas em porcelana  têm sido cada vez mais procuradas pelos pacientes nos consultórios, já sendo a técnica preferida dos famosos. O procedimento é feito por um profissional da área da Dentística ou Prótese Dentária e consiste na colocação de pequenas lâminas de porcelana na frente dos dentes que pode mudar a cor, formato, tamanho, ou comprimento dos dentes normais. Mas o que é preciso saber sobre ambos os procedimentos? Conversamos com a Dra Aluete Baldon, que tirou algumas das principais dúvidas e deu dicas de como cuidar do novo sorriso.
+                <p class="text-news-left">
+                  As lentes de contato e as facetas em porcelana têm sido cada
+                  vez mais procuradas pelos pacientes nos consultórios, já sendo
+                  a técnica preferida dos famosos. O procedimento é feito por um
+                  profissional da área da Dentística ou Prótese Dentária e
+                  consiste na colocação de pequenas lâminas de porcelana na
+                  frente dos dentes que pode mudar a cor, formato, tamanho, ou
+                  comprimento dos dentes normais. Mas o que é preciso saber
+                  sobre ambos os procedimentos? Conversamos com a Dra Aluete
+                  Baldon, que tirou algumas das principais dúvidas e deu dicas
+                  de como cuidar do novo sorriso.
                 </p>
 
                 <p>Confira abaixo:</p>
 
                 <strong>-O que são lentes de contato para os dentes?</strong>
-                <p>As lentes de contato dentais são tipos de facetas de porcelana que se diferenciam por serem tão finas quanto a lente de contato ocular (cerca de 0,2 mm de espessura).</p>
+                <p>
+                  As lentes de contato dentais são tipos de facetas de porcelana
+                  que se diferenciam por serem tão finas quanto a lente de
+                  contato ocular (cerca de 0,2 mm de espessura).
+                </p>
 
-                <strong>-Em quais casos as lentes de contato dentárias são indicadas?</strong>
-                <p>São indicadas para correções de formato, volume dentário e diastemas.</p>
+                <strong
+                  >-Em quais casos as lentes de contato dentárias são
+                  indicadas?</strong
+                >
+                <p>
+                  São indicadas para correções de formato, volume dentário e
+                  diastemas.
+                </p>
 
-                <strong>-Qual a diferença entre faceta de porcelana e lente de contato?</strong>
-                <p>As facetas de porcelana são mais espessas e opacas, servindo para corrigir mal posicionamento, formato e cor. Já a lente de contato é mais frágil e não serve para correção de cor devido sua espessura ser muito fina.</p>
+                <strong
+                  >-Qual a diferença entre faceta de porcelana e lente de
+                  contato?</strong
+                >
+                <p>
+                  As facetas de porcelana são mais espessas e opacas, servindo
+                  para corrigir mal posicionamento, formato e cor. Já a lente de
+                  contato é mais frágil e não serve para correção de cor devido
+                  sua espessura ser muito fina.
+                </p>
 
-                <strong>-Tenho os dentes bem manchados devido a tratamento com antibiótico (Tetraciclina). Qual a melhor indicação: facetas de porcelana ou lente de contato dentário?</strong>
-                <p>Neste caso a indicação são as facetas de porcelana pois devido a fina espessura da lente de contato ela não corrigirá a cor dos seus dentes.</p>
+                <strong
+                  >-Tenho os dentes bem manchados devido a tratamento com
+                  antibiótico (Tetraciclina). Qual a melhor indicação: facetas
+                  de porcelana ou lente de contato dentário?</strong
+                >
+                <p>
+                  Neste caso a indicação são as facetas de porcelana pois devido
+                  a fina espessura da lente de contato ela não corrigirá a cor
+                  dos seus dentes.
+                </p>
 
                 <strong>-O que são facetas de porcelana?</strong>
-                <p>As facetas de porcelana são peças confeccionadas artesanalmente (no laboratório) e são cimentadas definitivamente sobre a superfície dos dentes. Elas servem para corrigir o formato, a cor e o volume do dente, devolvendo a harmonia do sorriso.</p>
+                <p>
+                  As facetas de porcelana são peças confeccionadas
+                  artesanalmente (no laboratório) e são cimentadas
+                  definitivamente sobre a superfície dos dentes. Elas servem
+                  para corrigir o formato, a cor e o volume do dente, devolvendo
+                  a harmonia do sorriso.
+                </p>
 
-                <strong>-Quais são as indicações das facetas de porcelana?</strong>
-                <p>As facetas de porcelana são indicadas nos casos de defeitos de cor do dente, anormalidades de forma, estrutura ou textura anormais, mal posicionamento, diastemas e dentes com grandes restaurações.</p>
+                <strong
+                  >-Quais são as indicações das facetas de porcelana?</strong
+                >
+                <p>
+                  As facetas de porcelana são indicadas nos casos de defeitos de
+                  cor do dente, anormalidades de forma, estrutura ou textura
+                  anormais, mal posicionamento, diastemas e dentes com grandes
+                  restaurações.
+                </p>
 
-                <strong>-Precisa de anestesia para colocar as facetas de porcelana?</strong>
-                <p>Na maioria dos casos sim, pois durante o preparo do dente pode haver sensibilidade.</p>
+                <strong
+                  >-Precisa de anestesia para colocar as facetas de
+                  porcelana?</strong
+                >
+                <p>
+                  Na maioria dos casos sim, pois durante o preparo do dente pode
+                  haver sensibilidade.
+                </p>
 
-                <strong>-Tenho dente escurecido, fiz clareamento dental, mas ele não clareou. Posso fazer facetas em porcelana?</strong>
-                <p>Sim!  Dentes escurecidos que não obtiveram sucesso com o clareamento dental podem receber facetas em porcelana para mascarar o fundo escurecido e devolver a naturalidade de um dente hígido.</p>
+                <strong
+                  >-Tenho dente escurecido, fiz clareamento dental, mas ele não
+                  clareou. Posso fazer facetas em porcelana?</strong
+                >
+                <p>
+                  Sim! Dentes escurecidos que não obtiveram sucesso com o
+                  clareamento dental podem receber facetas em porcelana para
+                  mascarar o fundo escurecido e devolver a naturalidade de um
+                  dente hígido.
+                </p>
 
-                <strong>-Tenho dentes tortos e não quero usar aparelho, posso corrigi-los com as facetas de porcelana?</strong>
+                <strong
+                  >-Tenho dentes tortos e não quero usar aparelho, posso
+                  corrigi-los com as facetas de porcelana?</strong
+                >
                 <p>Se o desgaste for pouco ou nulo pode sim.</p>
 
-                <p>É importante salientar que cada caso deve ser avaliado individualmente por um profissional especializado para a devida indicação de qual material e procedimento de escolha.</p>
+                <p>
+                  É importante salientar que cada caso deve ser avaliado
+                  individualmente por um profissional especializado para a
+                  devida indicação de qual material e procedimento de escolha.
+                </p>
 
                 <div class="divisao-tags-page">
                   <i class="font-icon-25 fa fa-tags"></i>
@@ -144,17 +226,17 @@
                   <a href="">Sorriso dos Famosos</a>
                 </div>
               </div>
-
             </div>
             <div class="blog-news-right">
               <div class="blog-right-agendar-consulta">
                 <a href="" class="agendarHeader">
-                  <i class="fa-solid fa-phone"></i> <i class="fa-brands fa-whatsapp"></i> Agendar Consulta</a
+                  <i class="fa-solid fa-phone"></i>
+                  <i class="fa-brands fa-whatsapp"></i> Agendar Consulta</a
                 >
               </div>
 
               <div class="search-blog">
-                <input type="text" placeholder="Search ...">
+                <input type="text" placeholder="Search ..." />
               </div>
 
               <div class="blog-post-recente">
@@ -162,26 +244,44 @@
                   <strong>Posts Recentes</strong>
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">COVID-19: A importância da saúde bucal no fortalecimento da imunidade</a>
+                  <a href="" class="link-post-recente"
+                    >COVID-19: A importância da saúde bucal no fortalecimento da
+                    imunidade</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Dente do siso: mitos e verdades</a>
+                  <a href="" class="link-post-recente"
+                    >Dente do siso: mitos e verdades</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Sensibilidade dentária: sintomas, causas e tratamento</a>
+                  <a href="" class="link-post-recente"
+                    >Sensibilidade dentária: sintomas, causas e tratamento</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Mês do combate ao câncer: tudo o que você precisa saber sobre câncer de boca</a>
+                  <a href="" class="link-post-recente"
+                    >Mês do combate ao câncer: tudo o que você precisa saber
+                    sobre câncer de boca</a
+                  >
                 </div>
                 <div class="last-post-recent">
-                  <a href="" class="link-post-recente">Diabetes e saúde bucal: dúvidas comuns</a>
+                  <a href="" class="link-post-recente"
+                    >Diabetes e saúde bucal: dúvidas comuns</a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <div class="tags-pages-blog">
-            <a href=""> <i class="font-icon-post fa fa-angle-double-left"></i> Previous: Diferenças em Relação ao Aparelho Convencional</a>
-            <a href=""> Next: Você sabe o que é linha alba? <i class="font-icon-post fa fa-angle-double-right"></i> </a>
+            <a href="">
+              <i class="font-icon-post fa fa-angle-double-left"></i> Previous:
+              Diferenças em Relação ao Aparelho Convencional</a
+            >
+            <a href="">
+              Next: Você sabe o que é linha alba?
+              <i class="font-icon-post fa fa-angle-double-right"></i>
+            </a>
           </div>
         </div>
       </section>

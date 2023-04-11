@@ -32,63 +32,73 @@
     />
 
     <!--Carrousel-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
 
     <title>A clinica Oral</title>
   </head>
   <body>
     <main>
       <header>
-        <div>
-          <nav>
-            <button>ligar</button>
-            <ul class="itens-menu">
-              <li>Início</li>
-              <li id="tratamento">
-                <a href="#" id="tratamentoa">Tratamentos</a>
-                <ul class="sub-menu">
-                  <li>
-                    <li>
-                      <ul id="estetica"><a href="#" class="item">Estética</a>
-                        <ul class="sub-menu-1">
-                          <li>Lente de Contato Dental</li>
-                          <li>Facetas de Porcelana</li>
-                          <li>Clareamento Dental</li>
-                          <li>Coroas de Porcelana</li>
-                          <li>Restauração Dentária</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>
-                      <ul id="cirurgia">
-                        <a href="#" class="item">Cirurgia</a>
-                        <ul class="sub-menu-2">
-                          <li>Dentes do Siso</li>
-                          <li>Implante Dentário</li>
-                          <li>Cirurgia Ortoginática</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>Ortodontia</li>
-                    <li>Tratamento de Canal (Endodontia)</li>
-                    <li>Tratamento de Gengiva (Periodontia)</li>
-                    <li>Difusão do ATM</li>
-                    <li>Odontologia Pré-Natal</li>
-                    <li>Odontopediatria</li>
+        <nav>
+          <div class="call">
+            <a
+              class="button-wpp"
+              href="https://api.whatsapp.com/send?phone=5511988711774&amp;text=Oi, gostaria de agendar uma consulta"
+              onclick=" ga('send', 'event', 'whatsapp message', 'asc-mobile-desktop', 'botao 1');"
+              ><i class="fa fa-whatsapp"></i> Agendar Consulta</a
+            >
+          </div>
+
+          <div class="main-menu">
+            <ul class="menu">
+              <li><a href="#" class="link-active">Início</a></li>
+              <li class="has-submenu">
+                <a href="#" class="text-active">Tratamentos</a>
+                <ul class="submenu">
+                  <li class="has-submenu--estetica">
+                    <a href="#">Estética</a>
+                    <ul class="submenu--estetica">
+                      <li><a href="#">Lente de contato dental</a></li>
+                      <li><a href="#">Facetas de porcelanas</a></li>
+                      <li><a href="#">Clareamento Dental</a></li>
+                      <li><a href="#">Coroas de Porcelanas</a></li>
+                      <li><a href="#">Restauração Dentária</a></li>
+                    </ul>
                   </li>
+                  <li class="has-submenu--cirurgia">
+                    <a href="#">Cirurgia</a>
+                    <ul class="submenu--cirurgia">
+                      <li><a href="#">Dente do siso</a></li>
+                      <li><a href="#">Implante dentário</a></li>
+                      <li><a href="#">Cirurgia Ortagnática</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Otodontia</a></li>
+                  <li><a href="#">Tratamento de Canal (Endodontia)</a></li>
+                  <li><a href="#">Tratamento da Gengiva (Periodontia)</a></li>
+                  <li><a href="#">Disfunção do ATM</a></li>
+                  <li><a href="#">Odontologia Pré-Natal</a></li>
+                  <li><a href="#">Odontopediatria</a></li>
                 </ul>
               </li>
-              <li>Day Clinic</li>
-              <li>Equipe</li>
-              <li>Depoimentos</li>
-              <li>Endereço</li>
-              <li>Blog</li>
-              <li>Contato</li>
+              <li><a href="#">Day Clinic</a></li>
+              <li><a href="#">Equipe</a></li>
+              <li><a href="#">Depoimentos</a></li>
+              <li><a href="#">Endereço</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contato</a></li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </header>
 
       <section class="s-blog">
@@ -96,56 +106,85 @@
           <div class="blog-news">
             <div class="blog-news-left">
               <div class="news-left first-news-page">
-                <h3>Periodontite: como prevenir a doença bucal mais comum do mundo?</h3>
+                <h3>
+                  Periodontite: como prevenir a doença bucal mais comum do
+                  mundo?
+                </h3>
                 <p>01/10/2019</p>
-                <img src="./resources/img/Periodontite.jpg" alt="">
-                <p class="text-news-left">Gosto ruim na boca, mau hálito persistente, sensibilidade dentária e sangramento durante a escovação ou uso do fio dental. Esses são alguns sintomas comuns da doença periodontal também conhecida como periodontite.</p>
+                <img src="./resources/img/Periodontite.jpg" alt="" />
+                <p class="text-news-left">
+                  Gosto ruim na boca, mau hálito persistente, sensibilidade
+                  dentária e sangramento durante a escovação ou uso do fio
+                  dental. Esses são alguns sintomas comuns da doença periodontal
+                  também conhecida como periodontite.
+                </p>
 
-                <p>Caracterizada pela inflamação e destruição dos tecidos de proteção (gengiva) e suporte (osso, cemento e ligamento periodontal) dos dentes, a doença periodontal pode levar à perda dos dentes se não for tratada corretamente.</p>
+                <p>
+                  Caracterizada pela inflamação e destruição dos tecidos de
+                  proteção (gengiva) e suporte (osso, cemento e ligamento
+                  periodontal) dos dentes, a doença periodontal pode levar à
+                  perda dos dentes se não for tratada corretamente.
+                </p>
 
-                <p>De acordo com dados da Organização Mundial da Saúde (OMS), cerca de 90% da população mundial é afetada pela doença periodontal, e no Brasil também representa um desafio. O livro Guinness de Recordes Mundiais também aponta a doença periodontal como a mais comum do mundo.</p>
+                <p>
+                  De acordo com dados da Organização Mundial da Saúde (OMS),
+                  cerca de 90% da população mundial é afetada pela doença
+                  periodontal, e no Brasil também representa um desafio. O livro
+                  Guinness de Recordes Mundiais também aponta a doença
+                  periodontal como a mais comum do mundo.
+                </p>
 
-                <p>A boa notícia é que apesar de comum, a periodontite é possível de ser prevenida. A Clínica Oral acredita que o conhecimento é uma das ferramentas efetivas no combate e prevenção. Entenda melhor esse problema bucal:</p>
+                <p>
+                  A boa notícia é que apesar de comum, a periodontite é possível
+                  de ser prevenida. A Clínica Oral acredita que o conhecimento é
+                  uma das ferramentas efetivas no combate e prevenção. Entenda
+                  melhor esse problema bucal:
+                </p>
 
                 <strong>Causas</strong>
-                <p>A doença periodontal acontece quando a gengivite não é tratada. A inflamação e infecção passam das gengivas para os ligamentos e ossos que dão suporte aos dentes causando a periodontite.</p>
-                <p>Além do acúmulo de placa bacteriana e tártaro nos dentes que levam à inflamação e infecção outros fatores podem contribuir para o desenvolvimento da doença bucal, sendo eles: higiene bucal ineficiente, consumo de cigarros e tabaco, predisposição genética, diabetes, diminuição da imunidade, uso expressivo de medicamentos, abuso de substâncias como álcool e drogas, idade e alimentação.</p>
+                <p>
+                  A doença periodontal acontece quando a gengivite não é
+                  tratada. A inflamação e infecção passam das gengivas para os
+                  ligamentos e ossos que dão suporte aos dentes causando a
+                  periodontite.
+                </p>
+                <p>
+                  Além do acúmulo de placa bacteriana e tártaro nos dentes que
+                  levam à inflamação e infecção outros fatores podem contribuir
+                  para o desenvolvimento da doença bucal, sendo eles: higiene
+                  bucal ineficiente, consumo de cigarros e tabaco, predisposição
+                  genética, diabetes, diminuição da imunidade, uso expressivo de
+                  medicamentos, abuso de substâncias como álcool e drogas, idade
+                  e alimentação.
+                </p>
 
                 <strong>Sintomas</strong>
-                <p>Reconhecer os sinais e buscar o tratamento clínico são primordiais, porém a doença periodontal nem sempre apresenta dor, por este motivo é importante ficar atento aos principais sintomas:</p>
+                <p>
+                  Reconhecer os sinais e buscar o tratamento clínico são
+                  primordiais, porém a doença periodontal nem sempre apresenta
+                  dor, por este motivo é importante ficar atento aos principais
+                  sintomas:
+                </p>
                 <div class="list-itens-news-page">
                   <ul>
-                    <li>
-                      Mau hálito
-                    </li>
-                    <li>
-                      Gosto ruim na boca
-                    </li>
-                    <li>
-                      Sangramento gengival
-                    </li>
-                    <li>
-                      Sensibilidade na região das gengivas
-                    </li>
-                    <li>
-                      Dentes amolecidos
-                    </li>
-                    <li>
-                      Gengivas inchadas
-                    </li>
-                    <li>
-                      Pus visível em torno dos dentes e gengivas
-                    </li>
-                    <li>
-                      Dores na mastigação
-                    </li>
+                    <li>Mau hálito</li>
+                    <li>Gosto ruim na boca</li>
+                    <li>Sangramento gengival</li>
+                    <li>Sensibilidade na região das gengivas</li>
+                    <li>Dentes amolecidos</li>
+                    <li>Gengivas inchadas</li>
+                    <li>Pus visível em torno dos dentes e gengivas</li>
+                    <li>Dores na mastigação</li>
                     <li>
                       Hipersensibilidade à bebidas e alimentos quentes e frios
                     </li>
                   </ul>
                 </div>
 
-                <p>A forma mais efetiva de prevenir a doença periodontal é a boa higiene oral e consultas regulares no dentista.</p>
+                <p>
+                  A forma mais efetiva de prevenir a doença periodontal é a boa
+                  higiene oral e consultas regulares no dentista.
+                </p>
 
                 <div class="divisao-tags-page">
                   <i class="font-icon-25 fa fa-tags"></i>
@@ -154,17 +193,17 @@
                   <a href="">Saúde Bucal</a>
                 </div>
               </div>
-
             </div>
             <div class="blog-news-right">
               <div class="blog-right-agendar-consulta">
                 <a href="" class="agendarHeader">
-                  <i class="fa-solid fa-phone"></i> <i class="fa-brands fa-whatsapp"></i> Agendar Consulta</a
+                  <i class="fa-solid fa-phone"></i>
+                  <i class="fa-brands fa-whatsapp"></i> Agendar Consulta</a
                 >
               </div>
 
               <div class="search-blog">
-                <input type="text" placeholder="Search ...">
+                <input type="text" placeholder="Search ..." />
               </div>
 
               <div class="blog-post-recente">
@@ -172,26 +211,44 @@
                   <strong>Posts Recentes</strong>
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">COVID-19: A importância da saúde bucal no fortalecimento da imunidade</a>
+                  <a href="" class="link-post-recente"
+                    >COVID-19: A importância da saúde bucal no fortalecimento da
+                    imunidade</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Dente do siso: mitos e verdades</a>
+                  <a href="" class="link-post-recente"
+                    >Dente do siso: mitos e verdades</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Sensibilidade dentária: sintomas, causas e tratamento</a>
+                  <a href="" class="link-post-recente"
+                    >Sensibilidade dentária: sintomas, causas e tratamento</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Mês do combate ao câncer: tudo o que você precisa saber sobre câncer de boca</a>
+                  <a href="" class="link-post-recente"
+                    >Mês do combate ao câncer: tudo o que você precisa saber
+                    sobre câncer de boca</a
+                  >
                 </div>
                 <div class="last-post-recent">
-                  <a href="" class="link-post-recente">Diabetes e saúde bucal: dúvidas comuns</a>
+                  <a href="" class="link-post-recente"
+                    >Diabetes e saúde bucal: dúvidas comuns</a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <div class="tags-pages-blog">
-            <a href=""> <i class="font-icon-post fa fa-angle-double-left"></i> Previous: Mau hálito: da prevenção ao tratamento</a>
-            <a href=""> Next: Biocorrosão: como hábitos e estilo de vida impactam a saúde bucal<i class="font-icon-post fa fa-angle-double-right"></i> </a>
+            <a href="">
+              <i class="font-icon-post fa fa-angle-double-left"></i> Previous:
+              Mau hálito: da prevenção ao tratamento</a
+            >
+            <a href="">
+              Next: Biocorrosão: como hábitos e estilo de vida impactam a saúde
+              bucal<i class="font-icon-post fa fa-angle-double-right"></i>
+            </a>
           </div>
         </div>
       </section>

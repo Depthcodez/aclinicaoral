@@ -32,63 +32,73 @@
     />
 
     <!--Carrousel-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
 
     <title>A clinica Oral</title>
   </head>
   <body>
     <main>
       <header>
-        <div>
-          <nav>
-            <button>ligar</button>
-            <ul class="itens-menu">
-              <li>Início</li>
-              <li id="tratamento">
-                <a href="#" id="tratamentoa">Tratamentos</a>
-                <ul class="sub-menu">
-                  <li>
-                    <li>
-                      <ul id="estetica"><a href="#" class="item">Estética</a>
-                        <ul class="sub-menu-1">
-                          <li>Lente de Contato Dental</li>
-                          <li>Facetas de Porcelana</li>
-                          <li>Clareamento Dental</li>
-                          <li>Coroas de Porcelana</li>
-                          <li>Restauração Dentária</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>
-                      <ul id="cirurgia">
-                        <a href="#" class="item">Cirurgia</a>
-                        <ul class="sub-menu-2">
-                          <li>Dentes do Siso</li>
-                          <li>Implante Dentário</li>
-                          <li>Cirurgia Ortoginática</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>Ortodontia</li>
-                    <li>Tratamento de Canal (Endodontia)</li>
-                    <li>Tratamento de Gengiva (Periodontia)</li>
-                    <li>Difusão do ATM</li>
-                    <li>Odontologia Pré-Natal</li>
-                    <li>Odontopediatria</li>
+        <nav>
+          <div class="call">
+            <a
+              class="button-wpp"
+              href="https://api.whatsapp.com/send?phone=5511988711774&amp;text=Oi, gostaria de agendar uma consulta"
+              onclick=" ga('send', 'event', 'whatsapp message', 'asc-mobile-desktop', 'botao 1');"
+              ><i class="fa fa-whatsapp"></i> Agendar Consulta</a
+            >
+          </div>
+
+          <div class="main-menu">
+            <ul class="menu">
+              <li><a href="#" class="link-active">Início</a></li>
+              <li class="has-submenu">
+                <a href="#" class="text-active">Tratamentos</a>
+                <ul class="submenu">
+                  <li class="has-submenu--estetica">
+                    <a href="#">Estética</a>
+                    <ul class="submenu--estetica">
+                      <li><a href="#">Lente de contato dental</a></li>
+                      <li><a href="#">Facetas de porcelanas</a></li>
+                      <li><a href="#">Clareamento Dental</a></li>
+                      <li><a href="#">Coroas de Porcelanas</a></li>
+                      <li><a href="#">Restauração Dentária</a></li>
+                    </ul>
                   </li>
+                  <li class="has-submenu--cirurgia">
+                    <a href="#">Cirurgia</a>
+                    <ul class="submenu--cirurgia">
+                      <li><a href="#">Dente do siso</a></li>
+                      <li><a href="#">Implante dentário</a></li>
+                      <li><a href="#">Cirurgia Ortagnática</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Otodontia</a></li>
+                  <li><a href="#">Tratamento de Canal (Endodontia)</a></li>
+                  <li><a href="#">Tratamento da Gengiva (Periodontia)</a></li>
+                  <li><a href="#">Disfunção do ATM</a></li>
+                  <li><a href="#">Odontologia Pré-Natal</a></li>
+                  <li><a href="#">Odontopediatria</a></li>
                 </ul>
               </li>
-              <li>Day Clinic</li>
-              <li>Equipe</li>
-              <li>Depoimentos</li>
-              <li>Endereço</li>
-              <li>Blog</li>
-              <li>Contato</li>
+              <li><a href="#">Day Clinic</a></li>
+              <li><a href="#">Equipe</a></li>
+              <li><a href="#">Depoimentos</a></li>
+              <li><a href="#">Endereço</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contato</a></li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </header>
 
       <section class="s-blog">
@@ -98,36 +108,75 @@
               <div class="news-left first-news-page">
                 <h3>7 mitos e verdades do clareamento dental</h3>
                 <p>12/02/2019</p>
-                <img src="./resources/img/clareamento.jpg" alt="">
-                <p class="text-news-left">A união de um sorriso lindo e saudável faz com que muitos busquem alternativas rápidas e eficazes para os cuidados com os dentes. Prova disso é o sucesso do tratamento com alinhadores que substituem os braquetes e também do processo de clareamento, que devolve a tonalidade mais clara aos dentes.</p>
+                <img src="./resources/img/clareamento.jpg" alt="" />
+                <p class="text-news-left">
+                  A união de um sorriso lindo e saudável faz com que muitos
+                  busquem alternativas rápidas e eficazes para os cuidados com
+                  os dentes. Prova disso é o sucesso do tratamento com
+                  alinhadores que substituem os braquetes e também do processo
+                  de clareamento, que devolve a tonalidade mais clara aos
+                  dentes.
+                </p>
 
-                <p>Foi mais ou menos assim que o clareamento dental, caseiro ou de consultório, virou o queridinho na busca por um sorriso perfeito. Apesar da popularidade, o tratamento ainda desperta dúvidas e inseguranças nos pacientes.</p>
+                <p>
+                  Foi mais ou menos assim que o clareamento dental, caseiro ou
+                  de consultório, virou o queridinho na busca por um sorriso
+                  perfeito. Apesar da popularidade, o tratamento ainda desperta
+                  dúvidas e inseguranças nos pacientes.
+                </p>
 
-                <p>Por este motivo, A Clínica Oral destaca os 7 mitos e verdades do clareamento dental:</p>
+                <p>
+                  Por este motivo, A Clínica Oral destaca os 7 mitos e verdades
+                  do clareamento dental:
+                </p>
 
                 <strong>1. Café, vinho e refrigerantes nunca mais!</strong>
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Mito:</strong> Durante o tratamento de clareamento dental é recomendado que o paciente evite a ingestão de café, vinho e refrigerantes, assim como cigarro, chocolate e outros alimentos com corante, somente algumas horas depois do procedimento, estes itens não precisam ser cortados definitivamente do cardápio. Vale ressaltar que a ingestão de alimentos com alto teor de corante na composição alteram a cor do dente a longo prazo.
+                      <strong>Mito:</strong> Durante o tratamento de clareamento
+                      dental é recomendado que o paciente evite a ingestão de
+                      café, vinho e refrigerantes, assim como cigarro, chocolate
+                      e outros alimentos com corante, somente algumas horas
+                      depois do procedimento, estes itens não precisam ser
+                      cortados definitivamente do cardápio. Vale ressaltar que a
+                      ingestão de alimentos com alto teor de corante na
+                      composição alteram a cor do dente a longo prazo.
                     </li>
                   </ul>
                 </div>
 
-                <strong>2. Clareamento altera a sensibilidade dos dentes</strong>
+                <strong
+                  >2. Clareamento altera a sensibilidade dos dentes</strong
+                >
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Verdade:</strong> A sensibilidade varia de paciente para paciente e por este motivo é fundamental que o tratamento seja executado e supervisionado por um cirurgião dentista. É muito comum que durante o tratamento, caseiro ou de consultório, o paciente sinta sensibilidades passageiras, que podem ser amenizadas pelo dentista por meio do controle do tempo e concentração do produto clareador.
+                      <strong>Verdade:</strong> A sensibilidade varia de
+                      paciente para paciente e por este motivo é fundamental que
+                      o tratamento seja executado e supervisionado por um
+                      cirurgião dentista. É muito comum que durante o
+                      tratamento, caseiro ou de consultório, o paciente sinta
+                      sensibilidades passageiras, que podem ser amenizadas pelo
+                      dentista por meio do controle do tempo e concentração do
+                      produto clareador.
                     </li>
                   </ul>
                 </div>
 
-                <strong>3. Clareamento caseiro e de consultório possuem a mesma efetividade</strong>
+                <strong
+                  >3. Clareamento caseiro e de consultório possuem a mesma
+                  efetividade</strong
+                >
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Verdade:</strong> O clareamento caseiro é realizado com o gel clareador e uma placa, que é moldada no consultório. A concentração do gel clareador escolhida pelo dentista é que vai ditar a velocidade e sucesso do procedimento, o mesmo acontece no tratamento realizado no consultório.
+                      <strong>Verdade:</strong> O clareamento caseiro é
+                      realizado com o gel clareador e uma placa, que é moldada
+                      no consultório. A concentração do gel clareador escolhida
+                      pelo dentista é que vai ditar a velocidade e sucesso do
+                      procedimento, o mesmo acontece no tratamento realizado no
+                      consultório.
                     </li>
                   </ul>
                 </div>
@@ -136,7 +185,11 @@
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Mito:</strong> De uma forma geral, crianças e gestantes não devem fazer o tratamento. Além disso, o dentista deve avaliar o quadro clínico do paciente de forma geral para identificar a possibilidade de realizar ou não o clareamento.
+                      <strong>Mito:</strong> De uma forma geral, crianças e
+                      gestantes não devem fazer o tratamento. Além disso, o
+                      dentista deve avaliar o quadro clínico do paciente de
+                      forma geral para identificar a possibilidade de realizar
+                      ou não o clareamento.
                     </li>
                   </ul>
                 </div>
@@ -145,16 +198,25 @@
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Mito:</strong> O clareamento dental não altera a estrutura dos dentes porque age apenas na dentina, que é a camada externa responsável pela cor dos dentes.
+                      <strong>Mito:</strong> O clareamento dental não altera a
+                      estrutura dos dentes porque age apenas na dentina, que é a
+                      camada externa responsável pela cor dos dentes.
                     </li>
                   </ul>
                 </div>
 
-                <strong>6. As restaurações não sofrem alteração com o tratamento</strong>
+                <strong
+                  >6. As restaurações não sofrem alteração com o
+                  tratamento</strong
+                >
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Verdade:</strong> O agente clareador não age na cor das restaurações, sendo assim é comum acontecer uma desarmonia entre a cor dos dentes e das restaurações. Neste caso faz-se necessário avaliar a necessidade de  retoque ou troca das restaurações antigas.
+                      <strong>Verdade:</strong> O agente clareador não age na
+                      cor das restaurações, sendo assim é comum acontecer uma
+                      desarmonia entre a cor dos dentes e das restaurações.
+                      Neste caso faz-se necessário avaliar a necessidade de
+                      retoque ou troca das restaurações antigas.
                     </li>
                   </ul>
                 </div>
@@ -163,27 +225,36 @@
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Mito:</strong> O que interfere na efetividade do tratamento é o gel clareador manipulado pelo dentista. Além disso, o comprometimento do paciente com o clareamento caseiro também auxilia no alcance dos resultados desejados. O clareamento em consultório tem a concentração do agente clareador maior, o que acelera a ação, por este motivo uma sessão em consultório dura, em média, 60 minutos enquanto o tratamento caseiro pede que a placa seja usada com o gel por volta de 6 horas.
+                      <strong>Mito:</strong> O que interfere na efetividade do
+                      tratamento é o gel clareador manipulado pelo dentista.
+                      Além disso, o comprometimento do paciente com o
+                      clareamento caseiro também auxilia no alcance dos
+                      resultados desejados. O clareamento em consultório tem a
+                      concentração do agente clareador maior, o que acelera a
+                      ação, por este motivo uma sessão em consultório dura, em
+                      média, 60 minutos enquanto o tratamento caseiro pede que a
+                      placa seja usada com o gel por volta de 6 horas.
                     </li>
                   </ul>
                 </div>
 
-                <p>Cuide do seu sorriso, afinal ele é o seu cartão de visitas!</p>
+                <p>
+                  Cuide do seu sorriso, afinal ele é o seu cartão de visitas!
+                </p>
 
                 <p>*Contribuiu Dra. Luiza Scotto</p>
-
               </div>
-
             </div>
             <div class="blog-news-right">
               <div class="blog-right-agendar-consulta">
                 <a href="" class="agendarHeader">
-                  <i class="fa-solid fa-phone"></i> <i class="fa-brands fa-whatsapp"></i> Agendar Consulta</a
+                  <i class="fa-solid fa-phone"></i>
+                  <i class="fa-brands fa-whatsapp"></i> Agendar Consulta</a
                 >
               </div>
 
               <div class="search-blog">
-                <input type="text" placeholder="Search ...">
+                <input type="text" placeholder="Search ..." />
               </div>
 
               <div class="blog-post-recente">
@@ -191,30 +262,47 @@
                   <strong>Posts Recentes</strong>
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">COVID-19: A importância da saúde bucal no fortalecimento da imunidade</a>
+                  <a href="" class="link-post-recente"
+                    >COVID-19: A importância da saúde bucal no fortalecimento da
+                    imunidade</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Dente do siso: mitos e verdades</a>
+                  <a href="" class="link-post-recente"
+                    >Dente do siso: mitos e verdades</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Sensibilidade dentária: sintomas, causas e tratamento</a>
+                  <a href="" class="link-post-recente"
+                    >Sensibilidade dentária: sintomas, causas e tratamento</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Mês do combate ao câncer: tudo o que você precisa saber sobre câncer de boca</a>
+                  <a href="" class="link-post-recente"
+                    >Mês do combate ao câncer: tudo o que você precisa saber
+                    sobre câncer de boca</a
+                  >
                 </div>
                 <div class="last-post-recent">
-                  <a href="" class="link-post-recente">Diabetes e saúde bucal: dúvidas comuns</a>
+                  <a href="" class="link-post-recente"
+                    >Diabetes e saúde bucal: dúvidas comuns</a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <div class="tags-pages-blog">
-            <a href=""> <i class="font-icon-post fa fa-angle-double-left"></i> Previous: Bruxismo: combata o problema!</a>
-            <a href=""> Next: Próteses protocolo e implantes: da saúde ao resgate da autoestima <i class="font-icon-post fa fa-angle-double-right"></i> </a>
+            <a href="">
+              <i class="font-icon-post fa fa-angle-double-left"></i> Previous:
+              Bruxismo: combata o problema!</a
+            >
+            <a href="">
+              Next: Próteses protocolo e implantes: da saúde ao resgate da
+              autoestima <i class="font-icon-post fa fa-angle-double-right"></i>
+            </a>
           </div>
         </div>
       </section>
-
 
       <footer class="s-footer">
         <div class="container">

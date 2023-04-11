@@ -32,63 +32,73 @@
     />
 
     <!--Carrousel-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
 
     <title>A clinica Oral</title>
   </head>
   <body>
     <main>
       <header>
-        <div>
-          <nav>
-            <button>ligar</button>
-            <ul class="itens-menu">
-              <li>Início</li>
-              <li id="tratamento">
-                <a href="#" id="tratamentoa">Tratamentos</a>
-                <ul class="sub-menu">
-                  <li>
-                    <li>
-                      <ul id="estetica"><a href="#" class="item">Estética</a>
-                        <ul class="sub-menu-1">
-                          <li>Lente de Contato Dental</li>
-                          <li>Facetas de Porcelana</li>
-                          <li>Clareamento Dental</li>
-                          <li>Coroas de Porcelana</li>
-                          <li>Restauração Dentária</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>
-                      <ul id="cirurgia">
-                        <a href="#" class="item">Cirurgia</a>
-                        <ul class="sub-menu-2">
-                          <li>Dentes do Siso</li>
-                          <li>Implante Dentário</li>
-                          <li>Cirurgia Ortoginática</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>Ortodontia</li>
-                    <li>Tratamento de Canal (Endodontia)</li>
-                    <li>Tratamento de Gengiva (Periodontia)</li>
-                    <li>Difusão do ATM</li>
-                    <li>Odontologia Pré-Natal</li>
-                    <li>Odontopediatria</li>
+        <nav>
+          <div class="call">
+            <a
+              class="button-wpp"
+              href="https://api.whatsapp.com/send?phone=5511988711774&amp;text=Oi, gostaria de agendar uma consulta"
+              onclick=" ga('send', 'event', 'whatsapp message', 'asc-mobile-desktop', 'botao 1');"
+              ><i class="fa fa-whatsapp"></i> Agendar Consulta</a
+            >
+          </div>
+
+          <div class="main-menu">
+            <ul class="menu">
+              <li><a href="#" class="link-active">Início</a></li>
+              <li class="has-submenu">
+                <a href="#" class="text-active">Tratamentos</a>
+                <ul class="submenu">
+                  <li class="has-submenu--estetica">
+                    <a href="#">Estética</a>
+                    <ul class="submenu--estetica">
+                      <li><a href="#">Lente de contato dental</a></li>
+                      <li><a href="#">Facetas de porcelanas</a></li>
+                      <li><a href="#">Clareamento Dental</a></li>
+                      <li><a href="#">Coroas de Porcelanas</a></li>
+                      <li><a href="#">Restauração Dentária</a></li>
+                    </ul>
                   </li>
+                  <li class="has-submenu--cirurgia">
+                    <a href="#">Cirurgia</a>
+                    <ul class="submenu--cirurgia">
+                      <li><a href="#">Dente do siso</a></li>
+                      <li><a href="#">Implante dentário</a></li>
+                      <li><a href="#">Cirurgia Ortagnática</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Otodontia</a></li>
+                  <li><a href="#">Tratamento de Canal (Endodontia)</a></li>
+                  <li><a href="#">Tratamento da Gengiva (Periodontia)</a></li>
+                  <li><a href="#">Disfunção do ATM</a></li>
+                  <li><a href="#">Odontologia Pré-Natal</a></li>
+                  <li><a href="#">Odontopediatria</a></li>
                 </ul>
               </li>
-              <li>Day Clinic</li>
-              <li>Equipe</li>
-              <li>Depoimentos</li>
-              <li>Endereço</li>
-              <li>Blog</li>
-              <li>Contato</li>
+              <li><a href="#">Day Clinic</a></li>
+              <li><a href="#">Equipe</a></li>
+              <li><a href="#">Depoimentos</a></li>
+              <li><a href="#">Endereço</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contato</a></li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </header>
 
       <section class="s-blog">
@@ -99,33 +109,77 @@
                 <h3>Socorro, como lidar com este ronco?!</h3>
                 <p>20/02/2017</p>
                 <!-- <img src="./resources/img/" alt=""> -->
-                <p class="text-news-left">O ronco é bastante desagradável tanto para quem sofre com ele como para quem dorme ao lado. Ele pode ter diversas causas, cada uma necessitando de um tipo de tratamento.
+                <p class="text-news-left">
+                  O ronco é bastante desagradável tanto para quem sofre com ele
+                  como para quem dorme ao lado. Ele pode ter diversas causas,
+                  cada uma necessitando de um tipo de tratamento.
                 </p>
 
                 <strong>Qual a causa do ronco?</strong>
-                <p>O ronco é causado pela obstrução das vias aéreas superiores. Durante o sono, os músculos da garganta relaxam e ficam flácidos, a língua cai um pouco para trás, causando um estreitamento das vias aéreas superiores, que dificulta a passagem do ar e provoca a vibração dessas estruturas. O ronco também pode ser causado por desvio das fossas nasais, polipose nasal, ou ter origem infecciosa ou alérgica, como sinusite. Dessa forma, o ronco pode ter causas variáveis, e o tratamento deve ser indicado avaliando cada caso individualmente.</p>
+                <p>
+                  O ronco é causado pela obstrução das vias aéreas superiores.
+                  Durante o sono, os músculos da garganta relaxam e ficam
+                  flácidos, a língua cai um pouco para trás, causando um
+                  estreitamento das vias aéreas superiores, que dificulta a
+                  passagem do ar e provoca a vibração dessas estruturas. O ronco
+                  também pode ser causado por desvio das fossas nasais, polipose
+                  nasal, ou ter origem infecciosa ou alérgica, como sinusite.
+                  Dessa forma, o ronco pode ter causas variáveis, e o tratamento
+                  deve ser indicado avaliando cada caso individualmente.
+                </p>
 
                 <strong>O que é apneia?</strong>
-               <p>Na apneia obstrutiva do sono, ocorre o colabamento das vias aéreas superiores, com pausas respiratórias que duram mais de 10 segundos, determinando um esforço respiratório para reverter esse quadro. Isso leva ao despertar, durante o qual ocorrem as contrações musculares que abrem a via aérea, seguindo-se um período de hiperventilação. O sono retorna, e, com ele, o colabamento da via aérea, reiniciando o ciclo. Essa série de eventos pode se repetir centenas de vezes durante a noite. Uma das formas de tratamento para apneia são os aparelhos intra-orais que posicionam a mandíbula para frente, provocando um avanço da musculatura na região da faringe, com o intuito de ampliar a via aérea, e consequentemente aumentando o espaço de passagem do ar.</p>
-              
-               <strong>Quais os riscos de ter apneia?</strong>
-               <p>Para o diagnóstico da apneia e sua gravidade, deve ser feito um exame chamado polissonografia, que monitora todas as variáveis fisiológicas durante o sono. Nos casos mais graves de apneia, as pausas respiratórias podem ultrapassar 40 episódios por hora de sono. Como consequência, ocorre queda do oxigênio no sangue e aumento do risco de doenças cardiovasculares, como hipertensão arterial sistêmica, insuficiência cardíaca, infarto do miocárdio, arritmias e hipertensão pulmonar, podendo culminar com morte súbita.</p>
+                <p>
+                  Na apneia obstrutiva do sono, ocorre o colabamento das vias
+                  aéreas superiores, com pausas respiratórias que duram mais de
+                  10 segundos, determinando um esforço respiratório para
+                  reverter esse quadro. Isso leva ao despertar, durante o qual
+                  ocorrem as contrações musculares que abrem a via aérea,
+                  seguindo-se um período de hiperventilação. O sono retorna, e,
+                  com ele, o colabamento da via aérea, reiniciando o ciclo. Essa
+                  série de eventos pode se repetir centenas de vezes durante a
+                  noite. Uma das formas de tratamento para apneia são os
+                  aparelhos intra-orais que posicionam a mandíbula para frente,
+                  provocando um avanço da musculatura na região da faringe, com
+                  o intuito de ampliar a via aérea, e consequentemente
+                  aumentando o espaço de passagem do ar.
+                </p>
 
-               <strong>Quais as formas de tratar o ronco?</strong>
-               <p>Existem diversas formas de tratar o ronco, como higiene do sono e emagrecimento, tratamento com aparelhos intraorais como os propulsores mandibulares, aparelhos de pressão positiva (CPAP) e tratamentos cirúrgicos. A escolha do tratamento mais adequado ao paciente depende da gravidade de cada caso, e deve ser indicada por uma equipe multidisciplinar capacitada em distúrbios do sono.</p>
+                <strong>Quais os riscos de ter apneia?</strong>
+                <p>
+                  Para o diagnóstico da apneia e sua gravidade, deve ser feito
+                  um exame chamado polissonografia, que monitora todas as
+                  variáveis fisiológicas durante o sono. Nos casos mais graves
+                  de apneia, as pausas respiratórias podem ultrapassar 40
+                  episódios por hora de sono. Como consequência, ocorre queda do
+                  oxigênio no sangue e aumento do risco de doenças
+                  cardiovasculares, como hipertensão arterial sistêmica,
+                  insuficiência cardíaca, infarto do miocárdio, arritmias e
+                  hipertensão pulmonar, podendo culminar com morte súbita.
+                </p>
 
+                <strong>Quais as formas de tratar o ronco?</strong>
+                <p>
+                  Existem diversas formas de tratar o ronco, como higiene do
+                  sono e emagrecimento, tratamento com aparelhos intraorais como
+                  os propulsores mandibulares, aparelhos de pressão positiva
+                  (CPAP) e tratamentos cirúrgicos. A escolha do tratamento mais
+                  adequado ao paciente depende da gravidade de cada caso, e deve
+                  ser indicada por uma equipe multidisciplinar capacitada em
+                  distúrbios do sono.
+                </p>
               </div>
-
             </div>
             <div class="blog-news-right">
               <div class="blog-right-agendar-consulta">
                 <a href="" class="agendarHeader">
-                  <i class="fa-solid fa-phone"></i> <i class="fa-brands fa-whatsapp"></i> Agendar Consulta</a
+                  <i class="fa-solid fa-phone"></i>
+                  <i class="fa-brands fa-whatsapp"></i> Agendar Consulta</a
                 >
               </div>
 
               <div class="search-blog">
-                <input type="text" placeholder="Search ...">
+                <input type="text" placeholder="Search ..." />
               </div>
 
               <div class="blog-post-recente">
@@ -133,27 +187,45 @@
                   <strong>Posts Recentes</strong>
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">COVID-19: A importância da saúde bucal no fortalecimento da imunidade</a>
+                  <a href="" class="link-post-recente"
+                    >COVID-19: A importância da saúde bucal no fortalecimento da
+                    imunidade</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Dente do siso: mitos e verdades</a>
+                  <a href="" class="link-post-recente"
+                    >Dente do siso: mitos e verdades</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Sensibilidade dentária: sintomas, causas e tratamento</a>
+                  <a href="" class="link-post-recente"
+                    >Sensibilidade dentária: sintomas, causas e tratamento</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Mês do combate ao câncer: tudo o que você precisa saber sobre câncer de boca</a>
+                  <a href="" class="link-post-recente"
+                    >Mês do combate ao câncer: tudo o que você precisa saber
+                    sobre câncer de boca</a
+                  >
                 </div>
                 <div class="last-post-recent">
-                  <a href="" class="link-post-recente">Diabetes e saúde bucal: dúvidas comuns</a>
+                  <a href="" class="link-post-recente"
+                    >Diabetes e saúde bucal: dúvidas comuns</a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <div class="tags-pages-blog">
-            <a href=""> <i class="font-icon-post fa fa-angle-double-left"></i> Previous: Bichectomia, a cirurgia que pode mudar seu rosto
+            <a href="">
+              <i class="font-icon-post fa fa-angle-double-left"></i> Previous:
+              Bichectomia, a cirurgia que pode mudar seu rosto
             </a>
-            <a href=""> Next: Como prevenir a gengivite<i class="font-icon-post fa fa-angle-double-right"></i> </a>
+            <a href="">
+              Next: Como prevenir a gengivite<i
+                class="font-icon-post fa fa-angle-double-right"
+              ></i>
+            </a>
           </div>
         </div>
       </section>

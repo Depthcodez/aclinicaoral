@@ -32,63 +32,73 @@
     />
 
     <!--Carrousel-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
 
     <title>A clinica Oral</title>
   </head>
   <body>
     <main>
       <header>
-        <div>
-          <nav>
-            <button>ligar</button>
-            <ul class="itens-menu">
-              <li>Início</li>
-              <li id="tratamento">
-                <a href="#" id="tratamentoa">Tratamentos</a>
-                <ul class="sub-menu">
-                  <li>
-                    <li>
-                      <ul id="estetica"><a href="#" class="item">Estética</a>
-                        <ul class="sub-menu-1">
-                          <li>Lente de Contato Dental</li>
-                          <li>Facetas de Porcelana</li>
-                          <li>Clareamento Dental</li>
-                          <li>Coroas de Porcelana</li>
-                          <li>Restauração Dentária</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>
-                      <ul id="cirurgia">
-                        <a href="#" class="item">Cirurgia</a>
-                        <ul class="sub-menu-2">
-                          <li>Dentes do Siso</li>
-                          <li>Implante Dentário</li>
-                          <li>Cirurgia Ortoginática</li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li>Ortodontia</li>
-                    <li>Tratamento de Canal (Endodontia)</li>
-                    <li>Tratamento de Gengiva (Periodontia)</li>
-                    <li>Difusão do ATM</li>
-                    <li>Odontologia Pré-Natal</li>
-                    <li>Odontopediatria</li>
+        <nav>
+          <div class="call">
+            <a
+              class="button-wpp"
+              href="https://api.whatsapp.com/send?phone=5511988711774&amp;text=Oi, gostaria de agendar uma consulta"
+              onclick=" ga('send', 'event', 'whatsapp message', 'asc-mobile-desktop', 'botao 1');"
+              ><i class="fa fa-whatsapp"></i> Agendar Consulta</a
+            >
+          </div>
+
+          <div class="main-menu">
+            <ul class="menu">
+              <li><a href="#" class="link-active">Início</a></li>
+              <li class="has-submenu">
+                <a href="#" class="text-active">Tratamentos</a>
+                <ul class="submenu">
+                  <li class="has-submenu--estetica">
+                    <a href="#">Estética</a>
+                    <ul class="submenu--estetica">
+                      <li><a href="#">Lente de contato dental</a></li>
+                      <li><a href="#">Facetas de porcelanas</a></li>
+                      <li><a href="#">Clareamento Dental</a></li>
+                      <li><a href="#">Coroas de Porcelanas</a></li>
+                      <li><a href="#">Restauração Dentária</a></li>
+                    </ul>
                   </li>
+                  <li class="has-submenu--cirurgia">
+                    <a href="#">Cirurgia</a>
+                    <ul class="submenu--cirurgia">
+                      <li><a href="#">Dente do siso</a></li>
+                      <li><a href="#">Implante dentário</a></li>
+                      <li><a href="#">Cirurgia Ortagnática</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Otodontia</a></li>
+                  <li><a href="#">Tratamento de Canal (Endodontia)</a></li>
+                  <li><a href="#">Tratamento da Gengiva (Periodontia)</a></li>
+                  <li><a href="#">Disfunção do ATM</a></li>
+                  <li><a href="#">Odontologia Pré-Natal</a></li>
+                  <li><a href="#">Odontopediatria</a></li>
                 </ul>
               </li>
-              <li>Day Clinic</li>
-              <li>Equipe</li>
-              <li>Depoimentos</li>
-              <li>Endereço</li>
-              <li>Blog</li>
-              <li>Contato</li>
+              <li><a href="#">Day Clinic</a></li>
+              <li><a href="#">Equipe</a></li>
+              <li><a href="#">Depoimentos</a></li>
+              <li><a href="#">Endereço</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contato</a></li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </header>
 
       <section class="s-blog">
@@ -98,16 +108,28 @@
               <div class="news-left first-news-page">
                 <h3>Dente do siso: mitos e verdades</h3>
                 <p>09/03/2020</p>
-                <img src="./resources/img/Foto-Blog-3.jpg" alt="">
-                <p class="text-news-left">Temidos por muitos pacientes, os terceiros molares provocam muitas dúvidas. Também conhecidos como dentes do siso, eles são os últimos dentes a nascerem e, geralmente, erupcionam entre o final da adolescência e início da vida adulta.</p>
+                <img src="./resources/img/Foto-Blog-3.jpg" alt="" />
+                <p class="text-news-left">
+                  Temidos por muitos pacientes, os terceiros molares provocam
+                  muitas dúvidas. Também conhecidos como dentes do siso, eles
+                  são os últimos dentes a nascerem e, geralmente, erupcionam
+                  entre o final da adolescência e início da vida adulta.
+                </p>
 
-                <p>Com o objetivo de esclarecer todas as questões relacionadas aos terceiros molares, a A Clínica Oral debate os mitos e verdades do dente do siso:</p>
+                <p>
+                  Com o objetivo de esclarecer todas as questões relacionadas
+                  aos terceiros molares, a A Clínica Oral debate os mitos e
+                  verdades do dente do siso:
+                </p>
 
                 <strong>Todo mundo tem os quatro dentes do siso</strong>
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Mito:</strong> Algumas pessoas podem não ter algum deles ou todos, mas na maioria dos casos, os pacientes possuem quatro sisos, sendo eles: dois superiores e dois inferiores. 
+                      <strong>Mito:</strong> Algumas pessoas podem não ter algum
+                      deles ou todos, mas na maioria dos casos, os pacientes
+                      possuem quatro sisos, sendo eles: dois superiores e dois
+                      inferiores.
                     </li>
                   </ul>
                 </div>
@@ -116,16 +138,27 @@
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Mito:</strong> A decisão da extração deve ser tomada pelo cirurgião-dentista ao avaliar se a erupção do dente traz algum prejuízo para o alinhamento da arcada dentária ou apresenta dor e inflamação. 
+                      <strong>Mito:</strong> A decisão da extração deve ser
+                      tomada pelo cirurgião-dentista ao avaliar se a erupção do
+                      dente traz algum prejuízo para o alinhamento da arcada
+                      dentária ou apresenta dor e inflamação.
                     </li>
                   </ul>
                 </div>
 
-                <strong>O dente do siso pode prejudicar o alinhamento dos dentes</strong>
+                <strong
+                  >O dente do siso pode prejudicar o alinhamento dos
+                  dentes</strong
+                >
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Verdade:</strong> Justamente pelo fato do dente do siso nascer entre o final da adolescência e início da vida adulta, existe a possibilidade do paciente não ter espaço suficiente na arcada dentária para acomodá-lo. Desta forma, o terceiro molar pode empurrar os demais dentes e entortá-los.
+                      <strong>Verdade:</strong> Justamente pelo fato do dente do
+                      siso nascer entre o final da adolescência e início da vida
+                      adulta, existe a possibilidade do paciente não ter espaço
+                      suficiente na arcada dentária para acomodá-lo. Desta
+                      forma, o terceiro molar pode empurrar os demais dentes e
+                      entortá-los.
                     </li>
                   </ul>
                 </div>
@@ -134,16 +167,25 @@
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Mito:</strong> Os dentes do siso ficam localizados em uma área de difícil higienização e por este motivo estão mais propensos às cáries, mas nascem saudáveis como todos os outros dentes da arcada. 
+                      <strong>Mito:</strong> Os dentes do siso ficam localizados
+                      em uma área de difícil higienização e por este motivo
+                      estão mais propensos às cáries, mas nascem saudáveis como
+                      todos os outros dentes da arcada.
                     </li>
                   </ul>
                 </div>
 
-                <strong>A extração do siso é um procedimento comum na odontologia</strong>
+                <strong
+                  >A extração do siso é um procedimento comum na
+                  odontologia</strong
+                >
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Verdade:</strong> A extração do siso não é um bicho de sete cabeças, mas é comum causar medo por ser um procedimento cirúrgico. O pós-operatório é delicado e pede cuidados especiais para a reabilitação do paciente. 
+                      <strong>Verdade:</strong> A extração do siso não é um
+                      bicho de sete cabeças, mas é comum causar medo por ser um
+                      procedimento cirúrgico. O pós-operatório é delicado e pede
+                      cuidados especiais para a reabilitação do paciente.
                     </li>
                   </ul>
                 </div>
@@ -152,14 +194,24 @@
                 <div class="list-itens-news-page">
                   <ul>
                     <li>
-                      <strong>Verdade:</strong> Se há espaço na arcada dentária para a erupção do dente não haverá nem dor e tampouco sangramento, mas a dor pode aparecer se existir alguma inflamação. 
+                      <strong>Verdade:</strong> Se há espaço na arcada dentária
+                      para a erupção do dente não haverá nem dor e tampouco
+                      sangramento, mas a dor pode aparecer se existir alguma
+                      inflamação.
                     </li>
                   </ul>
                 </div>
 
-                <p>As consultas odontológicas periódicas são efetivas para realização da profilaxia dentária e acompanhamento do nascimento de novos dentes. </p>
+                <p>
+                  As consultas odontológicas periódicas são efetivas para
+                  realização da profilaxia dentária e acompanhamento do
+                  nascimento de novos dentes.
+                </p>
 
-                <p>Tire suas dúvidas com o seu cirurgião. Um bom diálogo evita os mitos! </p>
+                <p>
+                  Tire suas dúvidas com o seu cirurgião. Um bom diálogo evita os
+                  mitos!
+                </p>
 
                 <div class="divisao-tags-page">
                   <i class="font-icon-25 fa fa-tags"></i>
@@ -169,17 +221,17 @@
                   <a href="">Terceiros Molasres</a>
                 </div>
               </div>
-
             </div>
             <div class="blog-news-right">
               <div class="blog-right-agendar-consulta">
                 <a href="" class="agendarHeader">
-                  <i class="fa-solid fa-phone"></i> <i class="fa-brands fa-whatsapp"></i> Agendar Consulta</a
+                  <i class="fa-solid fa-phone"></i>
+                  <i class="fa-brands fa-whatsapp"></i> Agendar Consulta</a
                 >
               </div>
 
               <div class="search-blog">
-                <input type="text" placeholder="Search ...">
+                <input type="text" placeholder="Search ..." />
               </div>
 
               <div class="blog-post-recente">
@@ -187,30 +239,47 @@
                   <strong>Posts Recentes</strong>
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">COVID-19: A importância da saúde bucal no fortalecimento da imunidade</a>
+                  <a href="" class="link-post-recente"
+                    >COVID-19: A importância da saúde bucal no fortalecimento da
+                    imunidade</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Dente do siso: mitos e verdades</a>
+                  <a href="" class="link-post-recente"
+                    >Dente do siso: mitos e verdades</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Sensibilidade dentária: sintomas, causas e tratamento</a>
+                  <a href="" class="link-post-recente"
+                    >Sensibilidade dentária: sintomas, causas e tratamento</a
+                  >
                 </div>
                 <div class="link-recente-posts">
-                  <a href="" class="link-post-recente">Mês do combate ao câncer: tudo o que você precisa saber sobre câncer de boca</a>
+                  <a href="" class="link-post-recente"
+                    >Mês do combate ao câncer: tudo o que você precisa saber
+                    sobre câncer de boca</a
+                  >
                 </div>
                 <div class="last-post-recent">
-                  <a href="" class="link-post-recente">Diabetes e saúde bucal: dúvidas comuns</a>
+                  <a href="" class="link-post-recente"
+                    >Diabetes e saúde bucal: dúvidas comuns</a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <div class="tags-pages-blog">
-            <a href=""> <i class="font-icon-post fa fa-angle-double-left"></i> Previous: Sensibilidade dentária: sintomas, causas e tratamento</a>
-            <a href=""> Next: COVID-19: A importância da saúde bucal no fortalecimento da imunidade <i class="font-icon-post fa fa-angle-double-right"></i> </a>
+            <a href="">
+              <i class="font-icon-post fa fa-angle-double-left"></i> Previous:
+              Sensibilidade dentária: sintomas, causas e tratamento</a
+            >
+            <a href="">
+              Next: COVID-19: A importância da saúde bucal no fortalecimento da
+              imunidade <i class="font-icon-post fa fa-angle-double-right"></i>
+            </a>
           </div>
         </div>
       </section>
-
 
       <footer class="s-footer">
         <div class="container">
