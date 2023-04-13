@@ -7,7 +7,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./resources/css/main.css" />
-    <link rel="stylesheet" href="./resources/sass/header.css" />
+    <link rel="stylesheet" href="./resources/css/header-teste.css" />
 
     <!--Font Awesome-->
     <link
@@ -87,6 +87,22 @@
               <li><a href="#">Contato</a></li>
             </ul>
           </div>
+
+          <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >×</a
+            >
+            <a href="#">Início</a>
+            <a href="#">Tratamentos</a>
+            <a href="#">Day Clinic</a>
+            <a href="#">Equipe</a>
+            <a href="">Depoimentos</a>
+            <a href="">Endereço</a>
+            <a href="">Blog</a>
+            <a href="">Contato</a>
+          </div>
+
+          <button class="openbtn" onclick="openNav()">☰</button>
         </nav>
       </header>
 
@@ -334,36 +350,82 @@
     <script src="./resources/js/main.js"></script>
 
     <script>
-      const dropdowns = document.querySelectorAll('.dropdown')
+      const tratamentosMobile = document.querySelector('.has-submenu-mobile')
 
-      dropdowns.forEach(dropdown => {
-        const submenu = dropdown.querySelector('.submenu-menu')
-        const trigger = dropdown.querySelector('a[href="#"]')
-
-        trigger.addEventListener('click', e => {
-          e.preventDefault()
-          submenu.classList.toggle('active')
-        })
-
-        dropdown.addEventListener('mouseleave', () => {
-          submenu.classList.remove('active')
-        })
+      tratamentosMobile.addEventListener('click', function () {
+        this.classList.toggle('active')
       })
 
-      const submenus = document.querySelectorAll('.submenu')
+      const esteticaMobile = document.querySelector(
+        '.has-submenu--estetica-mobile'
+      )
 
-      submenus.forEach(submenu => {
-        const submenuMenu = submenu.querySelector('.submenu-menu')
-        const trigger = submenu.querySelector('a[href="#"]')
-
-        trigger.addEventListener('mouseover', () => {
-          submenuMenu.classList.add('active')
-        })
-
-        submenu.addEventListener('mouseleave', () => {
-          submenuMenu.classList.remove('active')
-        })
+      esteticaMobile.addEventListener('click', function (e) {
+        e.stopPropagation()
+        this.classList.toggle('active')
       })
+
+      const cirurgiaMobile = document.querySelector(
+        '.has-submenu--cirurgia-mobile'
+      )
+
+      cirurgiaMobile.addEventListener('click', function (e) {
+        e.stopPropagation()
+        this.classList.toggle('active')
+      })
+    </script>
+
+    <script>
+      function openNav() {
+        document.getElementById('mySidepanel').style.width = '250px'
+      }
+
+      function closeNav() {
+        document.getElementById('mySidepanel').style.width = '0'
+      }
+    </script>
+
+    <script>
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById('myDropdown').classList.toggle('show')
+      }
+
+      function myFunction2() {
+        document.getElementById('myDropdown2').classList.toggle('show')
+      }
+
+      window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName('dropdown-content')
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i]
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show')
+            }
+          }
+        }
+      }
+    </script>
+
+    <script>
+      function openSubmenu() {
+        document.querySelector('.submenu-teste .submenu-mobile').style.display =
+          'block'
+      }
+
+      function closeSubmenu() {
+        document.querySelector('.submenu-teste .submenu-mobile').style.display =
+          'none'
+      }
+
+      document
+        .querySelector('.submenu-teste')
+        .addEventListener('mouseover', openSubmenu)
+      document
+        .querySelector('.submenu-teste')
+        .addEventListener('mouseout', closeSubmenu)
     </script>
   </body>
 </html>

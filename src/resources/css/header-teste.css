@@ -1,297 +1,112 @@
-header {
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+.sidepanel  {
+  width: 0;
   position: fixed;
+  z-index: 1;
   top: 0;
-  left: 0;
   right: 0;
-  z-index: 9999;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  height: 80vh;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1170px;
-  margin: 0 auto;
-  height: 60px;
-}
-
-.agendarHeader {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #fff;
-  background-color: #f9a826;
-  border-radius: 4px;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-}
-
-.agendarHeader:hover {
-  transform: translateY(-2px);
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li a {
+  font-size: 25px;
+  color: #818181;
   display: block;
-  padding: 0 20px;
-  color: #333;
-  line-height: 60px;
-  text-decoration: none;
+  transition: 0.3s;
 }
 
-nav ul li a:hover {
-  color: #f9a826;
+.sidepanel a:hover {
+  color: #f1f1f1;
 }
 
-nav ul li.dropdown {
-  position: relative;
-}
-
-nav ul li.dropdown ul.dropdown-menu {
+.sidepanel .closebtn {
   position: absolute;
-  left: 0;
-  top: 100%;
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 99;
-  min-width: 200px;
-  display: none;
-}
-
-nav ul li.dropdown:hover ul.dropdown-menu {
-  display: block;
-}
-
-nav ul li.dropdown ul.dropdown-menu li a {
-  display: block;
-  padding: 10px 20px;
-  color: #333;
-  text-decoration: none;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-nav ul li.dropdown ul.dropdown-menu li:last-child a {
-  border-bottom: none;
-}
-
-nav ul li.dropdown .submenu-menu {
-  position: absolute;
-  left: 100%;
   top: 0;
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 99;
-  width: 200px;
-  height: 100%;
-  display: none;
-  transform: translateX(100%);
-  transition: all 0.3s ease-in-out;
-  margin-top: -36px;
-  white-space: nowrap; /* evita quebrar linha */
+  right: 25px;
+  font-size: 36px;
 }
 
-nav ul li.dropdown .submenu:hover .submenu-menu {
-  display: block;
-  transform: translateX(0);
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
 }
 
-/* NAVBAR */
-header {
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
+.openbtn:hover {
+  background-color:#444;
+}
+
+/*Togle tratamento*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
   width: 100%;
-  z-index: 100;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
 }
 
-nav.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 64px;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
+.active, .accordion:hover {
+  background-color: #ccc; 
 }
 
-nav ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
 
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
-  color: #555;
+/* Dropdown*/
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
   font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: color 0.2s ease;
+  border: none;
+  cursor: pointer;
 }
 
-nav ul li a:hover {
-  color: #007bff;
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
 }
 
-nav ul li.dropdown {
+.dropdown {
   position: relative;
+  display: inline-block;
 }
 
-nav ul li.dropdown .dropdown-menu {
+.dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  min-width: 200px;
-  padding: 10px 0;
-  z-index: 101;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-nav ul li.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-nav ul li.dropdown .submenu-menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: -200px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  min-width: 200px;
-  padding: 10px 0;
-  z-index: 102;
-}
-
-nav ul li.dropdown .submenu:hover .submenu-menu {
-  display: block;
-}
-
-nav ul li.dropdown .submenu-menu li {
-  margin: 5px 0;
-  display: block;
-  width: 100%;
-}
-
-nav ul li.dropdown .submenu-menu li a {
-  color: #555;
-  font-size: 14px;
-  font-weight: 500;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
   text-decoration: none;
-  transition: color 0.2s ease;
+  display: block;
 }
 
-nav ul li.dropdown .submenu-menu li a:hover {
-  color: #007bff;
-}
+.dropdown a:hover {background-color: #ddd;}
 
-/* FONT AWESOME */
-.fa-phone:before {
-  content: "\f095";
-}
+.show {display: block;}
 
-.fa-solid.fa-phone:before {
-  font-weight: 900;
-}
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 768px) {
-  nav ul {
-    display: none;
-  }
-
-  nav ul li:first-child {
-    margin-top: 20px;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 0;
-  }
-
-  nav ul li a {
-    display: block;
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  nav ul li a:hover {
-    color: #007bff;
-    background-color: #f9f9f9;
-  }
-
-  nav ul li.dropdown .dropdown-menu {
-    position: static;
-    display: none;
-    box-shadow: none;
-    min-width: 0;
-  }
-
-  /* estilo do dropdown do item "Tratamentos" */
-  nav ul li.dropdown .submenu-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 200px;
-    padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  }
-
-  nav ul li.dropdown:hover .submenu-menu {
-    display: block;
-  }
-
-  /* estilo do submenu do item "Estética" */
-  nav ul li.dropdown .submenu-menu .submenu {
-    position: static;
-    display: block;
-  }
-
-  nav ul li.dropdown .submenu-menu .submenu-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    min-width: 200px;
-    padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  }
-
-  nav ul li.dropdown .submenu-menu .submenu:hover .submenu-menu {
-    display: block;
-    animation: slideIn 0.2s forwards;
-  }
-}
-/* animação para o submenu do item "Estética" */
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+/*-------------------------------------------------*/

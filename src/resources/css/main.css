@@ -1891,9 +1891,16 @@ nav {
   .has-submenu--cirurgia:hover > .submenu--cirurgia {
     display: block; }
 
+.menu-toggle {
+  display: none; }
+
 @media only screen and (max-width: 768px) {
   .main-menu {
-    display: none; } }
+    display: none; }
+  .main-menu-mobile {
+    display: none; }
+  .menu-toggle {
+    display: block; } }
 
 body {
   font-family: 'Roboto'; }
