@@ -2095,10 +2095,19 @@ body {
     width: 100% !important; }
   .blog-news-right {
     width: 100% !important; }
+    .blog-news-right .call {
+      text-align: center !important; }
   .blog-right-agendar-consulta .call {
     text-align: center !important; }
   .list-itens-posts-pages {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .tags-pages-blog {
+    width: 100% !important;
+    font-size: 14px !important;
+    margin-top: 0.2rem !important; }
+  .search-blog {
+    padding: 0 !important;
+    margin-top: 3rem !important; } }
 
 body {
   font-family: 'Roboto'; }
