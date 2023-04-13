@@ -1891,15 +1891,13 @@ nav {
   .has-submenu--cirurgia:hover > .submenu--cirurgia {
     display: block; }
 
-.menu-toggle {
+.openbtn {
   display: none; }
 
 @media only screen and (max-width: 768px) {
   .main-menu {
     display: none; }
-  .main-menu-mobile {
-    display: none; }
-  .menu-toggle {
+  .openbtn {
     display: block; } }
 
 body {

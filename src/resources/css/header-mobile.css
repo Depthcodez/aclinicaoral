@@ -14,7 +14,7 @@
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -34,10 +34,11 @@
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #757575;
   padding: 10px 15px;
   border: none;
+  border-radius: 100%;
 }
 
 .openbtn:hover {
@@ -55,14 +56,15 @@ label {
 select {
   margin: 1rem 0;
   width: 100%;
-  padding: 5px;
+  padding: 0 2.7rem;
   border: none;
   font-size: 16px;
-  color: #444;
+  color: #757575;
   background-color: #111;
 }
 
 /* Estilizando as opções */
 option {
-  color: #444;
+  color: #757575;
+  font-size: 13px;
 }
