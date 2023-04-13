@@ -93,13 +93,98 @@
               >×</a
             >
             <a href="#">Início</a>
-            <a href="#">Tratamentos</a>
             <a href="#">Day Clinic</a>
+            <!-- <label for="dropdown1">Traramentos</label> -->
+            <select id="dropdown1">
+              <option value="">Tratamentos</option>
+              <option
+                value="https://www.google.com/"
+                data-href="https://www.google.com/"
+              >
+                Ortodontia
+              </option>
+              <option
+                value="https://www.google.com/"
+                data-href="https://www.google.com/"
+              >
+                Tratamento de canal (Endodontia)
+              </option>
+              <option
+                value="https://www.facebook.com/"
+                data-href="https://www.facebook.com/"
+              >
+                Tratamento da gengiva (Periodontia)
+              </option>
+              <option
+                value="https://www.youtube.com/"
+                data-href="https://www.youtube.com/"
+              >
+                Disfunção do ATM
+              </option>
+              <option
+                value="https://www.youtube.com/"
+                data-href="https://www.youtube.com/"
+              >
+                Odontologia Pré-Natal
+              </option>
+              <option
+                value="https://www.youtube.com/"
+                data-href="https://www.youtube.com/"
+              >
+                Odontopediatria
+              </option>
+            </select>
+
+            <!-- <label for="dropdown2">Dropdown 2</label> -->
+            <select id="dropdown2">
+              <option value="">Cirurgia</option>
+              <option
+                value="https://www.twitter.com/"
+                data-href="https://www.twitter.com/"
+              >
+                Opção 4
+              </option>
+              <option
+                value="https://www.instagram.com/"
+                data-href="https://www.instagram.com/"
+              >
+                Opção 5
+              </option>
+              <option
+                value="https://www.linkedin.com/"
+                data-href="https://www.linkedin.com/"
+              >
+                Opção 6
+              </option>
+            </select>
+
+            <!-- <label for="dropdown3">Dropdown 3</label> -->
+            <select id="dropdown3">
+              <option value="">Estética</option>
+              <option
+                value="https://www.reddit.com/"
+                data-href="https://www.reddit.com/"
+              >
+                Opção 7
+              </option>
+              <option
+                value="https://www.github.com/"
+                data-href="https://www.github.com/"
+              >
+                Opção 8
+              </option>
+              <option
+                value="https://www.stackoverflow.com/"
+                data-href="https://www.stackoverflow.com/"
+              >
+                Opção 9
+              </option>
+            </select>
             <a href="#">Equipe</a>
-            <a href="">Depoimentos</a>
-            <a href="">Endereço</a>
-            <a href="">Blog</a>
-            <a href="">Contato</a>
+            <a href="#">Depoimentos</a>
+            <a href="#">Endereço</a>
+            <a href="#">Blog</a>
+            <a href="#">Contato</a>
           </div>
 
           <button class="openbtn" onclick="openNav()">☰</button>
@@ -386,46 +471,16 @@
     </script>
 
     <script>
-      /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById('myDropdown').classList.toggle('show')
-      }
-
-      function myFunction2() {
-        document.getElementById('myDropdown2').classList.toggle('show')
-      }
-
-      window.onclick = function (event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName('dropdown-content')
-          for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i]
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show')
-            }
+      const dropdowns = document.querySelectorAll('select')
+      dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('change', event => {
+          const selectedOption =
+            event.target.options[event.target.selectedIndex]
+          if (selectedOption.getAttribute('data-href')) {
+            window.location.href = selectedOption.getAttribute('data-href')
           }
-        }
-      }
-    </script>
-
-    <script>
-      function openSubmenu() {
-        document.querySelector('.submenu-teste .submenu-mobile').style.display =
-          'block'
-      }
-
-      function closeSubmenu() {
-        document.querySelector('.submenu-teste .submenu-mobile').style.display =
-          'none'
-      }
-
-      document
-        .querySelector('.submenu-teste')
-        .addEventListener('mouseover', openSubmenu)
-      document
-        .querySelector('.submenu-teste')
-        .addEventListener('mouseout', closeSubmenu)
+        })
+      })
     </script>
   </body>
 </html>

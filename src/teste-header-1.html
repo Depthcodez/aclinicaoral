@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/drop-teste.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="dropdown1">Dropdown 1</label>
+    <select id="dropdown1">
+      <option value="">Selecione uma opção</option>
+      <option
+        value="https://www.google.com/"
+        data-href="https://www.google.com/"
+      >
+        Opção 1
+      </option>
+      <option
+        value="https://www.facebook.com/"
+        data-href="https://www.facebook.com/"
+      >
+        Opção 2
+      </option>
+      <option
+        value="https://www.youtube.com/"
+        data-href="https://www.youtube.com/"
+      >
+        Opção 3
+      </option>
+    </select>
+
+    <label for="dropdown2">Dropdown 2</label>
+    <select id="dropdown2">
+      <option value="">Selecione uma opção</option>
+      <option
+        value="https://www.twitter.com/"
+        data-href="https://www.twitter.com/"
+      >
+        Opção 4
+      </option>
+      <option
+        value="https://www.instagram.com/"
+        data-href="https://www.instagram.com/"
+      >
+        Opção 5
+      </option>
+      <option
+        value="https://www.linkedin.com/"
+        data-href="https://www.linkedin.com/"
+      >
+        Opção 6
+      </option>
+    </select>
+
+    <label for="dropdown3">Dropdown 3</label>
+    <select id="dropdown3">
+      <option value="">Selecione uma opção</option>
+      <option
+        value="https://www.reddit.com/"
+        data-href="https://www.reddit.com/"
+      >
+        Opção 7
+      </option>
+      <option
+        value="https://www.github.com/"
+        data-href="https://www.github.com/"
+      >
+        Opção 8
+      </option>
+      <option
+        value="https://www.stackoverflow.com/"
+        data-href="https://www.stackoverflow.com/"
+      >
+        Opção 9
+      </option>
+    </select>
+
+    <script>
+      const dropdowns = document.querySelectorAll('select')
+      dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('change', event => {
+          const selectedOption =
+            event.target.options[event.target.selectedIndex]
+          if (selectedOption.getAttribute('data-href')) {
+            window.location.href = selectedOption.getAttribute('data-href')
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
