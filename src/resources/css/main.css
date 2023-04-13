@@ -991,7 +991,7 @@ body {
     background-color: #ffffff;
     margin-bottom: 1rem; }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 769px) {
   .text-first p {
     font-size: 39px !important; }
   .text-first h1 {
@@ -2087,6 +2087,18 @@ body {
 
 .tags-pages-blog a {
   color: #7a7a7a; }
+
+@media only screen and (max-width: 769px) {
+  .blog-news {
+    display: block !important; }
+  .blog-news-left {
+    width: 100% !important; }
+  .blog-news-right {
+    width: 100% !important; }
+  .blog-right-agendar-consulta .call {
+    text-align: center !important; }
+  .list-itens-posts-pages {
+    width: 100% !important; } }
 
 body {
   font-family: 'Roboto'; }
