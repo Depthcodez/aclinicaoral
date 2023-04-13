@@ -991,6 +991,12 @@ body {
     background-color: #ffffff;
     margin-bottom: 1rem; }
 
+@media only screen and (max-width: 426px) {
+  .text-first p {
+    font-size: 39px !important; }
+  .text-first h1 {
+    font-size: 19px !important; } }
+
 body {
   font-family: 'Roboto'; }
 
@@ -1885,6 +1891,10 @@ nav {
   .has-submenu--cirurgia:hover > .submenu--cirurgia {
     display: block; }
 
+@media only screen and (max-width: 768px) {
+  .main-menu {
+    display: none; } }
+
 body {
   font-family: 'Roboto'; }
 
@@ -2096,10 +2106,10 @@ body {
           border-radius: 56px;
   line-height: 1.6rem;
   background: #c8bcac;
-  width: 35rem;
   color: #ffffff;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  white-space: nowrap; }
 
 @font-face {
   font-family: 'Gotham Regular Bold';
