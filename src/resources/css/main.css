@@ -732,7 +732,8 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 100%; }
+    width: 100%;
+    margin-top: 15rem; }
     .s-dayClinic .info-dayClinic .dayClinic-left {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1695,7 +1696,8 @@ header {
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.33);
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.33);
   position: fixed;
-  z-index: 1111; }
+  z-index: 1111;
+  top: 0; }
 
 /* Estilos para os links do header */
 header a {
