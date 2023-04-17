@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exibir as últimas avaliações do Google Places</title>
+    <style>
+      .review {
+        margin-bottom: 20px;
+      }
+      .rating {
+        font-weight: bold;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <link rel="stylesheet" href="./resources/css/testeAPI.css" />
+  </head>
+  <body>
+    <div id="reviews"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd4U5ETE1wjqnXCVxoMBtx8Ez4Y2QBOUo&libraries=places"></script>
+    <script>
+      function initMap() {
+        var service = new google.maps.places.PlacesService(
+          document.createElement('div')
+        )
+        var request = {
+          placeId: 'ChIJfZbyEzhXzpQRlhDURW4spRU'
+        }
+        service.getDetails(request, function (place, status) {
+          if (status == google.maps.places.PlacesServiceStatus.OK) {
+            var reviews = place.reviews
+            var reviewsContainer = document.getElementById('reviews')
+            for (var i = 0; i < reviews.length; i++) {
+              var review = reviews[i]
+              var div = document.createElement('div')
+              div.className = 'depoimentos-itens'
+              div.innerHTML =
+                '<img src="' +
+                review.profile_photo_url +
+                '" alt="">' +
+                '<h3>' +
+                review.author_name +
+                '</h3>' +
+                '<p>' +
+                review.text +
+                '</p>' +
+                '<div class="rating-depoimentos">'
+              for (var j = 1; j <= 5; j++) {
+                if (j <= review.rating) {
+                  div.innerHTML += '<span class="fa fa-star checked"></span>'
+                } else {
+                  div.innerHTML += '<span class="fa fa-star"></span>'
+                }
+              }
+              div.innerHTML += '</div>'
+              reviewsContainer.appendChild(div)
+            }
+          }
+        })
+      }
+
+      initMap()
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+  </body>
+</html>

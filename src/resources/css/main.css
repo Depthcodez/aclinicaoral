@@ -1926,6 +1926,18 @@ body {
     margin-bottom: 2rem;
     color: #fff; }
 
+.checked {
+  color: #fff;
+  margin-right: 0.5rem; }
+
+.slick-slide p {
+  max-width: 80%;
+  color: #fff; }
+
+.slick-slide h3 {
+  color: #fff;
+  margin-bottom: 1rem; }
+
 body {
   font-family: 'Roboto'; }
 
