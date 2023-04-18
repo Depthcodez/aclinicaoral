@@ -33,6 +33,18 @@
       rel="stylesheet"
     />
 
+    <!--Carrousel-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
     <title>A clinica Oral</title>
   </head>
   <body>
@@ -161,8 +173,16 @@
               <li>
                 <a href="http://www2.aclinicaoral.com.br/equipe.html">Equipe</a>
               </li>
-              <li><a href="http://www2.aclinicaoral.com.br/depoimentos.html">Depoimentos</a></li>
-              <li><a href="http://www2.aclinicaoral.com.br/endereco.html">Endereço</a></li>
+              <li>
+                <a href="http://www2.aclinicaoral.com.br/depoimentos.html"
+                  >Depoimentos</a
+                >
+              </li>
+              <li>
+                <a href="http://www2.aclinicaoral.com.br/endereco.html"
+                  >Endereço</a
+                >
+              </li>
               <li>
                 <a href="http://www2.aclinicaoral.com.br/blog.html">Blog</a>
               </li>
@@ -289,7 +309,9 @@
               </option>
             </select>
             <a href="http://www2.aclinicaoral.com.br/equipe.html">Equipe</a>
-            <a href="http://www2.aclinicaoral.com.br/depoimentos.html">Depoimentos</a>
+            <a href="http://www2.aclinicaoral.com.br/depoimentos.html"
+              >Depoimentos</a
+            >
             <a href="#localizacao">Endereço</a>
             <a href="http://www2.aclinicaoral.com.br/blog.html">Blog</a>
             <a href="http://www2.aclinicaoral.com.br/contato.html">Contato</a>
@@ -449,7 +471,12 @@
       </section>
 
       <section class="s-depoimento">
-        <div class="container"></div>
+        <div class="container">
+          <div class="box-depoimento">
+            <h1>Depoimentos</h1>
+            <div id="reviews-carousel" class="slick-carousel"></div>
+          </div>
+        </div>
       </section>
 
       <section class="s-localizacao">
@@ -526,5 +553,21 @@
       </footer>
     </main>
     <script src="./resources/js/main.js"></script>
+
+    <!--API Google-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd4U5ETE1wjqnXCVxoMBtx8Ez4Y2QBOUo&libraries=places"></script>
+    <!--Carrousel-->
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script src="./resources/js/apiGoogle2.js"></script>
   </body>
 </html>
