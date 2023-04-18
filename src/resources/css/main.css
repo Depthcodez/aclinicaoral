@@ -1938,6 +1938,13 @@ body {
   color: #fff;
   margin-bottom: 1rem; }
 
+@media only screen and (max-width: 769px) {
+  .depoimentos-itens img {
+    width: 80px !important;
+    height: 80px !important; }
+  #reviews-carousel {
+    padding: 0 3rem !important; } }
+
 body {
   font-family: 'Roboto'; }
 
@@ -2123,7 +2130,20 @@ body {
     margin-top: 0.2rem !important; }
   .search-blog {
     padding: 0 !important;
-    margin-top: 3rem !important; } }
+    margin-top: 3rem !important; }
+  .list-pages-post ul li a {
+    margin: 0 !important; }
+  .news-left strong {
+    font-size: 14px !important; }
+  .list-itens strong {
+    font-size: 14px !important; }
+  .list-itens ul li p {
+    font-size: 14px !important; }
+  .list-itens ul li a {
+    font-size: 14px !important; }
+  .divisao-tags-page a {
+    font-size: 14px !important;
+    margin: 0.5rem !important; } }
 
 body {
   font-family: 'Roboto'; }
