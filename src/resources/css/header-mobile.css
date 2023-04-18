@@ -45,6 +45,10 @@
   background-color:#444;
 }
 
+.item-menu-mobile{
+  margin-top: 1rem;
+}
+
 /* Dropdown-teste*/
 label {
   display: block;
@@ -67,4 +71,64 @@ select {
 option {
   color: #757575;
   font-size: 13px;
+}
+
+
+/*collapse*/
+.collapsible {
+  background-color: #222B34;
+  color: #818181;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  padding-left: 3rem;
+  position: relative; /* Adicionado para posicionar a seta */
+  height: 35px;
+}
+
+.collapsible::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #818181;
+  margin-top: 1rem;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid #818181;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+.active, .collapsible:hover {
+  background-color: #222B34;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #222B34;
+}
+
+.content a{
+  font-size: 14px;
+  margin: 0.3rem 0;
 }

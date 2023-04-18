@@ -7,25 +7,25 @@ dropdownToggles.forEach(toggle => {
 })
 
 // Lógica para menu-mobile
-const tratamentosMobile = document.querySelector('.has-submenu-mobile')
+// const tratamentosMobile = document.querySelector('.has-submenu-mobile')
 
-tratamentosMobile.addEventListener('click', function () {
-  this.classList.toggle('active')
-})
+// tratamentosMobile.addEventListener('click', function () {
+//   this.classList.toggle('active')
+// })
 
-const esteticaMobile = document.querySelector('.has-submenu--estetica-mobile')
+// const esteticaMobile = document.querySelector('.has-submenu--estetica-mobile')
 
-esteticaMobile.addEventListener('click', function (e) {
-  e.stopPropagation()
-  this.classList.toggle('active')
-})
+// esteticaMobile.addEventListener('click', function (e) {
+//   e.stopPropagation()
+//   this.classList.toggle('active')
+// })
 
-const cirurgiaMobile = document.querySelector('.has-submenu--cirurgia-mobile')
+// const cirurgiaMobile = document.querySelector('.has-submenu--cirurgia-mobile')
 
-cirurgiaMobile.addEventListener('click', function (e) {
-  e.stopPropagation()
-  this.classList.toggle('active')
-})
+// cirurgiaMobile.addEventListener('click', function (e) {
+//   e.stopPropagation()
+//   this.classList.toggle('active')
+// })
 
 // abrir menu-mobile
 function openNav() {
@@ -37,12 +37,28 @@ function closeNav() {
 }
 
 // logica drop-down-menu-mobile
-const dropdowns = document.querySelectorAll('select')
-dropdowns.forEach(dropdown => {
-  dropdown.addEventListener('change', event => {
-    const selectedOption = event.target.options[event.target.selectedIndex]
-    if (selectedOption.getAttribute('data-href')) {
-      window.location.href = selectedOption.getAttribute('data-href')
+// const dropdowns = document.querySelectorAll('select')
+// dropdowns.forEach(dropdown => {
+//   dropdown.addEventListener('change', event => {
+//     const selectedOption = event.target.options[event.target.selectedIndex]
+//     if (selectedOption.getAttribute('data-href')) {
+//       window.location.href = selectedOption.getAttribute('data-href')
+//     }
+//   })
+// })
+
+// Lógica collapse Menu mobile
+var coll = document.getElementsByClassName('collapsible')
+var i
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+    var content = this.nextElementSibling
+    if (content.style.display === 'block') {
+      content.style.display = 'none'
+    } else {
+      content.style.display = 'block'
     }
   })
-})
+}
