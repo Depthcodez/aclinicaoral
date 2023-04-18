@@ -1939,11 +1939,18 @@ body {
   margin-bottom: 1rem; }
 
 @media only screen and (max-width: 769px) {
-  .depoimentos-itens img {
-    width: 80px !important;
-    height: 80px !important; }
+  .depoimentos-itens {
+    margin-left: 0 !important;
+    padding: 1rem !important; }
+    .depoimentos-itens img {
+      width: 80px !important;
+      height: 80px !important; }
+    .depoimentos-itens .text-apost {
+      width: 100%; }
   #reviews-carousel {
-    padding: 0 3rem !important; } }
+    padding: 0 3rem !important; }
+  .box-depoimento div {
+    padding: 0 !important; } }
 
 body {
   font-family: 'Roboto'; }
