@@ -16,13 +16,13 @@ service.getDetails({ placeId, fields }, (place, status) => {
     const reviews = place.reviews
 
     const reviewsList = $('#reviews-carousel')
-    console.log(reviews);
+    console.log(reviews)
 
     if (Array.isArray(reviews)) {
       reviews
         // .sort((a, b) => b.time - a.time)
         .forEach(review => {
-          if (review.rating >= 3) {
+          if (review.rating >= 4) {
             const reviewDate = new Date(review.time * 1000)
             const formattedDate = reviewDate.toLocaleDateString('pt-BR', {
               day: 'numeric',
@@ -34,7 +34,9 @@ service.getDetails({ placeId, fields }, (place, status) => {
               <div class="depoimento-box">
                 <div class="title-box">
                   <div class="username">
-                    <img src="${review.profile_photo_url}" alt="Foto do ${review.author_name}">
+                    <img src="${review.profile_photo_url}" alt="Foto do ${
+              review.author_name
+            }">
                     <div class="name-author">
                       <p>${review.author_name}</p>
                       <p class="date-com">${formattedDate}</p>
@@ -43,28 +45,25 @@ service.getDetails({ placeId, fields }, (place, status) => {
                   <img class="googleimg" src="./resources/img/google.svg" alt="Logo do google">
                 </div>
                 <div class="avaliacao">
-                  ${
-                    (() => {
-                      let starString = "";
-                      for (let j = 1; j <= 5; j++) {
-                        if (j <= review.rating) {
-                          starString += '<span class="fa fa-star checked"></span>';
-                        } else {
-                          starString += '<span class="fa fa-star"></span>';
-                        }
+                  ${(() => {
+                    let starString = ''
+                    for (let j = 1; j <= 5; j++) {
+                      if (j <= review.rating) {
+                        starString += '<span class="fa fa-star checked"></span>'
+                      } else {
+                        starString += '<span class="fa fa-star"></span>'
                       }
-                      return starString;
-                    })()
-                  }
+                    }
+                    return starString
+                  })()}
                 </div>
                 <div class="text-avaliacao">
                   ${review.text}
                 </p>
               </div>
-            `);
+            `)
 
-          reviewsList.append(li);
-
+            reviewsList.append(li)
           }
         })
     } else {
@@ -94,7 +93,7 @@ service.getDetails({ placeId, fields }, (place, status) => {
           }
         }
       ]
-    });
+    })
   } else {
     console.error('Erro ao obter informações do local')
   }
