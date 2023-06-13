@@ -90,7 +90,7 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.webp");
+  background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.jpg");
   padding-bottom: 4rem;
   margin-top: 15rem; }
   .s-contato .box-contato {
@@ -263,7 +263,7 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.webp");
+    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.jpg");
     padding-bottom: 4rem; }
     .s-contato .box-contato {
       background: #fff;
@@ -403,7 +403,7 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.webp");
+    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.jpg");
     padding-bottom: 4rem; }
     .s-contato .box-contato {
       background: #fff;
@@ -466,7 +466,7 @@ body {
                 -ms-flex-pack: center;
                     justify-content: center; }
             .s-contato .box-contato .container .info-contato .info-contato-left .buttons-contato .button-contato-zap {
-              width: 70%;
+              width: 120% !important;
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -495,7 +495,7 @@ body {
                 -o-transition: all 0.2s;
                 transition: all 0.2s; }
             .s-contato .box-contato .container .info-contato .info-contato-left .buttons-contato .button-contato-agenda {
-              width: 70%;
+              width: 120% !important;
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -2299,3 +2299,7 @@ body {
 
 .slick-dots li.slick-active button:before {
   color: #fff !important; }
+
+@media only screen and (max-width: 456px) {
+  .s-depoimento {
+    margin: 8rem 0 !important; } }
