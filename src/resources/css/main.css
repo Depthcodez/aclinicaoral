@@ -90,7 +90,7 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.jpg");
+  background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.webp");
   padding-bottom: 4rem;
   margin-top: 15rem; }
   .s-contato .box-contato {
@@ -263,7 +263,7 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.jpg");
+    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.webp");
     padding-bottom: 4rem; }
     .s-contato .box-contato {
       background: #fff;
@@ -403,7 +403,7 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.jpg");
+    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.webp");
     padding-bottom: 4rem; }
     .s-contato .box-contato {
       background: #fff;
@@ -940,7 +940,7 @@ body {
     line-height: 2rem; } }
 
 .s-banner .imgBanner {
-  background-image: url("../img/background-index-new-3.png");
+  background-image: url("../img/background-index-new-3.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1007,7 +1007,7 @@ body {
     line-height: 2rem; } }
 
 .s-localizacao {
-  background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.jpg");
+  background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.webp");
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 4rem;
@@ -1121,7 +1121,7 @@ body {
 
 @media only screen and (max-width: 456px) {
   .s-localizacao {
-    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.jpg");
+    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.webp");
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 4rem;
