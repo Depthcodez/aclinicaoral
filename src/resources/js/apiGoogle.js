@@ -16,7 +16,7 @@ service.getDetails({ placeId, fields }, (place, status) => {
     const reviews = place.reviews
 
     const reviewsList = $('#reviews-carousel')
-    console.log(reviews)
+    //console.log(reviews)
 
     if (Array.isArray(reviews)) {
       reviews

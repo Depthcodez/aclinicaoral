@@ -132,3 +132,70 @@ option {
   font-size: 14px;
   margin: 0.3rem 0;
 }
+
+/*Aceitar cookies inicio*/
+/* Aceitar cookies */
+.cookie-popup {
+  position: fixed;
+  width: 80%; /* Aumentar para 80% para dispositivos móveis */
+  max-width: 350px; /* Limitar a largura para telas grandes */
+  bottom: 2%;
+  left: 5%;
+  transform: translateX(-50%);
+  padding: 15px;
+  background-color: #fff;
+  border: none; /* Remover borda */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  transform: translateY(20px); /* Adicionar um pequeno movimento vertical */
+}
+
+.cookie-popup.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cookie-popup p {
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.cookie-popup a {
+  font-size: 1.6rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.cookie-popup button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+  font-size: 1.4rem;
+}
+
+.cookie-popup button:hover {
+  background-color: #0056b3;
+}
+
+.cookie-popup button:last-child {
+  background-color: transparent;
+  border: 1px solid #007BFF;
+  color: #007BFF;
+}
+
+.cookie-popup button:last-child:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/*Aceitar cookies fim*/

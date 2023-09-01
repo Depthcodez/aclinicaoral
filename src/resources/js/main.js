@@ -62,3 +62,64 @@ for (i = 0; i < coll.length; i++) {
     }
   })
 }
+
+// Popoup Aceitar cookies
+document.addEventListener('DOMContentLoaded', function () {
+  checkCookiePermission()
+})
+
+function checkCookiePermission() {
+  // Verifica se o cookie já foi aceito
+  var accepted = getCookie('cookieAccepted')
+
+  if (accepted !== 'true') {
+    // Mostra o popup se o cookie não foi aceito anteriormente
+    document.getElementById('cookiePopup').style.display = 'block'
+  }
+}
+
+function acceptCookies() {
+  // Define o cookie para aceito e esconde o popup
+  setCookie('cookieAccepted', 'true', 30)
+  document.getElementById('cookiePopup').style.display = 'none'
+}
+
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date()
+  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000)
+  var expires = 'expires=' + d.toUTCString()
+  document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/'
+}
+
+function getCookie(cname) {
+  var name = cname + '='
+  var decodedCookie = decodeURIComponent(document.cookie)
+  var ca = decodedCookie.split(';')
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i]
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1)
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length)
+    }
+  }
+  return ''
+}
+
+function rejectCookies() {
+  // Esconde o popup
+  document.getElementById('cookiePopup').style.display = 'none'
+
+  // Limpar todos os cookies do site
+  var cookies = document.cookie.split(';')
+
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i]
+    var eqPos = cookie.indexOf('=')
+    var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie
+    document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/'
+  }
+}
+
+document.querySelector('.cookie-popup').classList.add('show')

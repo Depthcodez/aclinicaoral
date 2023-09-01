@@ -38,6 +38,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="./resources/css/main.css" />
     <link rel="stylesheet" href="./resources/css/header-mobile.css" />
+    <link rel="stylesheet" href="./resources/sass/header.css" />
 
     <!--Font Awesome-->
     <link
@@ -60,18 +61,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-    />
-
-    <!--Carrousel-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
 
     <title>A clinica Oral</title>
@@ -108,7 +97,7 @@
                 <a href="#" class="text-active">Tratamentos</a>
                 <ul class="submenu">
                   <li class="has-submenu--estetica">
-                    <a href="">Estética</a>
+                    <a href="#">Estética</a>
                     <ul class="submenu--estetica">
                       <li>
                         <a href="lente-de-contato-dental.html"
@@ -184,14 +173,14 @@
                 <a href="equipe.html">Equipe</a>
               </li>
               <li>
-                <a href="depoimentos.html" class="link-active">Depoimentos</a>
+                <a href="depoimentos.html">Depoimentos</a>
               </li>
               <li>
                 <a href="endereco.html">Endereço</a>
               </li>
 
               <li>
-                <a href="contato.html">Contato</a>
+                <a href="contato.html" class="link-active">Contato</a>
               </li>
             </ul>
           </div>
@@ -251,70 +240,91 @@
         </nav>
       </header>
 
-      <section class="s-depoimento" style="margin: 20rem 0">
+      <section class="s-politica-de-privacidade">
         <div class="container">
-          <div class="box-depoimento">
-            <h1>Depoimentos</h1>
-            <div id="reviews-carousel" class="slick-carousel"></div>
-          </div>
-          <div id="localizacao"></div>
-        </div>
-      </section>
+          <div class="box-privacidade">
+            <h2>
+              Política de Privacidade e Uso de Cookies - Consultório
+              Odontológico A Clínica Oral
+            </h2>
 
-      <section class="s-contato" style="margin-top: -5rem">
-        <div class="box-contato">
-          <div class="container">
-            <div class="info-contato">
-              <div class="info-contato-left" style="margin: auto 0">
-                <h1 style="font-size: 29px">Localização</h1>
-                <div class="conteudo-contato-left">
-                  <h3>Endereço</h3>
-                  <p>R. Funchal, 551 - 8º Andar - CJ 81</p>
-                  <p>Vila Olímpia, São Paulo - SP</p>
-                  <p>CEP: 04551-060</p>
-                </div>
-                <div class="number-left-localizacao" style="padding: 5rem 0">
-                  <a
-                    href="https://api.whatsapp.com/send?phone=5511988711774&amp;text=Oi, gostaria de agendar uma consulta"
-                    onclick=" ga('send', 'event', 'whatsapp message', 'asc-mobile-desktop', 'botao 1');"
-                  >
-                    <i class="fa-brands fa-whatsapp"></i> Ver Número</a
-                  >
-                </div>
-              </div>
-              <div class="info-contato-right">
-                <div class="conteudo-contato-right">
-                  <div class="contato-mapa">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7312.480678439538!2d-46.68981!3d-23.595712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5738057de8a3%3A0x241bc6529d38625f!2sR.%20Funchal%2C%20551%20-%20Vila%20Ol%C3%ADmpia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004551-060%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1678976008098!5m2!1spt-BR!2sus"
-                      width="600"
-                      height="450"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
+            <p>
+              No Consultório Odontológico A Clínica Oral, valorizamos a
+              privacidade e a transparência de todos os nossos pacientes e
+              visitantes do site. Essa política de privacidade explica como
+              coletamos e usamos informações por meio de "cookies" em nosso
+              website.
+            </p>
+
+            <div class="itens-cookies">
+              <strong>O que são Cookies? </strong>
+              <p>
+                Cookies são pequenos arquivos de texto transferidos para o seu
+                navegador ou dispositivo quando você visita websites. Eles
+                ajudam o site a lembrar informações sobre sua visita e outras
+                configurações, tornando a visita mais eficiente e agradável.
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="mobile-dayClinic">
-        <div class="infos-mobile-dayClinic">
-          <div class="ligar-mobile-dayClinic">
-            <a
-              href="https://api.whatsapp.com/send?phone=5511988711774&text=Oi, gostaria de agendar uma consulta"
-            >
-              <i class="fa-solid fa-phone"></i> Ligar</a
-            >
-          </div>
-          <div class="mapa-mobile-dayClinic">
-            <a href="https://goo.gl/maps/PmnZHzsFP33oQsJL6"
-              ><i class="fa-solid fa-location-dot"></i> Mapa</a
-            >
+            <div class="itens-cookies">
+              <strong style="font-size: 3rem"
+                >Como utilizamos os Cookies?
+              </strong>
+              <br />
+              <br />
+              <strong>1. Cookies obrigatórios: </strong>
+              <p>
+                Estes são essenciais para que você possa navegar pelo site e
+                usar seus recursos. Sem eles, serviços como agendamento de
+                consultas e acesso a áreas seguras do site não podem ser
+                fornecidos.
+              </p>
+            </div>
+
+            <div class="itens-cookies">
+              <strong>2. Cookies Funcionais: </strong>
+              <p>
+                Estes cookies permitem que nosso site se lembre das escolhas que
+                você faz - como seu nome, idioma ou região - para proporcionar
+                uma experiência personalizada. Por exemplo, um cookie funcional
+                é usado para lembrar as informações de um paciente que retorna,
+                tornando mais rápida e fácil a marcação de uma nova consulta.
+              </p>
+            </div>
+
+            <div class="itens-cookies">
+              <strong>3. Cookies de Analytics:</strong>
+              <p>
+                Usamos estes cookies para coletar informações sobre como os
+                visitantes usam nosso site. Eles nos ajudam a entender quais
+                páginas são as mais visitadas e como os visitantes se movimentam
+                pelo site. Todas as informações coletadas por esses cookies são
+                agregadas e, portanto, anônimas. Eles apenas nos ajudam a
+                melhorar a forma como nosso site funciona, garantindo que os
+                pacientes encontrem facilmente o que procuram.
+              </p>
+            </div>
+
+            <div class="itens-cookies">
+              <strong>4. Cookies de Monitoramento: </strong>
+              <p>
+                Esses cookies são usados para coletar informações sobre suas
+                preferências em nosso site, de modo que possamos oferecer
+                conteúdo relevante e direcionado, como promoções ou informações
+                sobre novos tratamentos odontológicos que possam ser do seu
+                interesse.
+              </p>
+            </div>
+
+            <div class="itens-cookies">
+              <strong>Como gerenciar os Cookies? </strong>
+              <p>
+                Você pode escolher se deseja aceitar ou rejeitar cookies
+                ajustando as configurações do seu navegador. No entanto, ao
+                desativar os cookies, algumas funcionalidades do nosso site
+                podem não funcionar corretamente.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -353,21 +363,5 @@
       </footer>
     </main>
     <script src="./resources/js/main.js"></script>
-
-    <!--API Google-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCscZNmyXskxqdy_5tGEWWp1oL61sOGR4M&libraries=places"></script>
-
-    <!--Carrousel-->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    ></script>
-
-    <!--Lógica API Google Depoimentos-->
-    <script src="./resources/js/apiGoogle.js"></script>
   </body>
 </html>
