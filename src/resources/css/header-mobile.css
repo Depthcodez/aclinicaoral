@@ -141,6 +141,7 @@ option {
   max-width: 350px; /* Limitar a largura para telas grandes */
   bottom: 2%;
   left: 5%;
+  z-index: 9;
   transform: translateX(-50%);
   padding: 15px;
   background-color: #fff;

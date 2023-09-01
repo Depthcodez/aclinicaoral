@@ -70,50 +70,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function checkCookiePermission() {
   // Verifica se o cookie já foi aceito
-  var accepted = getCookie('cookieAccepted')
+  var accepted = localStorage.getItem('cookieAccepted')
 
   if (accepted !== 'true') {
     // Mostra o popup se o cookie não foi aceito anteriormente
-    document.getElementById('cookiePopup').style.display = 'block'
+    document.querySelector('.cookie-popup').classList.add('show')
   }
 }
 
 function acceptCookies() {
-  // Define o cookie para aceito e esconde o popup
-  setCookie('cookieAccepted', 'true', 30)
-  document.getElementById('cookiePopup').style.display = 'none'
-}
-
-function setCookie(cname, cvalue, exdays) {
-  var d = new Date()
-  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000)
-  var expires = 'expires=' + d.toUTCString()
-  document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/'
-}
-
-function getCookie(cname) {
-  var name = cname + '='
-  var decodedCookie = decodeURIComponent(document.cookie)
-  var ca = decodedCookie.split(';')
-  for (var i = 0; i < ca.length; i++) {
-    var c = ca[i]
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1)
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length)
-    }
-  }
-  return ''
+  // Define no localStorage que o cookie foi aceito e esconde o popup
+  localStorage.setItem('cookieAccepted', 'true')
+  document.querySelector('.cookie-popup').classList.remove('show')
 }
 
 function rejectCookies() {
   // Esconde o popup
-  document.getElementById('cookiePopup').style.display = 'none'
+  document.querySelector('.cookie-popup').classList.remove('show')
+
+  // Limpa o valor específico do localStorage
+  localStorage.removeItem('cookieAccepted')
 
   // Limpar todos os cookies do site
   var cookies = document.cookie.split(';')
-
   for (var i = 0; i < cookies.length; i++) {
     var cookie = cookies[i]
     var eqPos = cookie.indexOf('=')
@@ -121,5 +100,3 @@ function rejectCookies() {
     document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/'
   }
 }
-
-document.querySelector('.cookie-popup').classList.add('show')
