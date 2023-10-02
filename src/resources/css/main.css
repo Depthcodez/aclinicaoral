@@ -1659,7 +1659,9 @@ body {
     background: none;
     padding: 0; }
     .s-tratamento-base .info-tratamento-base .tratamentoBase-right .img-right-tratamentoBase {
-      margin: 10% 0% 0%; } }
+      margin: 10% 0% 0%; }
+  #gt_float_wrapper {
+    bottom: 40px !important; } }
 
 body {
   font-family: 'Roboto'; }
