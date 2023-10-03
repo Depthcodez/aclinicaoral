@@ -92,7 +92,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.jpg");
+  background-image: url("resources/img/background-agendar-consulta.webp");
   padding-bottom: 4rem;
   margin-top: 15rem;
 }
@@ -225,7 +225,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.jpg");
+    background-image: url("resources/img/background-agendar-consulta.webp");
     padding-bottom: 4rem;
   }
   .s-contato .box-contato {
@@ -317,7 +317,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.jpg");
+    background-image: url("resources/img/background-agendar-consulta.webp");
     padding-bottom: 4rem;
   }
   .s-contato .box-contato {
@@ -807,7 +807,7 @@ body {
   }
 }
 .s-localizacao {
-  background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.webp");
+  background-image: url("resources/img/background-agendar-consulta.webp");
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 4rem;
@@ -886,7 +886,7 @@ body {
 
 @media only screen and (max-width: 456px) {
   .s-localizacao {
-    background-image: url("https://www.aclinicaoral.com.br/wp-content/uploads/background-agendar-consulta.webp");
+    background-image: url("resources/img/background-agendar-consulta.webp");
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 4rem;
