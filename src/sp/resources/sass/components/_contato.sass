@@ -1,0 +1,308 @@
+@import './_pattern'
+@import './_responsive'
+
+.s-contato
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-image: url("resources/img/background-agendar-consulta.webp")
+  padding-bottom: 4rem
+  margin-top: 15rem
+  .box-contato
+    background: #fff
+    margin-top: 2rem
+    width: 95%
+    padding-bottom: 4rem
+    .container
+      .info-contato
+        display: flex
+        width: 100%
+        .info-contato-left
+          width: 50%
+          h1
+            text-align: center
+            font-size: 59px
+            color: $bege-padrao
+          h3
+            color: $color-titulo
+            font-size: 29px
+            margin: 2rem 0
+          p, span
+            color: $color-p
+            line-height: 3rem
+          .conteudo-contato-left
+            span
+              i
+                margin-right: 1rem
+          .buttons-contato
+            .button-contato-zap
+              margin: 2rem 0
+              width: 50%
+              display: flex
+              align-items: center
+              border: 2px solid $bege-padrao
+              justify-content: center
+              border-radius: 30px
+              padding: 1.5rem
+              gap: 1rem
+              color: $bege-padrao
+              white-space: nowrap
+              &:hover
+                transform: translateY(-3px)
+                transition: all 0.2s
+                box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1)
+            .button-contato-agenda
+              margin: 2rem 0
+              width: 50%
+              display: flex
+              align-items: center
+              border: 2px solid $bege-padrao
+              justify-content: center
+              border-radius: 30px
+              padding: 1.5rem
+              color: $bege-padrao
+              white-space: nowrap
+              i
+                margin-left: -1rem
+                margin-right: 1rem
+              &:hover
+                transform: translateY(-3px)
+                transition: all 0.2s
+                box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1)
+        .info-contato-right
+          width: 50%
+          padding: 2rem
+          .conteudo-contato-right
+            max-width: 100%
+            .contato-mapa
+              iframe
+                width: 100%
+
+.s-footer
+  background: #fff
+  .container
+    .box-footer
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-align: center
+      color: $color-footer
+      p
+        font-size: 16px
+      .icons-footer
+        margin-top: 3rem
+        margin-bottom: 2rem
+        a
+          margin: 0 2rem
+          color: $color-footer
+          &:hover
+            color: $bege-padrao
+            transition: all 0.1s
+        i
+          font-size: 4rem
+          width: 48px
+          height: 48px
+      .endereco-footer
+        margin-bottom: 2rem 0
+      .icon-logo-footer
+        padding-bottom: 3rem
+        img
+          &:hover
+            transform: translateY(-3px)
+            transition: all 0.2s
+            box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1)
+
+@media only screen and (max-width: 820px)
+  .s-contato
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-image: url("resources/img/background-agendar-consulta.webp")
+    padding-bottom: 4rem
+    .box-contato
+      background: #fff
+      margin-top: 2rem
+      width: 95%
+      padding-bottom: 4rem
+      .container
+        .info-contato
+          display: flex
+          width: 100%
+          .info-contato-left
+            width: 50%
+            h1
+              text-align: center
+              font-size: 59px
+              color: $bege-padrao
+            h3
+              color: $color-titulo
+              font-size: 29px 
+              margin: 2rem 0
+            p, span
+              color: $color-p
+              font-size: 14px
+            .conteudo-contato-left
+              span
+                i
+                  margin-right: 1rem
+            .buttons-contato
+              .button-contato-zap
+                margin: 2rem 0
+                width: 80%
+                display: flex
+                align-items: center
+                border: 2px solid $bege-padrao
+                justify-content: center
+                border-radius: 30px
+                padding: 1.5rem
+                gap: 1rem
+                color: $bege-padrao
+                white-space: nowrap              
+                &:hover
+                  transform: translateY(-3px)
+                  transition: all 0.2s
+              .button-contato-agenda
+                margin: 2rem 0
+                width: 80%
+                display: flex
+                align-items: center
+                border: 2px solid $bege-padrao
+                justify-content: center
+                border-radius: 30px
+                padding: 1.5rem
+                color: $bege-padrao
+                white-space: nowrap
+
+@media only screen and (max-width: 768px)
+  .info-contato
+    flex-direction: column
+    .info-contato-left
+      width: 100% !important
+      .conteudo-contato-left
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        .buttons-contato
+          width: 40%
+          display: flex
+          flex-direction: column
+          align-items: center
+    .info-contato-right
+      width: 100% !important
+
+@media only screen and (max-width: 456px)
+  .s-contato
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-image: url("resources/img/background-agendar-consulta.webp")
+    padding-bottom: 4rem
+    .box-contato
+      background: #fff
+      margin-top: 2rem
+      width: 95%
+      padding-bottom: 4rem
+      .container
+        .info-contato
+          display: flex
+          flex-direction: column
+          width: 100%
+          justify-content: center
+          align-items: center
+          text-align: center
+          .info-contato-left
+            width: 100%
+            h1
+              text-align: center
+              font-size: 59px
+              color: $bege-padrao
+            h3
+              color: $color-titulo
+              font-size: 29px
+              margin: 1rem 0
+            p, span
+              color: $color-p
+              line-height: 2rem
+              text-align: center
+            .conteudo-contato-left
+              span
+                i
+                  margin-right: 1rem
+            .buttons-contato
+              text-align: center
+              display: flex
+              flex-direction: column
+              align-items: center
+              justify-content: center
+              .button-contato-zap
+                width: 120% !important
+                display: flex
+                align-items: center
+                border: 2px solid $bege-padrao
+                justify-content: center
+                border-radius: 30px
+                padding: 1.5rem
+                gap: 1rem
+                color: $bege-padrao
+                white-space: nowrap
+                margin-bottom: -1rem
+                &:hover
+                  transform: translateY(-3px)
+                  transition: all 0.2s
+              .button-contato-agenda
+                width: 120% !important
+                display: flex
+                align-items: center
+                border: 2px solid $bege-padrao
+                justify-content: center
+                border-radius: 30px
+                padding: 1.5rem
+                color: $bege-padrao
+                white-space: nowrap
+                i
+                  margin-left: -1rem
+                  margin-right: 1rem
+                &:hover
+                  transform: translateY(-3px)
+                  transition: all 0.2s
+          .info-contato-right
+            width: 100%
+            padding: 2rem
+            .conteudo-contato-right
+              max-width: 100%
+              .contato-mapa
+                iframe
+                  width: 100%
+
+  .s-footer
+    background: #fff
+    .container
+      .box-footer
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        color: $color-footer
+        p
+          font-size: 14px
+        .icons-footer
+          margin-top: 3rem
+          margin-bottom: 2rem
+          a
+            margin: 0 1rem
+            color: $color-footer
+            &:hover
+              color: $bege-padrao
+              transition: all 0.1s
+          i
+            font-size: 4rem
+            width: 48px
+            height: 48px
+        .endereco-footer
+          margin-bottom: 2rem 0

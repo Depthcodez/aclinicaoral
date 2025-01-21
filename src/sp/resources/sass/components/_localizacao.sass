@@ -1,0 +1,138 @@
+@import './_pattern'
+@import './_responsive'
+
+.s-localizacao
+  background-image: url("resources/img/background-agendar-consulta.webp")
+  background-repeat: no-repeat
+  background-position: center
+  padding-top: 4rem
+  padding-bottom: 4rem
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  .container
+    .info-localizacao
+      background: #fff
+      display: flex
+      .left-localizacao
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 50%
+        padding-left: 2rem
+        h2
+          color: $bege-padrao
+          font-size: 29px
+          text-align: center
+        .info-left-localizacao
+          p
+            color: $color-p
+            font-size: 16px
+          h3
+            color: $color-titulo
+            margin: 2rem 0
+      .right-localizacao
+        width: 50%
+        .info-left-localizacao
+          padding: 2rem
+          .localizacao-mapa
+            max-width: 100%
+            iframe
+              width: 100%
+
+.number-left-localizacao
+  margin-top: 2rem
+  background: $bege-padrao
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 30%
+  a
+    padding: 2rem 5rem
+    background: $bege-links
+    border-radius: 30px
+    color: #fff 
+    text-transform: uppercase 
+    font-size: 14px
+    display: flex
+    justify-content: center
+    align-items: center
+    i
+      margin-right: 1rem
+      font-size: 2rem
+    &:hover
+      transform: translateY(-3px)
+      transition: all 0.2s
+      color: $bege-padrao
+      cursor: pointer
+
+@media only screen and (max-width: 456px)
+  .s-localizacao
+    background-image: url("resources/img/background-agendar-consulta.webp")
+    background-repeat: no-repeat
+    background-position: center
+    padding-top: 4rem
+    padding-bottom: 4rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .container
+      .info-localizacao
+        background: #fff
+        display: block
+        .left-localizacao
+          display: flex
+          flex-direction: column
+          justify-content: center
+          width: 100% !important
+          padding-left: 0 !important
+          h2
+            color: $bege-padrao
+            font-size: 29px
+            text-align: center
+          .info-left-localizacao
+            p
+              color: $color-p
+              font-size: 14px !important
+              text-align: center !important
+            h3
+              color: $color-titulo
+              text-align: center !important
+              margin: 2rem 0
+        .right-localizacao
+          width: 100% !important
+          .info-left-localizacao
+            padding: 2rem
+            .localizacao-mapa
+              max-width: 100%
+              iframe
+                width: 100%
+
+  .number-left-localizacao
+    margin-top: 2rem
+    background: $bege-padrao
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 30%
+    padding: 3rem 0 !important
+    a
+      padding: 2rem 5rem
+      background: $bege-links
+      border-radius: 30px
+      color: #fff 
+      text-transform: uppercase 
+      font-size: 14px
+      display: flex
+      justify-content: center
+      align-items: center
+      i
+        margin-right: 1rem
+        font-size: 2rem
+      &:hover
+        transform: translateY(-3px)
+        transition: all 0.2s
+        color: $bege-padrao
+        cursor: pointer

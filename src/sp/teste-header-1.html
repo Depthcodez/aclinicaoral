@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-KDDMHBL')
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-N6EWCHH32B"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-N6EWCHH32B')
+    </script>
+    <link rel="stylesheet" href="./resources/css/drop-teste.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KDDMHBL"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Popup de Cookies -->
+    <div class="cookie-popup" id="cookiePopup">
+      <p>
+        Este site usa cookies para garantir que você obtenha a melhor
+        experiência. <a href="/sp/politica-de-privacidade.html">Saiba mais</a>
+      </p>
+      <button onclick="acceptCookies()">Aceitar</button>
+      <button onclick="rejectCookies()">Rejeitar</button>
+    </div>
+    <label for="dropdown1">Dropdown 1</label>
+    <select id="dropdown1">
+      <option value="">Selecione uma opção</option>
+      <option
+        value="https://www.google.com/"
+        data-href="https://www.google.com/"
+      >
+        Opção 1
+      </option>
+      <option
+        value="https://www.facebook.com/"
+        data-href="https://www.facebook.com/"
+      >
+        Opção 2
+      </option>
+      <option
+        value="https://www.youtube.com/"
+        data-href="https://www.youtube.com/"
+      >
+        Opção 3
+      </option>
+    </select>
+
+    <label for="dropdown2">Dropdown 2</label>
+    <select id="dropdown2">
+      <option value="">Selecione uma opção</option>
+      <option
+        value="https://www.twitter.com/"
+        data-href="https://www.twitter.com/"
+      >
+        Opção 4
+      </option>
+      <option
+        value="https://www.instagram.com/"
+        data-href="https://www.instagram.com/"
+      >
+        Opção 5
+      </option>
+      <option
+        value="https://www.linkedin.com/"
+        data-href="https://www.linkedin.com/"
+      >
+        Opção 6
+      </option>
+    </select>
+
+    <label for="dropdown3">Dropdown 3</label>
+    <select id="dropdown3">
+      <option value="">Selecione uma opção</option>
+      <option
+        value="https://www.reddit.com/"
+        data-href="https://www.reddit.com/"
+      >
+        Opção 7
+      </option>
+      <option
+        value="https://www.github.com/"
+        data-href="https://www.github.com/"
+      >
+        Opção 8
+      </option>
+      <option
+        value="https://www.stackoverflow.com/"
+        data-href="https://www.stackoverflow.com/"
+      >
+        Opção 9
+      </option>
+    </select>
+
+    <script>
+      const dropdowns = document.querySelectorAll('select')
+      dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('change', event => {
+          const selectedOption =
+            event.target.options[event.target.selectedIndex]
+          if (selectedOption.getAttribute('data-href')) {
+            window.location.href = selectedOption.getAttribute('data-href')
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

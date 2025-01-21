@@ -1,0 +1,49 @@
+@import './_pattern'
+.depoimento-box
+    background: #fff
+    // max-height: 10rem
+    margin: 0 2rem
+    padding: 1rem 2rem
+    max-width: 90%
+    border-radius: 3px
+    .title-box
+        width: 100%
+        display: flex
+        justify-content: space-between
+        margin-bottom: 1rem
+        .username
+            width: 60%
+            display: flex
+            img
+                width: 30px
+                height: 30px
+            .name-author
+                width: 100%
+                p
+                    width: 100%
+                    margin-left: 1rem
+                    font-size: 1rem
+                    color: $color-p !important
+                    font-weight: 900
+                    line-height: 1.5rem
+                .date-com
+                    font-size: 0.8rem !important
+                    color:#7a7a7aab !important
+        .googleimg
+            width: 15px
+            height: 15px
+    .avaliacao
+        margin-bottom: 1rem
+        .checked
+            color: #f6b900
+            font-size: 1.3rem
+    .text-avaliacao
+        font-size: 1.2rem !important
+        line-height: 2rem !important
+
+.slick-dots li.slick-active button:before
+    color: #fff !important
+
+@media only screen and (max-width: 456px)
+    .s-depoimento
+        margin: 8rem 0 !important

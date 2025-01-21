@@ -1,0 +1,53 @@
+@import './_pattern'
+@import './_responsive'
+
+.s-banner
+  .imgBanner
+    background-image: url('../img/background-index-new-3.webp')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    z-index: -1
+    min-height: 750px
+    display: flex
+    align-items: center
+    .background-overlay
+      min-height: 750px
+      background-color: #30312F
+      opacity: 0.2
+      transition: background 0.3s, border-radius 0.3s, opacity 0.3s
+      position: absolute
+  .container
+    margin: 0 10%
+    .msgBanner
+      // position: absolute
+      // top: 45%
+      // right: 45%
+      .text-first
+        p
+          font-size: 39px
+          color: $branco-padrao
+          font-family: "Roboto", Sans-serif
+          font-weight: 400
+          width: 95%
+          line-height: 4rem
+          margin-bottom: 2rem
+        h1
+          font-size: 2.8rem
+          color: $branco-padrao
+          font-weight: 500
+
+
+      h3
+        color: $branco-padrao
+      img
+        background-color: $branco-padrao
+        margin-bottom: 1rem
+  
+@media only screen and (max-width: 769px)
+  .text-first
+    p
+      font-size: 39px !important
+    h1
+      font-size: 2.8rem !important

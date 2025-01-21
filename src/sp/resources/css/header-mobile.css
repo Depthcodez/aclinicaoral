@@ -1,0 +1,202 @@
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #222B34;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  height: 100vh;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #757575;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 100%;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+
+.item-menu-mobile{
+  margin-top: 1rem;
+}
+
+/* Dropdown-teste*/
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilizando o select */
+select {
+  margin: 1rem 0;
+  width: 100%;
+  padding: 0 2.7rem;
+  border: none;
+  font-size: 16px;
+  color: #757575;
+  background-color: #222B34;
+}
+
+/* Estilizando as opções */
+option {
+  color: #757575;
+  font-size: 13px;
+}
+
+
+/*collapse*/
+.collapsible {
+  background-color: #222B34;
+  color: #818181;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  padding-left: 3rem;
+  position: relative; /* Adicionado para posicionar a seta */
+  height: 35px;
+}
+
+.collapsible::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #818181;
+  margin-top: 1rem;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid #818181;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+.active, .collapsible:hover {
+  background-color: #222B34;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #222B34;
+}
+
+.content a{
+  font-size: 14px;
+  margin: 0.3rem 0;
+}
+
+/*Aceitar cookies inicio*/
+/* Aceitar cookies */
+.cookie-popup {
+  position: fixed;
+  width: 80%; /* Aumentar para 80% para dispositivos móveis */
+  max-width: 350px; /* Limitar a largura para telas grandes */
+  bottom: 2%;
+  left: 5%;
+  z-index: 9;
+  transform: translateX(-50%);
+  padding: 15px;
+  background-color: #fff;
+  border: none; /* Remover borda */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  transform: translateY(20px); /* Adicionar um pequeno movimento vertical */
+}
+
+.cookie-popup.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cookie-popup p {
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.cookie-popup a {
+  font-size: 1.6rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.cookie-popup button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+  font-size: 1.4rem;
+}
+
+.cookie-popup button:hover {
+  background-color: #0056b3;
+}
+
+.cookie-popup button:last-child {
+  background-color: transparent;
+  border: 1px solid #007BFF;
+  color: #007BFF;
+}
+
+.cookie-popup button:last-child:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/*Aceitar cookies fim*/
