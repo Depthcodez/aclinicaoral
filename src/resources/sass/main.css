@@ -494,7 +494,10 @@ body {
   text-align: center;
 }
 .s-equipe .container .equipe-info .equipe-curriculo .img-curriculo img {
-  width: 100%;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   margin-bottom: 2rem;
 }
@@ -534,8 +537,10 @@ body {
     text-align: center;
   }
   .s-equipe .container .equipe-info .equipe-curriculo .img-curriculo img {
-    width: 25rem;
-    height: 25rem;
+    width: 250px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 50%;
     margin-bottom: 2rem;
   }
@@ -1371,7 +1376,6 @@ header {
   position: fixed;
   z-index: 1111;
   top: 0;
-  display: none !important;
 }
 
 /* Estilos para os links do header */
@@ -1404,7 +1408,7 @@ nav .call {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-wrap: wrap;
+  white-space: nowrap;
 }
 .main-menu .menu li {
   display: flex;
