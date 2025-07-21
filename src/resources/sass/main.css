@@ -634,6 +634,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5 !important;
 }
 .mobile-dayClinic .infos-mobile-dayClinic {
   display: flex;
