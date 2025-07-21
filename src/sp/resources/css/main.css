@@ -945,7 +945,7 @@ body {
     line-height: 2rem; } }
 
 .s-banner .imgBanner {
-  background-image: url("../img/background-index-new-3.webp");
+  background-image: url("../img/background_nova_recepcao.webp") !important;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -960,6 +960,16 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .s-banner .imgBanner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 2; }
   .s-banner .imgBanner .background-overlay {
     min-height: 750px;
     background-color: #30312F;
@@ -972,7 +982,8 @@ body {
     position: absolute; }
 
 .s-banner .container {
-  margin: 0 10%; }
+  margin: 0 10%;
+  z-index: 3 !important; }
   .s-banner .container .msgBanner .text-first p {
     font-size: 39px;
     color: #ffffff;
@@ -1439,23 +1450,140 @@ body {
 .rating {
   color: #fff; }
 
-.s-tratamento-base .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left .agendarIndex {
-  padding: 1rem 1.5rem;
-  background: #c8bcac;
-  font-weight: bold;
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
-  color: #fff;
-  margin-top: 1rem; }
-  .s-tratamento-base .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left .agendarIndex:hover {
-    -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-            transform: translateY(-10px);
-    -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-    -webkit-box-shadow: 4px 4px 4px 8px;
-            box-shadow: 4px 4px 4px 8px; }
+.s-tratamento-base {
+  background-color: #f8f8f8;
+  overflow: hidden; }
+  .s-tratamento-base .info-tratamento-base {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    min-height: 80vh; }
+  .s-tratamento-base .tratamento-base-left {
+    width: 40%;
+    padding: 5rem;
+    position: relative;
+    z-index: 2;
+    background-color: #f8f8f8;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .s-tratamento-base .tratamento-base-left .content-tratamentoBase-left h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem; }
+    .s-tratamento-base .tratamento-base-left .content-tratamentoBase-left p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem; }
+    .s-tratamento-base .tratamento-base-left .content-tratamentoBase-left .agendarIndex {
+      display: inline-block;
+      padding: 1rem 1.5rem;
+      background: #c8bcac;
+      font-weight: bold;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      color: #fff !important;
+      text-decoration: none;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
+      .s-tratamento-base .tratamento-base-left .content-tratamentoBase-left .agendarIndex:hover {
+        -webkit-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+                transform: translateY(-5px);
+        -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); }
+  .s-tratamento-base .tratamentoBase-right {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 3;
+    margin-left: -10%; }
+    .s-tratamento-base .tratamentoBase-right .img-right-tratamentoBase {
+      width: 100%;
+      height: 100%; }
+      .s-tratamento-base .tratamentoBase-right .img-right-tratamentoBase img {
+        height: 50rem !important;
+        -o-object-fit: cover !important;
+           object-fit: cover !important; }
+  .s-tratamento-base .glide {
+    width: 100%;
+    height: 100%; }
+    .s-tratamento-base .glide .glide__track, .s-tratamento-base .glide .glide__slides {
+      height: 100%; }
+    .s-tratamento-base .glide .glide__slide {
+      height: 100%; }
+      .s-tratamento-base .glide .glide__slide img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
+  .s-tratamento-base .glide__arrows .glide__arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s; }
+    .s-tratamento-base .glide__arrows .glide__arrow:hover {
+      background-color: rgba(0, 0, 0, 0.5); }
+    .s-tratamento-base .glide__arrows .glide__arrow--left {
+      left: 2rem; }
+    .s-tratamento-base .glide__arrows .glide__arrow--right {
+      right: 2rem; }
+  @media (max-width: 992px) {
+    .s-tratamento-base .info-tratamento-base {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .s-tratamento-base .tratamento-base-left, .s-tratamento-base .tratamentoBase-right {
+      width: 100%;
+      margin-left: 0; }
+    .s-tratamento-base .tratamento-base-left {
+      padding: 3rem 1.5rem;
+      text-align: center; }
+    .s-tratamento-base .tratamentoBase-right {
+      height: 50vh; } }
 
 .s-itens-menu {
   margin-top: -7rem; }

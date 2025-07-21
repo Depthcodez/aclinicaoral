@@ -3,7 +3,7 @@
 
 .s-banner
   .imgBanner
-    background-image: url('../img/background-index-new-3.webp')
+    background-image: url('../img/background_nova_recepcao.webp')
     background-position: center center
     background-repeat: no-repeat
     background-size: cover
@@ -12,6 +12,16 @@
     min-height: 750px
     display: flex
     align-items: center
+    &::before
+      content: '' 
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: #000 
+      opacity: 0.5 
+      z-index: 2 
     .background-overlay
       min-height: 750px
       background-color: #30312F
@@ -20,6 +30,7 @@
       position: absolute
   .container
     margin: 0 10%
+    z-index: 3 !important
     .msgBanner
       // position: absolute
       // top: 45%

@@ -104,6 +104,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+    />
+    <!-- CSS do tema para as setas e navegação -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css"
+    />
+
     <title>A clinica Oral</title>
 
     <link rel="canonical" href="https://www2.aclinicaoral.com.br/" />
@@ -432,7 +442,7 @@
           <div class="tratamentoBase-right">
             <div class="img-right-tratamentoBase">
               <img
-                src="./resources/img/A-Clínica-Oral-Dentista-Vila-Olímpia.webp"
+                src="./resources/img/recepcao_nova.webp"
                 alt=""
                 width="1000"
                 height="667"
@@ -444,8 +454,8 @@
       </section>
 
       <section class="s-tratamento-base">
-        <!-- <div class="container"> -->
         <div class="info-tratamento-base invisalign-left">
+          <!-- A sua coluna da esquerda com o texto (inalterada) -->
           <div class="tratamento-base-left p-10">
             <div class="content-tratamentoBase-left">
               <h2>Equipamentos de Última Geração</h2>
@@ -455,26 +465,81 @@
                 para fotografias digitais, laser, softwares de imagens para
                 sempre oferecer o melhor serviço para nossos pacientes.
               </p>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511988711774&amp;text=Oi, gostaria de agendar uma consulta"
+                onclick=" ga('send', 'event', 'whatsapp message', 'asc-mobile-desktop', 'botao 1');"
+                class="agendarIndex"
+                >Agendar Avaliação</a
+              >
             </div>
           </div>
-          <div class="tratamentoBase-right">
-            <div class="img-right-tratamentoBase">
-              <img
-                src="./resources/img/Equipamentos-de-Última-Geração-Dentista-Vila-Olímpia.webp"
-                alt=""
-                width="1000"
-                height="667"
-                class="ml-2"
-              />
+
+          <!-- A sua coluna da direita, agora com o carrossel dentro -->
+          <div class="tratamentoBase-right" style="margin-left: 10%">
+            <div class="img-right-tratamentoBase" style="margin: 0 0 0 20%">
+              <!-- Estrutura do Carrossel Glide.js -->
+              <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                      <img
+                        src="./resources/img/equipamentos1_novo.webp"
+                        alt="Equipamento 1"
+                        width="1000"
+                        height="667"
+                      />
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="./resources/img/equipamentos2_novo.webp"
+                        alt="Scanner Digital"
+                        width="1000"
+                        height="667"
+                      />
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="./resources/img/equipamentos3_novo.webp"
+                        alt="Câmera Intra-oral"
+                        width="1000"
+                        height="667"
+                      />
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="./resources/img/equipamentos4_novo.webp"
+                        alt="Raio-X Digital"
+                        width="1000"
+                        height="667"
+                      />
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Setas de Navegação -->
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button
+                    class="glide__arrow glide__arrow--left"
+                    data-glide-dir="<"
+                  >
+                    &#8249;
+                  </button>
+                  <button
+                    class="glide__arrow glide__arrow--right"
+                    data-glide-dir=">"
+                  >
+                    &#8250;
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- </div> -->
       </section>
 
       <section class="s-tratamento-base">
-        <!-- <div class="container"> -->
         <div class="info-tratamento-base">
+          <!-- A sua coluna da esquerda com o texto (inalterada) -->
           <div class="tratamento-base-left p-10">
             <div class="content-tratamentoBase-left">
               <h2>Espaço Aconchegante</h2>
@@ -486,20 +551,62 @@
                 sem fio, travesseiros e cobertores para conforto do paciente
                 durante o atendimento.
               </p>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511988711774&amp;text=Oi, gostaria de agendar uma consulta"
+                onclick=" ga('send', 'event', 'whatsapp message', 'asc-mobile-desktop', 'botao 1');"
+                class="agendarIndex"
+                >Agendar Consulta</a
+              >
             </div>
           </div>
+
+          <!-- A sua coluna da direita, agora com o carrossel dentro -->
           <div class="tratamentoBase-right">
             <div class="img-right-tratamentoBase">
-              <img
-                src="./resources/img/Espaco-Aconchegante-Dentista-Vila-Olímpia.webp"
-                alt=""
-                width="1000"
-                height="667"
-              />
+              <!-- Estrutura do Carrossel Glide.js -->
+              <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                      <img
+                        src="./resources/img/espaco_aconchegante_novo.webp"
+                        alt="Espaço Aconchegante 1"
+                      />
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="./resources/img/espaco_aconchegante2.webp"
+                        alt="Sala de Espera"
+                      />
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="./resources/img/espaco_aconchegante3.webp"
+                        alt="Consultório"
+                      />
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Setas de Navegação -->
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button
+                    class="glide__arrow glide__arrow--left"
+                    data-glide-dir="<"
+                  >
+                    &#8249;
+                  </button>
+                  <button
+                    class="glide__arrow glide__arrow--right"
+                    data-glide-dir=">"
+                  >
+                    &#8250;
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- </div> -->
       </section>
 
       <section class="s-equipe">
@@ -672,6 +779,7 @@
       src="https://cdn.gtranslate.net/widgets/latest/float.js"
       defer
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
 
     <script src="./resources/js/main.js"></script>
 

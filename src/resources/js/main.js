@@ -100,3 +100,31 @@ function rejectCookies() {
     document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/'
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const glideElement = document.querySelector('.s-tratamento-base .glide')
+
+  if (glideElement) {
+    new Glide(glideElement, {
+      type: 'carousel',
+      perView: 1,
+      autoplay: 4000,
+      hoverpause: true
+    }).mount()
+  }
+})
+
+window.addEventListener('load', function () {
+  // CORREÇÃO: Seleciona TODOS os elementos .glide na página
+  const allCarousels = document.querySelectorAll('.s-tratamento-base .glide')
+
+  // Itera sobre cada carrossel encontrado e o inicia
+  allCarousels.forEach(function (carousel) {
+    new Glide(carousel, {
+      type: 'carousel',
+      perView: 1,
+      autoplay: 4000,
+      hoverpause: true
+    }).mount()
+  })
+})

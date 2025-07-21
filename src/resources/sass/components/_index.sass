@@ -5,21 +5,113 @@
   color: #fff
 
 .s-tratamento-base
-  // .container
+  background-color: #f8f8f8 // O fundo da secção
+  overflow: hidden // Previne qualquer scroll indesejado
+
   .info-tratamento-base
-    .tratamento-base-left
-      .content-tratamentoBase-left
-        .agendarIndex
-          padding: 1rem 1.5rem
-          background: $bege-padrao
-          font-weight: bold
-          border-radius: 30px
-          color: #fff
-          margin-top: 1rem
-          &:hover
-            transform: translateY(-10px)
-            transition: all 0.2s
-            box-shadow: 4px 4px 4px 8px
+    display: flex
+    align-items: stretch // Faz as colunas terem a mesma altura
+    min-height: 80vh
+
+  // --- Coluna da Esquerda (Texto) ---
+  .tratamento-base-left
+    width: 40% // Largura da coluna de texto
+    padding: 5rem
+    position: relative // Necessário para o z-index
+    z-index: 2 // Garante que o texto fique na frente
+    background-color: #f8f8f8 // Fundo opaco para o texto
+    // Centraliza o conteúdo do texto verticalmente
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    .content-tratamentoBase-left
+      h2
+        font-size: 2.5rem
+        margin-bottom: 1.5rem
+      p
+        font-size: 1.1rem
+        line-height: 1.6
+        margin-bottom: 2rem
+      .agendarIndex
+        display: inline-block
+        padding: 1rem 1.5rem
+        background: $bege-padrao
+        font-weight: bold
+        border-radius: 30px
+        color: #fff !important
+        text-decoration: none
+        transition: all 0.2s
+        &:hover
+          transform: translateY(-5px)
+          box-shadow: 0 8px 15px rgba(0,0,0,0.1)
+
+  // --- Coluna da Direita (Carrossel) ---
+  .tratamentoBase-right
+    width: 100% // LARGURA AJUSTADA: Maior para criar a sobreposição
+    height: auto // A altura será definida pelo pai
+    position: relative
+    z-index: 3 // Fica atrás do bloco de texto
+    margin-left: -10% // AJUSTADO: Puxa a imagem para debaixo da coluna de texto
+
+    .img-right-tratamentoBase
+      width: 100%
+      height: 100%
+      img
+        height: 50rem !important
+        object-fit: cover !important
+
+  // --- Estilos do Carrossel Glide.js ---
+  .glide
+    width: 100%
+    height: 100%
+    .glide__track, .glide__slides
+      height: 100%
+    .glide__slide
+      height: 100%
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+  // Estilos para as Setas
+  .glide__arrows
+    .glide__arrow
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 10
+      width: 50px
+      height: 50px
+      background-color: rgba(0, 0, 0, 0.3)
+      border: none
+      border-radius: 50%
+      color: #fff
+      font-size: 1.5rem
+      cursor: pointer
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: background-color 0.3s
+      &:hover
+        background-color: rgba(0, 0, 0, 0.5)
+      &--left
+        left: 2rem
+      &--right
+        right: 2rem
+
+  // --- Ajustes para Mobile ---
+@media (max-width: 992px)
+  .info-tratamento-base
+    flex-direction: column
+  .tratamento-base-left, .tratamentoBase-right
+    width: 100%
+    margin-left: 0 // Reseta a margem no mobile
+  .tratamento-base-left
+    padding: 3rem 1.5rem
+    text-align: center
+  .tratamentoBase-right
+    height: 50vh
 
 .s-itens-menu
   margin-top: -7rem
@@ -176,8 +268,15 @@
         width: 100%
         background: none
         padding: 0
+        margin-left: 0% !important
+        margin-top: 2rem
         .img-right-tratamentoBase
-          margin: 10% 0% 0%
+          margin: none !important
+          margin-left: 0% !important
+          
+          img
+            height: 95% !important
+            object-fit: contain !important
   #gt_float_wrapper
     bottom: 40px !important
       
