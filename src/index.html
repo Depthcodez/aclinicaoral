@@ -69,6 +69,15 @@
 
     <link rel="stylesheet" href="./resources/css/header-mobile.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css"
+    />
+
     <!--Font Awesome-->
     <link
       rel="stylesheet"
@@ -102,16 +111,6 @@
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
-    />
-    <!-- CSS do tema para as setas e navegação -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css"
     />
 
     <title>A clinica Oral</title>
@@ -349,14 +348,22 @@
       <section class="s-itens-menu">
         <div class="container">
           <div class="itens-index">
-            <p class="box-iten-index">Alinhadores invisíveis</p>
-            <p class="box-iten-index">Clareamento</p>
-            <p class="box-iten-index">Lente de Contato Dental</p>
+            <a href="./ortodontia.html">
+              <p class="box-iten-index">Alinhadores invisíveis</p>
+            </a>
+            <a href="./clareamento-dental.html">
+              <p class="box-iten-index">Clareamento</p>
+            </a>
+
+            <a href="./lente-de-contato-dental.html">
+              <p class="box-iten-index">Lente de Contato Dental</p>
+            </a>
+
             <!-- <p class="box-iten-index">Lente de Contato Dental</p> -->
           </div>
-          <div class="iten-tratamento">
+          <!-- <div class="iten-tratamento">
             <a href="">Todos os Tratamentos</a>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -372,7 +379,9 @@
                 />
               </div>
               <div class="text-tratamento">
-                <span>Alinhadores invisíveis</span>
+                <a href="./ortodontia.html">
+                  <span>Alinhadores invisíveis</span>
+                </a>
               </div>
             </div>
             <div class="item-tratamento">
@@ -383,7 +392,9 @@
                 />
               </div>
               <div class="text-tratamento">
-                <span>Clareamento</span>
+                <a href="./clareamento-dental.html">
+                  <span>Clareamento</span>
+                </a>
               </div>
             </div>
             <div class="item-tratamento">
@@ -394,7 +405,9 @@
                 />
               </div>
               <div class="text-tratamento">
-                <span>Lente de Contato Dental</span>
+                <a href="./lente-de-contato-dental.html"
+                  ><span>Lente de Contato Dental</span></a
+                >
               </div>
             </div>
             <!-- <div class="item-tratamento">
@@ -409,9 +422,9 @@
               </div>
             </div> -->
           </div>
-          <div class="iten-tratamento">
+          <!-- <div class="iten-tratamento">
             <a href="">Todos os Tratamentos</a>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -677,7 +690,7 @@
                     href="https://api.whatsapp.com/send?phone=5511988711774&amp;text=Oi, gostaria de agendar uma consulta"
                     onclick=" ga('send', 'event', 'whatsapp message', 'asc-mobile-desktop', 'botao 1');"
                   >
-                    <i class="fa-brands fa-whatsapp"></i> Ver Número</a
+                    <i class="fa-brands fa-whatsapp"></i>Agendar sua Consulta</a
                   >
                 </div>
               </div>
@@ -721,7 +734,9 @@
         <div class="container">
           <div class="box-footer">
             <div class="icons-footer">
-              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href="mailto:recepcao@aclinicaora.com.br"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
               <a href="https://www.facebook.com/aclinicaoral11"
                 ><i class="fa-brands fa-facebook-f"></i
               ></a>
