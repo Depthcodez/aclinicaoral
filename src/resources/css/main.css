@@ -1687,7 +1687,8 @@ body {
             align-items: center;
     margin: 4rem 0 0; }
     .none .container .itens-tratamento .item-tratamento {
-      width: 25%;
+      width: 90%;
+      text-align: center;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -1779,6 +1780,7 @@ body {
           -ms-flex-direction: column;
               flex-direction: column; }
       .none .container .itens-tratamento .item-tratamento {
+        text-align: center;
         width: 50%;
         margin: 5rem 0;
         min-height: 100%;
