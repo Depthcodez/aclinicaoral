@@ -128,3 +128,41 @@ window.addEventListener('load', function () {
     }).mount()
   })
 })
+
+// Seleciona o popup e o botão "Agendar"
+const popup = document.getElementById('whatsapp-popup')
+const botaoAgendar = document.getElementById('botao-agendar')
+
+// Função para fechar o popup
+function fecharPopup() {
+  popup.style.display = 'none'
+}
+
+// Adiciona um evento de clique em todos os botões/links de WhatsApp do site
+document.addEventListener('DOMContentLoaded', function () {
+  // Seleciona todos os links que apontam para o WhatsApp
+  const linksWhatsapp = document.querySelectorAll('a[href*="api.whatsapp.com"]')
+
+  linksWhatsapp.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      // 1. Previne o comportamento padrão do link (não abre o WhatsApp imediatamente)
+      event.preventDefault()
+
+      // 2. Guarda o link original do WhatsApp
+      const urlWhatsapp = this.href
+
+      // 3. Define o link no botão "Agendar" do popup
+      botaoAgendar.href = urlWhatsapp
+
+      // 4. Mostra o popup
+      popup.style.display = 'flex'
+    })
+  })
+
+  // Fecha o popup se o usuário clicar no fundo escuro
+  popup.addEventListener('click', function (event) {
+    if (event.target === this) {
+      fecharPopup()
+    }
+  })
+})

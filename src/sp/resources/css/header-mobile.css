@@ -200,3 +200,70 @@ option {
 }
 
 /*Aceitar cookies fim*/
+
+
+/* Estilos para o Popup do WhatsApp */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.popup-content p {
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 16px;
+}
+
+.botao-agendar {
+    display: inline-block;
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-agendar:hover {
+    background-color: #128C7E;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    color: #333;
+}
