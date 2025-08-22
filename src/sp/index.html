@@ -143,6 +143,143 @@
       name="twitter:description"
       content="Conforto e sofisticação para você e seu sorriso Dentista Villa Olímpia Ortodontia Clareamento Dental Dentes do Siso Lente de Contato Dental Principais Tratamentos Ortodontia Clareamento Dental Dentes do Siso Lente de Contato Dental TODOS OS TRATAMENTOS A Clínica Oral Somos uma Clínica Odontológica com o objetivo de no mesmo espaço integrar todas as especialidades, proporcionando… Read more"
     />
+
+    <style>
+      .s-quick-panel {
+        padding: 4rem 0;
+        background-color: #f8f8f8; /* Um cinza bem claro para destacar a seção */
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+      }
+
+      .s-quick-panel .panel-items {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 2rem; /* Espaçamento entre os itens */
+      }
+
+      .s-quick-panel .panel-item {
+        text-align: center;
+        flex: 1; /* Faz com que os itens ocupem o espaço de forma flexível */
+        min-width: 150px; /* Largura mínima para cada item */
+        max-width: 200px; /* Largura máxima para cada item */
+      }
+
+      .s-quick-panel .panel-item i {
+        font-size: 2.8rem; /* Tamanho do ícone */
+        color: #c8bcac; /* Cor $bege-padrao do seu site */
+        margin-bottom: 1rem;
+      }
+
+      .s-quick-panel .panel-item p {
+        font-size: 1rem;
+        line-height: 1.4;
+        color: #7a7a7a;
+        font-weight: 500;
+      }
+
+      .s-hero-callout {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        padding: 5rem 1rem;
+        text-align: center;
+        color: #fff;
+      }
+
+      .s-hero-callout .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .s-hero-callout .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      .s-hero-callout .hero-content h2 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #7a7a7a;
+      }
+
+      .s-hero-callout .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #7a7a7a;
+      }
+
+      .s-hero-callout .hero-button {
+        display: inline-block;
+        background-color: #c8bcac;
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .s-hero-callout .hero-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .s-hero-callout .hero-button i {
+        margin-right: 10px;
+      }
+
+      .s-itens-menu {
+        margin-top: 2rem;
+      }
+
+      /* Ajustes para telas menores */
+      @media (max-width: 768px) {
+        .s-itens-menu {
+          margin-top: 0rem;
+        }
+        .s-callout {
+          padding: 1rem;
+        }
+        .s-callout p {
+          font-size: 0.9rem;
+        }
+        .s-callout .callout-link {
+          font-size: 1rem;
+        }
+
+        .s-quick-panel .panel-items {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .s-quick-panel .panel-item {
+          max-width: 300px; /* Aumenta a largura máxima no modo coluna */
+        }
+
+        .s-hero-callout {
+          padding: 3rem 1rem;
+        }
+        .s-hero-callout .hero-content h2 {
+          font-size: 1.8rem;
+        }
+        .s-hero-callout .hero-content p {
+          font-size: 1rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -343,6 +480,7 @@
           <button class="openbtn" onclick="openNav()">☰</button>
         </nav>
       </header>
+
       <div id="whatsapp-popup" class="popup-overlay" style="display: none">
         <div class="popup-content">
           <span class="popup-close" onclick="fecharPopup()">&times;</span>
@@ -384,6 +522,28 @@
         </div>
       </section>
 
+      <section class="s-hero-callout">
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="hero-content">
+            <h2>
+              Clínica particular especializada em estética dental de alto
+              padrão.
+            </h2>
+            <p>
+              Conquiste o sorriso que você sempre sonhou com tecnologia de ponta
+              e especialistas dedicados.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=5511913428770&text=Oi, gostaria de agendar uma consulta particular"
+              class="hero-button"
+            >
+              <i class="fa fa-whatsapp"></i> Agende sua consulta particular
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section class="s-itens-menu">
         <div class="container">
           <div class="itens-index">
@@ -404,7 +564,15 @@
       <section class="s-itens-menu none">
         <div class="container">
           <h2>Principais Tratamentos</h2>
-          <div class="itens-tratamento">
+          <div
+            class="itens-tratamento"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            "
+          >
             <a href="./ortodontia.html">
               <div class="item-tratamento">
                 <div class="plus">
@@ -449,7 +617,34 @@
         </div>
       </section>
 
-      <section class="s-tratamento-base">
+      <section class="s-quick-panel" style="margin-top: 4rem">
+        <div class="container">
+          <div class="panel-items">
+            <div class="panel-item">
+              <i class="fa fa-star"></i>
+              <p>Atendimento<br />100% particular</p>
+            </div>
+            <div class="panel-item">
+              <i class="fa fa-calendar-check-o"></i>
+              <p>Agendamento rápido<br />de consultas</p>
+            </div>
+            <div class="panel-item">
+              <i class="fa fa-graduation-cap"></i>
+              <p>Equipe<br />pós-graduada pela USP</p>
+            </div>
+            <div class="panel-item">
+              <i class="fa fa-cogs"></i>
+              <p>Equipamentos<br />de última geração</p>
+            </div>
+            <div class="panel-item">
+              <i class="fa fa-map-marker"></i>
+              <p>Localização privilegiada<br />na Vila Olímpia</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-tratamento-base" style="margin-top: 0">
         <!-- <div class="container"> -->
         <div class="info-tratamento-base">
           <div class="tratamento-base-left p-10">

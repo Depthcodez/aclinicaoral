@@ -1191,7 +1191,8 @@ body {
 .s-tratamento-base .info-tratamento-base {
   display: flex;
   align-items: stretch;
-  min-height: 80vh;
+  height: auto;
+  justify-content: space-between;
 }
 .s-tratamento-base .tratamento-base-left {
   width: 40%;
@@ -1203,6 +1204,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.s-tratamento-base .tratamento-base-left .content-tratamentoBase-left {
+  width: 90%;
+}
 .s-tratamento-base .tratamento-base-left .content-tratamentoBase-left h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -1211,6 +1215,9 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
+}
+.s-tratamento-base .tratamento-base-left .content-tratamentoBase-left ul {
+  width: 90%;
 }
 .s-tratamento-base .tratamento-base-left .content-tratamentoBase-left .agendarIndex {
   display: inline-block;
@@ -1303,7 +1310,7 @@ body {
   }
 }
 .s-itens-menu {
-  margin-top: -7rem;
+  margin-top: -5rem;
 }
 .s-itens-menu .container .itens-index {
   display: flex;
@@ -1354,7 +1361,8 @@ body {
   margin: 4rem 0 0;
 }
 .none .container .itens-tratamento .item-tratamento {
-  width: 25%;
+  width: 90%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1430,10 +1438,19 @@ body {
   .none .container .itens-tratamento {
     flex-direction: column;
   }
+  .none .container .itens-tratamento a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
   .none .container .itens-tratamento .item-tratamento {
+    text-align: center;
     width: 50%;
     margin: 5rem 0;
     min-height: 100%;
+    width: 80% !important;
   }
   .none .container .itens-tratamento .item-tratamento:first-child {
     margin: 2rem 0;
@@ -1443,6 +1460,7 @@ body {
   }
   .none .container .itens-tratamento .item-tratamento .text-tratamento {
     height: 100%;
+    text-align: center;
   }
   .none .container .iten-tratamento {
     width: 100%;
@@ -1458,6 +1476,9 @@ body {
   }
   .s-equipe .container .equipe-info {
     flex-direction: column;
+  }
+  .s-tratamento-base .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left {
+    width: 100% !important;
   }
   .s-tratamento-base .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left h2 {
     text-align: center;
