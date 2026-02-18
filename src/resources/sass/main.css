@@ -1144,6 +1144,8 @@ body {
   .s-tratamento-base .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left ul {
     text-align: center;
     margin: 0 auto;
+  }
+  .s-tratamento-base .info-tratamento-base .tratamento-base-left .content-tratamentoBase-left ul {
     color: #7a7a7a;
     text-align: center;
     width: 80%;
@@ -1464,12 +1466,14 @@ body {
   }
   .none .container .iten-tratamento {
     width: 100%;
-    --e-column-margin-right: 10%;
-    --e-column-margin-left: 10%;
   }
   .none .container .iten-tratamento a {
     width: 100%;
     margin: 5% 10% 0% 10%;
+  }
+  .none .container .iten-tratamento {
+    --e-column-margin-right: 10%;
+    --e-column-margin-left: 10%;
   }
   .s-equipe {
     border-top: none;
