@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
         if (response.ok) {
+          fbq('track', 'Lead')
           // Mensagem de Sucesso com SweetAlert
           Swal.fire({
             title: 'Sucesso!',
@@ -116,4 +117,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   }
+})
+
+// Rastreio de Cliques no WhatsApp (Pixel Lead)
+document.addEventListener('DOMContentLoaded', () => {
+  // Seleciona todos os links que contém o domínio do WhatsApp
+  const wppLinks = document.querySelectorAll(
+    'a[href*="api.whatsapp.com"], a[href*="wa.me"]'
+  )
+
+  wppLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Verifica se a função do Pixel existe para evitar erros no console
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead')
+      }
+    })
+  })
 })

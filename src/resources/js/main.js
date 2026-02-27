@@ -128,3 +128,20 @@ window.addEventListener('load', function () {
     }).mount()
   })
 })
+
+// Rastreio de Cliques no WhatsApp (Pixel Lead)
+document.addEventListener('DOMContentLoaded', () => {
+  // Seleciona todos os links que contém o domínio do WhatsApp
+  const wppLinks = document.querySelectorAll(
+    'a[href*="api.whatsapp.com"], a[href*="wa.me"]'
+  )
+
+  wppLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Verifica se a função do Pixel existe para evitar erros no console
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead')
+      }
+    })
+  })
+})
