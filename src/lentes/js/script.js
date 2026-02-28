@@ -92,7 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
         if (response.ok) {
-          fbq('track', 'Lead')
+          if (typeof fbq === 'function') {
+            fbq('track', 'Lead')
+          }
           // Mensagem de Sucesso com SweetAlert
           Swal.fire({
             title: 'Sucesso!',
