@@ -137,11 +137,26 @@ document.addEventListener('DOMContentLoaded', () => {
   )
 
   wppLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      // Verifica se a função do Pixel existe para evitar erros no console
+    link.addEventListener('click', (e) => {
+      // Evitar o redirecionamento imediato
+      e.preventDefault()
+      
+      const href = link.getAttribute('href')
+      const target = link.getAttribute('target')
+
+      // Verifica se a função do Pixel existe para disparar o evento
       if (typeof fbq === 'function') {
         fbq('track', 'Lead')
       }
+
+      // Aguarda 300ms para o Pixel registrar e depois redireciona
+      setTimeout(() => {
+        if (target === '_blank') {
+          window.open(href, '_blank')
+        } else {
+          window.location.href = href
+        }
+      }, 300)
     })
   })
 })
