@@ -25,8 +25,8 @@
         --pantone-gray-4: #a7a9ac; /* Cinza Claro: r:167 g:169 b:172 */
         --pantone-gray-10: #636467; /* Cinza Escuro: r:99 g:100 b:103 */
 
-        --bg-color: var(--pantone-7534);
-        --primary-color: var(--pantone-7535);
+        --bg-color: var(--pantone-7535); 
+        --button-bg: var(--pantone-7534);
         --text-color: var(--pantone-gray-10);
         --card-bg: #fff;
       }
@@ -46,7 +46,7 @@
         flex-direction: column;
         align-items: center;
         padding: 40px 20px;
-        background-image: radial-gradient(circle at top, #eceae6 0%, var(--bg-color) 60%);
+        background-image: radial-gradient(circle at top, var(--pantone-7534) 0%, var(--bg-color) 70%);
       }
 
       .profile-container {
@@ -107,7 +107,7 @@
         justify-content: center;
         position: relative;
         background-color: transparent;
-        border: 2px solid var(--primary-color);
+        border: 2px solid var(--button-bg);
         color: var(--text-color);
         text-decoration: none;
         padding: 18px 20px;
@@ -119,10 +119,10 @@
       }
 
       .link-item:hover {
-        background-color: var(--primary-color);
-        color: var(--text-color); /* Mantém o texto escuro ao focar */
+        background-color: var(--button-bg);
+        color: var(--text-color);
         transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(197, 191, 180, 0.4);
+        box-shadow: 0 10px 20px rgba(153, 149, 142, 0.2);
       }
 
       .link-item i {
@@ -133,29 +133,29 @@
 
       /* Destaque para o Whatsapp (Pulse effect) */
       .link-highlight {
-        background-color: var(--text-color); /* Fundo escuro */
-        border-color: var(--text-color);
-        color: var(--bg-color); /* Texto claro */
-        box-shadow: 0 4px 15px rgba(99, 100, 103, 0.3);
+        background-color: var(--button-bg); 
+        border-color: var(--button-bg);
+        color: var(--text-color);
+        box-shadow: 0 4px 15px rgba(217, 213, 207, 0.4);
         animation: pulse 2s infinite;
       }
 
       @keyframes pulse {
         0% {
-          box-shadow: 0 0 0 0 rgba(99, 100, 103, 0.4);
+          box-shadow: 0 0 0 0 rgba(217, 213, 207, 0.6);
         }
         70% {
-          box-shadow: 0 0 0 10px rgba(99, 100, 103, 0);
+          box-shadow: 0 0 0 10px rgba(217, 213, 207, 0);
         }
         100% {
-          box-shadow: 0 0 0 0 rgba(99, 100, 103, 0);
+          box-shadow: 0 0 0 0 rgba(217, 213, 207, 0);
         }
       }
 
       .link-highlight:hover {
-        background-color: #4f5053; /* Um pouco mais escuro q o Gray 10 */
-        border-color: #4f5053;
-        color: var(--bg-color);
+        background-color: #cac5be;
+        border-color: #cac5be;
+        color: var(--text-color);
       }
 
       /* Vídeo (incorporado no linktree) */
@@ -219,7 +219,7 @@
     <!-- Perfil -->
     <div class="profile-container">
       <div class="logo-wrapper">
-        <img src="../resources/img/Logo-Dentista-Vila-Olímpia.webp" alt="A Clínica Oral" />
+        <img src="../resources/img/logo_links_aclinica1.jpeg" alt="A Clínica Oral" />
       </div>
       <h1 class="profile-name">A Clínica Oral</h1>
       <p class="profile-bio">Odontologia de Excelência na Vila Olímpia</p>
