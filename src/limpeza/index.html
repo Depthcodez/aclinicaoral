@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -570,34 +570,15 @@
               })
 
               if (response.ok) {
-                console.group(
-                  '📢 [META PIXEL] Evento LEAD - Formulário Limpeza'
-                )
-                console.log('✅ Status: Sucesso no envio do webhook')
-                if (typeof fbq === 'function') {
-                  try {
-                    fbq('trackCustom', 'Lead_Formulario_Airflow')
-                    console.log(
-                      '🎯 Evento fbq("trackCustom", "Lead_Formulario_Airflow") disparado com sucesso pelo formulário.'
-                    )
-                  } catch (err) {
-                    console.error(
-                      '❌ Erro ao disparar fbq("trackCustom", "Lead_Formulario_Airflow"):',
-                      err
-                    )
-                  }
-                } else {
-                  console.warn(
-                    '⚠️ Atenção: A função fbq() não foi encontrada ou o bloqueador de anúncios está ativo.'
-                  )
-                }
-                console.groupEnd()
+
                 // Mensagem de Sucesso com SweetAlert
                 Swal.fire({
                   title: 'Sucesso!',
                   text: 'Recebemos seus dados e entraremos em contato em breve.',
                   icon: 'success',
                   confirmButtonColor: '#b8926a' // Cor dourada/bege da sua marca
+                }).then(() => {
+                  window.location.href = '../obrigado/index.html'
                 })
                 leadForm.reset()
               } else {
@@ -633,36 +614,15 @@
             const href = link.getAttribute('href')
             const target = link.getAttribute('target')
 
-            console.group(
-              '📢 [META PIXEL] Evento LEAD - Clique WhatsApp Limpeza'
-            )
-            console.log(`🔗 Link de destino: ${href}`)
-            // Verifica se a função do Pixel existe para disparar o evento
-            if (typeof fbq === 'function') {
-              try {
-                fbq('trackCustom', 'Lead_WhatsApp_Airflow')
-                console.log(
-                  '🎯 Evento fbq("trackCustom", "Lead_WhatsApp_Airflow") disparado com sucesso pelo botão WhatsApp.'
-                )
-              } catch (err) {
-                console.error(
-                  '❌ Erro ao disparar fbq("trackCustom", "Lead_WhatsApp_Airflow"):',
-                  err
-                )
-              }
-            } else {
-              console.warn(
-                '⚠️ Atenção: A função fbq() não foi encontrada ou o bloqueador de anúncios está ativo.'
-              )
-            }
-            console.groupEnd()
+
 
             // Aguarda 300ms para o Pixel registrar e depois redireciona
             setTimeout(() => {
+              const redirectUrl = '../whatsapp/index.html?url=' + encodeURIComponent(href)
               if (target === '_blank') {
-                window.open(href, '_blank')
+                window.open(redirectUrl, '_blank')
               } else {
-                window.location.href = href
+                window.location.href = redirectUrl
               }
             }, 300)
           })

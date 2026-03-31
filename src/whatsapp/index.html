@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -17,14 +17,6 @@
         f.parentNode.insertBefore(j, f)
       })(window, document, 'script', 'dataLayer', 'GTM-P3MFJ23N')
     </script>
-    <!-- End Google Tag Manager -->
-    <title>Iniciando conversa...</title>
-
-    <meta
-      http-equiv="refresh"
-      content="0;url=https://api.whatsapp.com/send?phone=5511913428770&text=Oi, vi o anúncio e gostaria de agendar uma consulta"
-    />
-
     <script>
       ;(function (w, d, s, l, i) {
         w[l] = w[l] || []
@@ -37,6 +29,10 @@
         f.parentNode.insertBefore(j, f)
       })(window, document, 'script', 'dataLayer', 'GTM-KDDMHBL') // Use o seu ID do GTM
     </script>
+    <!-- End Google Tag Manager -->
+    
+    <title>Iniciando conversa...</title>
+
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -87,17 +83,16 @@
     <!-- End Google Tag Manager (noscript) -->
     <p style="text-align: center; font-family: sans-serif; padding-top: 50px">
       Estamos te redirecionando para o WhatsApp...
-      <br /><br />
-      Se nada acontecer,
-      <a
-        href="https://api.whatsapp.com/send?phone=5511913428770&text=Oi, vi o anúncio e gostaria de agendar uma consulta"
-        >clique aqui para iniciar a conversa</a
-      >.
     </p>
 
     <script type="text/javascript">
-      window.location.href =
-        'https://api.whatsapp.com/send?phone=5511913428770&text=Oi, vi o anúncio e gostaria de agendar uma consulta'
+      // Pega a URL dinâmica vinda das LPs ou usa o padrão da página genérica
+      const params = new URLSearchParams(window.location.search);
+      const redirectUrl = params.get('url') || 'https://api.whatsapp.com/send?phone=5511913428770&text=Oi, vi o anúncio e gostaria de agendar uma consulta';
+      
+      setTimeout(() => {
+        window.location.href = redirectUrl;
+      }, 1500); // Aguarda cerca de 1.5 segundo para disparar os eventos
     </script>
   </body>
 </html>

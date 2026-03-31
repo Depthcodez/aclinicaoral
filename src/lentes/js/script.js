@@ -92,15 +92,15 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
         if (response.ok) {
-          if (typeof fbq === 'function') {
-            fbq('track', 'Lead')
-          }
+
           // Mensagem de Sucesso com SweetAlert
           Swal.fire({
             title: 'Sucesso!',
             text: 'Recebemos seus dados e entraremos em contato em breve.',
             icon: 'success',
             confirmButtonColor: '#b8926a' // Cor dourada/bege da sua marca
+          }).then(() => {
+            window.location.href = '../obrigado/index.html'
           })
           leadForm.reset()
         } else {
@@ -136,17 +136,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const href = link.getAttribute('href')
       const target = link.getAttribute('target')
 
-      // Verifica se a função do Pixel existe para disparar o evento
-      if (typeof fbq === 'function') {
-        fbq('track', 'Lead')
-      }
+
 
       // Aguarda 300ms para o Pixel registrar e depois redireciona
       setTimeout(() => {
+        const redirectUrl = '../whatsapp/index.html?url=' + encodeURIComponent(href)
         if (target === '_blank') {
-          window.open(href, '_blank')
+          window.open(redirectUrl, '_blank')
         } else {
-          window.location.href = href
+          window.location.href = redirectUrl
         }
       }, 300)
     })

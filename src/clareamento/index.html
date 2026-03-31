@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -281,27 +281,7 @@
             <iframe
               width="315"
               height="560"
-              src="https://www.youtube.com/embed/fhFRmYO3f-w"
-              title="Depoimento"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-              "
-              allowfullscreen
-            ></iframe>
-          </div>
-          <!-- Video 2 -->
-          <div class="video-wrapper">
-            <iframe
-              width="315"
-              height="560"
-              src="https://www.youtube.com/embed/WJCnz4VlsNI"
+              src="https://www.youtube.com/embed/mx7epj0izpg"
               title="Depoimento"
               frameborder="0"
               allow="
@@ -381,7 +361,7 @@
                 class="gallery-thumb active"
               />
               <img
-                src="../resources/img/foto_lp_emergencia_1.png"
+                src="../resources/img/foto_lp_clareamento_1.png"
                 alt="Foto 1 - Clareamento"
                 class="gallery-thumb"
               />
@@ -391,7 +371,7 @@
                 class="gallery-thumb"
               />
               <img
-                src="../resources/img/foto_lp_emergencia_2.jpg"
+                src="../resources/img/foto_lp_clareamento_2.jpg"
                 alt="Foto 3 - Clareamento"
                 class="gallery-thumb"
               />
@@ -576,34 +556,15 @@
               })
 
               if (response.ok) {
-                console.group(
-                  '📢 [META PIXEL] Evento LEAD - Formulário Clareamento'
-                )
-                console.log('✅ Status: Sucesso no envio do webhook')
-                if (typeof fbq === 'function') {
-                  try {
-                    fbq('trackCustom', 'Lead_Formulario_Clareamento')
-                    console.log(
-                      '🎯 Evento fbq("trackCustom", "Lead_Formulario_Clareamento") disparado com sucesso pelo formulário.'
-                    )
-                  } catch (err) {
-                    console.error(
-                      '❌ Erro ao disparar fbq("trackCustom", "Lead_Formulario_Clareamento"):',
-                      err
-                    )
-                  }
-                } else {
-                  console.warn(
-                    '⚠️ Atenção: A função fbq() não foi encontrada ou o bloqueador de anúncios está ativo.'
-                  )
-                }
-                console.groupEnd()
+
                 // Mensagem de Sucesso com SweetAlert
                 Swal.fire({
                   title: 'Sucesso!',
                   text: 'Recebemos seus dados e entraremos em contato em breve.',
                   icon: 'success',
                   confirmButtonColor: '#b8926a' // Cor dourada/bege da sua marca
+                }).then(() => {
+                  window.location.href = '../obrigado/index.html'
                 })
                 leadForm.reset()
               } else {
@@ -639,36 +600,15 @@
             const href = link.getAttribute('href')
             const target = link.getAttribute('target')
 
-            console.group(
-              '📢 [META PIXEL] Evento LEAD - Clique WhatsApp Clareamento'
-            )
-            console.log(`🔗 Link de destino: ${href}`)
-            // Verifica se a função do Pixel existe para disparar o evento
-            if (typeof fbq === 'function') {
-              try {
-                fbq('trackCustom', 'Lead_WhatsApp_Clareamento')
-                console.log(
-                  '🎯 Evento fbq("trackCustom", "Lead_WhatsApp_Clareamento") disparado com sucesso pelo botão WhatsApp.'
-                )
-              } catch (err) {
-                console.error(
-                  '❌ Erro ao disparar fbq("trackCustom", "Lead_WhatsApp_Clareamento"):',
-                  err
-                )
-              }
-            } else {
-              console.warn(
-                '⚠️ Atenção: A função fbq() não foi encontrada ou o bloqueador de anúncios está ativo.'
-              )
-            }
-            console.groupEnd()
+
 
             // Aguarda 300ms para o Pixel registrar e depois redireciona
             setTimeout(() => {
+              const redirectUrl = '../whatsapp/index.html?url=' + encodeURIComponent(href)
               if (target === '_blank') {
-                window.open(href, '_blank')
+                window.open(redirectUrl, '_blank')
               } else {
-                window.location.href = href
+                window.location.href = redirectUrl
               }
             }, 300)
           })
