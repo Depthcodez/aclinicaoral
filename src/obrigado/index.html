@@ -1,47 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Obrigado! - A Clínica Oral</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  
-  <!-- Meta Pixel Code -->
-  <script>
-    !(function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js'));
-    fbq('init', '505832050701220');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=505832050701220&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="../resources/img/favicon-32x32.png" />
-  
-  <style>
-    body { font-family: 'Poppins', sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background-color: #f7f7f7; text-align: center; margin: 0; }
-    h1 { color: #b8926a; }
-    p { color: #333; max-width: 600px; padding: 0 20px; }
-    .btn { display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #b8926a; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; }
-  </style>
-</head>
-<body>
-  <div>
-    <h1>Obrigado!</h1>
-    <p>Recebemos seus dados com sucesso. Nossa equipe entrará em contato em breve para agendar seu atendimento.</p>
-    <a href="javascript:history.back()" class="btn">Voltar à página anterior</a>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Obrigado! - A Clínica Oral</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments)
+        }
+        if (!f._fbq) f._fbq = n
+        n.push = n
+        n.loaded = !0
+        n.version = '2.0'
+        n.queue = []
+        t = b.createElement(e)
+        t.async = !0
+        t.src = v
+        s = b.getElementsByTagName(e)[0]
+        s.parentNode.insertBefore(t, s)
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      )
+      fbq('init', '505832050701220')
+      fbq('track', 'PageView')
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=505832050701220&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-936003210"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'AW-936003210')
+    </script>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../resources/img/favicon-32x32.png"
+    />
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f7f7f7;
+        text-align: center;
+        margin: 0;
+      }
+      h1 {
+        color: #b8926a;
+      }
+      p {
+        color: #333;
+        max-width: 600px;
+        padding: 0 20px;
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #b8926a;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Obrigado!</h1>
+      <p>
+        Recebemos seus dados com sucesso. Nossa equipe entrará em contato em
+        breve para agendar seu atendimento.
+      </p>
+      <a href="javascript:history.back()" class="btn"
+        >Voltar à página anterior</a
+      >
+    </div>
+  </body>
 </html>
