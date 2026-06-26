@@ -79,6 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
       data.data_hora = new Date().toLocaleString('pt-BR') // Dia e Horário formatado
       data.url_origem = window.location.href // URL da página
       data.source = 'Landing Page Alinhadores'
+      if (window.lpTracking) {
+        await window.lpTracking.enrichLeadData(data)
+      }
 
       // SUBSTITUA PELA SUA URL DO MAKE
       const WEBHOOK_URL =
@@ -138,15 +141,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-      // Aguarda 300ms para o Pixel registrar e depois redireciona
+      // Redireciona para a página intermediária, que registra o clique uma única vez.
       setTimeout(() => {
-        const redirectUrl = '../whatsapp/index.html?url=' + encodeURIComponent(href)
+        const redirectParams = new URLSearchParams({
+          url: href,
+          procedimento: 'Alinhadores Estéticos',
+          source: 'Landing Page Alinhadores',
+          link_text: link.innerText.trim(),
+          link_classes: link.className
+        })
+        const redirectUrl = '../whatsapp/index.html?' + redirectParams.toString()
         if (target === '_blank') {
           window.open(redirectUrl, '_blank')
         } else {
           window.location.href = redirectUrl
         }
-      }, 300)
+      }, 800)
     })
   })
 })

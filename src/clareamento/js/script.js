@@ -75,10 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = Object.fromEntries(formData.entries())
 
       // Adicionando informações extras solicitadas
-      data.procedimento = 'Limpeza Dental' // Nome do serviço
+      data.procedimento = 'Clareamento Dental' // Nome do serviço
       data.data_hora = new Date().toLocaleString('pt-BR') // Dia e Horário formatado
       data.url_origem = window.location.href // URL da página
-      data.source = 'Landing Page Limpeza Dental'
+      data.source = 'Landing Page Clareamento'
+      if (window.lpTracking) {
+        await window.lpTracking.enrichLeadData(data)
+      }
 
       // SUBSTITUA PELA SUA URL DO MAKE
       const WEBHOOK_URL =
@@ -161,14 +164,22 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       console.groupEnd();
 
-      // Aguarda 300ms para o Pixel registrar e depois redireciona
+      // Redireciona para a página intermediária, que registra o clique uma única vez.
       setTimeout(() => {
+        const redirectParams = new URLSearchParams({
+          url: href,
+          procedimento: 'Clareamento Dental',
+          source: 'Landing Page Clareamento',
+          link_text: link.innerText.trim(),
+          link_classes: link.className
+        })
+        const redirectUrl = '../whatsapp/index.html?' + redirectParams.toString()
         if (target === '_blank') {
-          window.open(href, '_blank')
+          window.open(redirectUrl, '_blank')
         } else {
-          window.location.href = href
+          window.location.href = redirectUrl
         }
-      }, 300)
+      }, 800)
     })
   })
 })

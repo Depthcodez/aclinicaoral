@@ -417,56 +417,6 @@ header .container {
   color: var(--text-dark);
 }
 
-.case-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 360px));
-  gap: 24px;
-  justify-content: center;
-  align-items: stretch;
-}
-
-.video-link-card,
-.case-card {
-  background: var(--white);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.video-link-card {
-  min-height: 320px;
-  padding: 36px 28px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-dark);
-  border: 1px solid var(--primary-light);
-}
-
-.video-link-card i {
-  font-size: 4rem;
-  color: var(--primary-color);
-  margin-bottom: 22px;
-}
-
-.video-link-card h3 {
-  color: var(--text-dark);
-  margin-bottom: 10px;
-}
-
-.video-link-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-hover);
-}
-
-.case-card img {
-  width: 100%;
-  height: 100%;
-  min-height: 320px;
-  object-fit: cover;
-}
-
 .sobre-highlight {
   margin-top: 20px;
   font-size: 1.15rem;
@@ -780,14 +730,6 @@ footer {
     order: -1;
   }
 
-  .case-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .case-card img {
-    height: auto;
-    min-height: 0;
-  }
 }
 
 @media (max-width: 768px) {

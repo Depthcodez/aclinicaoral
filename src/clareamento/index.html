@@ -460,6 +460,7 @@
     </a>
 
     <!-- <script src="./js/script.js"></script> -->
+    <script src="../resources/js/lp-tracking.js"></script>
 
     <script>
       document.addEventListener('DOMContentLoaded', () => {
@@ -543,6 +544,9 @@
             data.data_hora = new Date().toLocaleString('pt-BR') // Dia e Horário formatado
             data.url_origem = window.location.href // URL da página
             data.source = 'Landing Page Clareamento'
+            if (window.lpTracking) {
+              await window.lpTracking.enrichLeadData(data)
+            }
 
             // SUBSTITUA PELA SUA URL DO MAKE
             const WEBHOOK_URL =
@@ -599,16 +603,23 @@
             const href = link.getAttribute('href')
             const target = link.getAttribute('target')
 
-            // Aguarda 300ms para o Pixel registrar e depois redireciona
+            // Redireciona para a página intermediária, que registra o clique uma única vez.
             setTimeout(() => {
+              const redirectParams = new URLSearchParams({
+                url: href,
+                procedimento: 'Clareamento Dental',
+                source: 'Landing Page Clareamento',
+                link_text: link.innerText.trim(),
+                link_classes: link.className
+              })
               const redirectUrl =
-                '../whatsapp/index.html?url=' + encodeURIComponent(href)
+                '../whatsapp/index.html?' + redirectParams.toString()
               if (target === '_blank') {
                 window.open(redirectUrl, '_blank')
               } else {
                 window.location.href = redirectUrl
               }
-            }, 300)
+            }, 800)
           })
         })
       })
