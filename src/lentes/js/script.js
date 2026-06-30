@@ -124,24 +124,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 })
 
-// Rastreio de Cliques no WhatsApp (Pixel Lead)
+// Rastreio de Cliques no WhatsApp e ligação
 document.addEventListener('DOMContentLoaded', () => {
-  // Seleciona todos os links que contém o domínio do WhatsApp
   const wppLinks = document.querySelectorAll(
     'a[href*="api.whatsapp.com"], a[href*="wa.me"]'
   )
 
   wppLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      // Evitar o redirecionamento imediato
+    link.addEventListener('click', e => {
       e.preventDefault()
-      
+
       const href = link.getAttribute('href')
       const target = link.getAttribute('target')
 
-
-
-      // Redireciona para a página intermediária, que registra o clique uma única vez.
       setTimeout(() => {
         const redirectParams = new URLSearchParams({
           url: href,
@@ -151,12 +146,61 @@ document.addEventListener('DOMContentLoaded', () => {
           link_classes: link.className
         })
         const redirectUrl = '../whatsapp/index.html?' + redirectParams.toString()
+
         if (target === '_blank') {
           window.open(redirectUrl, '_blank')
         } else {
           window.location.href = redirectUrl
         }
       }, 800)
+    })
+  })
+
+  const callLinks = document.querySelectorAll('[data-call-button]')
+
+  callLinks.forEach(link => {
+    link.addEventListener('click', async e => {
+      e.preventDefault()
+
+      const href = link.getAttribute('href')
+      const payload = {
+        evento: 'call_click',
+        procedimento: link.dataset.procedimento || 'Lentes de Porcelana',
+        source: link.dataset.source || 'Landing Page Lentes',
+        telefone: '+5511988711774',
+        link_text: link.innerText.trim() || link.getAttribute('aria-label') || 'Ligar',
+        link_classes: link.className,
+        link_label: link.dataset.callLabel || ''
+      }
+
+      if (typeof fbq === 'function') {
+        try {
+          fbq('trackCustom', 'Lead_Ligacao_Lentes')
+        } catch (err) {
+          console.error('Erro ao disparar evento de ligação no Meta Pixel:', err)
+        }
+      }
+
+      if (window.dataLayer) {
+        window.dataLayer.push({
+          event: 'Lead_Ligacao_Lentes',
+          ...payload
+        })
+      }
+
+      if (window.lpTracking) {
+        const track =
+          window.lpTracking.trackWhatsappClickWithIp ||
+          window.lpTracking.trackWhatsappClick
+
+        await track(payload)
+      }
+
+
+      await new Promise(resolve => setTimeout(resolve, 500))
+
+
+      window.location.href = href
     })
   })
 })

@@ -130,6 +130,7 @@
         >
           <i class="fa-brands fa-whatsapp"></i> Agendar Agora
         </a>
+        <a href="tel:+5511988711774" class="btn-cta-header btn-call-header" data-call-button data-procedimento="Limpeza Dental" data-source="Landing Page Limpeza Dental" data-call-label="Header"><i class="fa-solid fa-phone"></i> Ligar</a>
       </div>
     </header>
 
@@ -204,6 +205,7 @@
             >
               <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
             </a>
+            <a href="tel:+5511988711774" class="btn-call-hero" data-call-button data-procedimento="Limpeza Dental" data-source="Landing Page Limpeza Dental" data-call-label="Hero"><i class="fa-solid fa-phone"></i> Ligar agora</a>
           </div>
         </div>
       </div>
@@ -272,6 +274,7 @@
             class="btn-secondary"
             >Quero meu check-up digital</a
           >
+          <a href="tel:+5511988711774" class="btn-secondary btn-call-secondary" data-call-button data-procedimento="Limpeza Dental" data-source="Landing Page Limpeza Dental" data-call-label="CTA"><i class="fa-solid fa-phone"></i> Ligar agora</a>
         </div>
       </div>
     </section>
@@ -331,6 +334,7 @@
             class="btn-secondary"
             >Agendar Agora</a
           >
+          <a href="tel:+5511988711774" class="btn-secondary btn-call-secondary" data-call-button data-procedimento="Limpeza Dental" data-source="Landing Page Limpeza Dental" data-call-label="CTA"><i class="fa-solid fa-phone"></i> Ligar agora</a>
         </div>
       </div>
     </section>
@@ -412,6 +416,7 @@
             class="btn-secondary"
             >Conheça a clínica</a
           >
+          <a href="tel:+5511988711774" class="btn-secondary btn-call-secondary" data-call-button data-procedimento="Limpeza Dental" data-source="Landing Page Limpeza Dental" data-call-label="CTA"><i class="fa-solid fa-phone"></i> Ligar agora</a>
         </div>
       </div>
     </section>
@@ -486,6 +491,7 @@
     >
       <i class="fa-brands fa-whatsapp"></i>
     </a>
+    <a href="tel:+5511988711774" class="float-call" aria-label="Ligar para A Clínica Oral" data-call-button data-procedimento="Limpeza Dental" data-source="Landing Page Limpeza Dental" data-call-label="Flutuante"><i class="fa-solid fa-phone"></i></a>
 
     <!-- <script src="./js/script.js"></script> -->
     <script src="../resources/js/lp-tracking.js"></script>
@@ -615,23 +621,19 @@
           })
         }
       })
-
-      // Rastreio de Cliques no WhatsApp (Pixel Lead)
+      // Rastreio de Cliques no WhatsApp e ligação
       document.addEventListener('DOMContentLoaded', () => {
-        // Seleciona todos os links que contém o domínio do WhatsApp
         const wppLinks = document.querySelectorAll(
           'a[href*="api.whatsapp.com"], a[href*="wa.me"]'
         )
 
         wppLinks.forEach(link => {
           link.addEventListener('click', e => {
-            // Evitar o redirecionamento imediato
             e.preventDefault()
 
             const href = link.getAttribute('href')
             const target = link.getAttribute('target')
 
-            // Redireciona para a página intermediária, que registra o clique uma única vez.
             setTimeout(() => {
               const redirectParams = new URLSearchParams({
                 url: href,
@@ -640,14 +642,62 @@
                 link_text: link.innerText.trim(),
                 link_classes: link.className
               })
-              const redirectUrl =
-                '../whatsapp/index.html?' + redirectParams.toString()
+              const redirectUrl = '../whatsapp/index.html?' + redirectParams.toString()
+
               if (target === '_blank') {
                 window.open(redirectUrl, '_blank')
               } else {
                 window.location.href = redirectUrl
               }
             }, 800)
+          })
+        })
+
+        const callLinks = document.querySelectorAll('[data-call-button]')
+
+        callLinks.forEach(link => {
+          link.addEventListener('click', async e => {
+            e.preventDefault()
+
+            const href = link.getAttribute('href')
+            const payload = {
+              evento: 'call_click',
+              procedimento: link.dataset.procedimento || 'Limpeza Dental',
+              source: link.dataset.source || 'Landing Page Limpeza Dental',
+              telefone: '+5511988711774',
+              link_text: link.innerText.trim() || link.getAttribute('aria-label') || 'Ligar',
+              link_classes: link.className,
+              link_label: link.dataset.callLabel || ''
+            }
+
+            if (typeof fbq === 'function') {
+              try {
+                fbq('trackCustom', 'Lead_Ligacao_Airflow')
+              } catch (err) {
+                console.error('Erro ao disparar evento de ligação no Meta Pixel:', err)
+              }
+            }
+
+            if (window.dataLayer) {
+              window.dataLayer.push({
+                event: 'Lead_Ligacao_Airflow',
+                ...payload
+              })
+            }
+
+            if (window.lpTracking) {
+              const track =
+                window.lpTracking.trackWhatsappClickWithIp ||
+                window.lpTracking.trackWhatsappClick
+
+              await track(payload)
+            }
+
+
+            await new Promise(resolve => setTimeout(resolve, 500))
+
+
+            window.location.href = href
           })
         })
       })

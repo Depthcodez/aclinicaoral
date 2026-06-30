@@ -48,13 +48,22 @@
     const queryUrl = WEBHOOK_URL + '?' + new URLSearchParams(data).toString()
     const pixel = new Image()
     pendingPixels.push(pixel)
-    pixel.onload = pixel.onerror = function () {
-      const index = pendingPixels.indexOf(pixel)
-      if (index >= 0) pendingPixels.splice(index, 1)
-    }
-    pixel.src = queryUrl
 
-    return true
+    return new Promise(resolve => {
+      let finished = false
+
+      function finish() {
+        if (finished) return
+        finished = true
+        const index = pendingPixels.indexOf(pixel)
+        if (index >= 0) pendingPixels.splice(index, 1)
+        resolve(true)
+      }
+
+      pixel.onload = pixel.onerror = finish
+      pixel.src = queryUrl
+      setTimeout(finish, 800)
+    })
   }
 
   async function trackWhatsappClickWithIp(payload) {
